@@ -1,0 +1,192 @@
+; ---------------------------------------------------------------------------
+
+cpm_fcb		struc ;	(sizeof=0x24)
+drive_num:	db ?
+filename:	db 8 dup(?)
+filetype:	db 3 dup(?)
+fcb_ex:		db ?
+reserved_1:	db ?
+reserved_2:	db ?
+fcb_rc:		db ?
+fcb_al:		db 16 dup(?)
+fcb_cr:		db ?
+fcb_rnd:	db 3 dup(?)
+cpm_fcb		ends
+
+; ---------------------------------------------------------------------------
+
+input_t		struc ;	(sizeof=0x6)
+field_0:	db 5 dup(?)		; enum charMap
+field_5:	db ?			; enum parseRval
+input_t		ends
+
+; ---------------------------------------------------------------------------
+
+; If the first bit of roomFlags	is set print the verbose_offset	message.
+; 2nd bit: Print the terse_offset message
+; 3rd bit: firstMaybe_offset message
+navierRoom_t	struc ;	(sizeof=0x1A)
+scoreBonus:	db ?			; base 10
+roomFlags:	db ?
+verbose_offset:	db 2 dup(?)
+terse_offset:	db 2 dup(?)
+firstMaybe_offset:db 2 dup(?)
+offset_probably:db 2 dup(?)
+north_room:	db ?			; enum gcs_rooms
+south_room:	db ?			; enum gcs_rooms
+east_room:	db ?			; enum gcs_rooms
+west_room:	db ?			; enum gcs_rooms
+ne_room:	db ?			; enum gcs_rooms
+nw_room:	db ?			; enum gcs_rooms
+se_room:	db ?			; enum gcs_rooms
+sw_room:	db ?			; enum gcs_rooms
+up_room:	db ?			; enum gcs_rooms
+down_room:	db ?			; enum gcs_rooms
+cw_room:	db ?			; enum gcs_rooms
+ccw_room:	db ?			; enum gcs_rooms
+enter_room:	db ?			; enum gcs_rooms
+exit_room:	db ?			; enum gcs_rooms
+inward_room:	db ?			; enum gcs_rooms
+outward_room:	db ?			; enum gcs_rooms
+navierRoom_t	ends
+
+; ---------------------------------------------------------------------------
+
+; If the first bit of roomFlags	is set print the verbose_offset	message.
+; 2nd bit: Print the terse_offset message
+; 3rd bit: firstMaybe_offset message
+gcsRoom_t	struc ;	(sizeof=0x1A)
+scoreBonus:	db ?			; base 10
+roomFlags:	db ?
+verbose_offset:	db 2 dup(?)
+terse_offset:	db 2 dup(?)
+firstMaybe_offset:db 2 dup(?)
+offset_probably:db 2 dup(?)
+north_room:	db ?			; enum gcs_rooms
+south_room:	db ?			; enum gcs_rooms
+east_room:	db ?			; enum gcs_rooms
+west_room:	db ?			; enum gcs_rooms
+ne_room:	db ?			; enum gcs_rooms
+nw_room:	db ?			; enum gcs_rooms
+se_room:	db ?			; enum gcs_rooms
+sw_room:	db ?			; enum gcs_rooms
+up_room:	db ?			; enum gcs_rooms
+down_room:	db ?			; enum gcs_rooms
+cw_room:	db ?			; enum gcs_rooms
+ccw_room:	db ?			; enum gcs_rooms
+enter_room:	db ?			; enum gcs_rooms
+exit_room:	db ?			; enum gcs_rooms
+inward_room:	db ?			; enum gcs_rooms
+outward_room:	db ?			; enum gcs_rooms
+gcsRoom_t	ends
+
+; ---------------------------------------------------------------------------
+
+isthurRoom_t	struc ;	(sizeof=0x1A)
+scoreBonus:	db ?			; base 10
+roomFlags:	db ?
+verbose_offset:	db 2 dup(?)
+terse_offset:	db 2 dup(?)
+firstMaybe_offset:db 2 dup(?)
+offset_probably:db 2 dup(?)
+north_room:	db ?			; enum isthur_rooms
+south_room:	db ?			; enum isthur_rooms
+east_room:	db ?			; enum isthur_rooms
+west_room:	db ?			; enum isthur_rooms
+ne_room:	db ?			; enum isthur_rooms
+nw_room:	db ?			; enum isthur_rooms
+se_room:	db ?			; enum isthur_rooms
+sw_room:	db ?			; enum isthur_rooms
+up_room:	db ?			; enum isthur_rooms
+down_room:	db ?			; enum isthur_rooms
+cw_room:	db ?			; enum isthur_rooms
+ccw_room:	db ?			; enum isthur_rooms
+enter_room:	db ?			; enum isthur_rooms
+exit_room:	db ?			; enum isthur_rooms
+inward_room:	db ?			; enum isthur_rooms
+outward_room:	db ?			; enum isthur_rooms
+isthurRoom_t	ends
+
+; ---------------------------------------------------------------------------
+
+earthRoom_t	struc ;	(sizeof=0x1A)
+scoreBonus:	db ?			; base 10
+roomFlags:	db ?			; base 16
+verbose_offset:	db 2 dup(?)
+terse_offset:	db 2 dup(?)
+firstMaybe_offset:db 2 dup(?)
+offset_probably:db 2 dup(?)
+north_room:	db ?			; enum earth_rooms
+south_room:	db ?			; enum earth_rooms
+east_room:	db ?			; enum earth_rooms
+west_room:	db ?			; enum earth_rooms
+ne_room:	db ?			; enum earth_rooms
+nw_room:	db ?			; enum earth_rooms
+se_room:	db ?			; enum earth_rooms
+sw_room:	db ?			; enum earth_rooms
+up_room:	db ?			; enum earth_rooms
+down_room:	db ?			; enum earth_rooms
+cw_room:	db ?			; enum earth_rooms
+ccw_room:	db ?			; enum earth_rooms
+enter_room:	db ?			; enum earth_rooms
+exit_room:	db ?			; enum earth_rooms
+inward_room:	db ?			; enum earth_rooms
+outward_room:	db ?			; enum earth_rooms
+earthRoom_t	ends
+
+; ---------------------------------------------------------------------------
+
+hire_t		struc ;	(sizeof=0x3)
+occupied:	db ?
+hireMsgHi:	db ?
+hireMsgLo:	db ?
+hire_t		ends
+
+; ---------------------------------------------------------------------------
+
+msgOffset	struc ;	(sizeof=0x2)
+hiByte:		db ?
+loByte:		db ?
+msgOffset	ends
+
+; ---------------------------------------------------------------------------
+
+orbitStruMaybe	struc ;	(sizeof=0x3)
+canLandFlag:	db ?			; If 1,	the ship can land. If 0, the msg at msgHi,msgLo	is printed
+msgHi:		db ?
+msgLo:		db ?
+orbitStruMaybe	ends
+
+; ---------------------------------------------------------------------------
+
+gcsBasedItems	struc ;	(sizeof=0x6)
+itemCode:	db ?			; enum itemCodes
+roomNum:	db ?			; enum gcs_rooms
+field_2:	db ?
+field_3:	db ?
+field_4:	db ?
+field_5:	db ?
+gcsBasedItems	ends
+
+; ---------------------------------------------------------------------------
+
+isthurBasedItems struc ; (sizeof=0x6)
+itemCode:	db ?			; enum itemCodes
+roomNum:	db ?			; enum isthur_rooms
+field_2:	db ?
+field_3:	db ?
+field_4:	db ?
+field_5:	db ?
+isthurBasedItems ends
+
+; ---------------------------------------------------------------------------
+
+earthBasedItems	struc ;	(sizeof=0x6)
+itemCode:	db ?			; enum itemCodes
+roomNum:	db ?			; enum earth_rooms
+field_2:	db ?
+field_3:	db ?
+field_4:	db ?
+field_5:	db ?
+earthBasedItems	ends
+
