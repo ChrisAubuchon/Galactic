@@ -157,36 +157,10 @@ msgHi:		db ?
 msgLo:		db ?
 orbitStruMaybe	ends
 
-; ---------------------------------------------------------------------------
-
-gcsBasedItems	struc ;	(sizeof=0x6)
-itemCode:	db ?			; enum itemCodes
-roomNum:	db ?			; enum gcs_rooms
+object_t struct ; (sizeof=0x6)
+location:	db ?
+roomNumber:	db ?
 field_2:	db ?
 field_3:	db ?
 field_4:	db ?
 field_5:	db ?
-gcsBasedItems	ends
-
-; ---------------------------------------------------------------------------
-
-isthurBasedItems struc ; (sizeof=0x6)
-itemCode:	db ?			; enum itemCodes
-roomNum:	db ?			; enum isthur_rooms
-field_2:	db ?
-field_3:	db ?
-field_4:	db ?
-field_5:	db ?
-isthurBasedItems ends
-
-; ---------------------------------------------------------------------------
-
-earthBasedItems	struc ;	(sizeof=0x6)
-itemCode:	db ?			; enum itemCodes
-roomNum:	db ?			; enum earth_rooms
-field_2:	db ?
-field_3:	db ?
-field_4:	db ?
-field_5:	db ?
-earthBasedItems	ends
-
