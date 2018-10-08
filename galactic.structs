@@ -22,122 +22,35 @@ input_t		ends
 
 ; ---------------------------------------------------------------------------
 
-; If the first bit of roomFlags	is set print the verbose_offset	message.
-; 2nd bit: Print the terse_offset message
-; 3rd bit: firstMaybe_offset message
-navierRoom_t	struc ;	(sizeof=0x1A)
-scoreBonus:	db ?			; base 10
-roomFlags:	db ?
-verbose_offset:	db 2 dup(?)
-terse_offset:	db 2 dup(?)
-firstMaybe_offset:db 2 dup(?)
-offset_probably:db 2 dup(?)
-north_room:	db ?			; enum gcs_rooms
-south_room:	db ?			; enum gcs_rooms
-east_room:	db ?			; enum gcs_rooms
-west_room:	db ?			; enum gcs_rooms
-ne_room:	db ?			; enum gcs_rooms
-nw_room:	db ?			; enum gcs_rooms
-se_room:	db ?			; enum gcs_rooms
-sw_room:	db ?			; enum gcs_rooms
-up_room:	db ?			; enum gcs_rooms
-down_room:	db ?			; enum gcs_rooms
-cw_room:	db ?			; enum gcs_rooms
-ccw_room:	db ?			; enum gcs_rooms
-enter_room:	db ?			; enum gcs_rooms
-exit_room:	db ?			; enum gcs_rooms
-inward_room:	db ?			; enum gcs_rooms
-outward_room:	db ?			; enum gcs_rooms
-navierRoom_t	ends
-
-; ---------------------------------------------------------------------------
-
-; If the first bit of roomFlags	is set print the verbose_offset	message.
-; 2nd bit: Print the terse_offset message
-; 3rd bit: firstMaybe_offset message
-gcsRoom_t	struc ;	(sizeof=0x1A)
-scoreBonus:	db ?			; base 10
-roomFlags:	db ?
-verbose_offset:	db 2 dup(?)
-terse_offset:	db 2 dup(?)
-firstMaybe_offset:db 2 dup(?)
-offset_probably:db 2 dup(?)
-north_room:	db ?			; enum gcs_rooms
-south_room:	db ?			; enum gcs_rooms
-east_room:	db ?			; enum gcs_rooms
-west_room:	db ?			; enum gcs_rooms
-ne_room:	db ?			; enum gcs_rooms
-nw_room:	db ?			; enum gcs_rooms
-se_room:	db ?			; enum gcs_rooms
-sw_room:	db ?			; enum gcs_rooms
-up_room:	db ?			; enum gcs_rooms
-down_room:	db ?			; enum gcs_rooms
-cw_room:	db ?			; enum gcs_rooms
-ccw_room:	db ?			; enum gcs_rooms
-enter_room:	db ?			; enum gcs_rooms
-exit_room:	db ?			; enum gcs_rooms
-inward_room:	db ?			; enum gcs_rooms
-outward_room:	db ?			; enum gcs_rooms
-gcsRoom_t	ends
-
-; ---------------------------------------------------------------------------
-
-isthurRoom_t	struc ;	(sizeof=0x1A)
-scoreBonus:	db ?			; base 10
-roomFlags:	db ?
-verbose_offset:	db 2 dup(?)
-terse_offset:	db 2 dup(?)
-firstMaybe_offset:db 2 dup(?)
-offset_probably:db 2 dup(?)
-north_room:	db ?			; enum isthur_rooms
-south_room:	db ?			; enum isthur_rooms
-east_room:	db ?			; enum isthur_rooms
-west_room:	db ?			; enum isthur_rooms
-ne_room:	db ?			; enum isthur_rooms
-nw_room:	db ?			; enum isthur_rooms
-se_room:	db ?			; enum isthur_rooms
-sw_room:	db ?			; enum isthur_rooms
-up_room:	db ?			; enum isthur_rooms
-down_room:	db ?			; enum isthur_rooms
-cw_room:	db ?			; enum isthur_rooms
-ccw_room:	db ?			; enum isthur_rooms
-enter_room:	db ?			; enum isthur_rooms
-exit_room:	db ?			; enum isthur_rooms
-inward_room:	db ?			; enum isthur_rooms
-outward_room:	db ?			; enum isthur_rooms
-isthurRoom_t	ends
-
-; ---------------------------------------------------------------------------
-
-earthRoom_t	struc ;	(sizeof=0x1A)
-scoreBonus:	db ?			; base 10
-roomFlags:	db ?			; base 16
-verbose_offset:	db 2 dup(?)
-terse_offset:	db 2 dup(?)
-firstMaybe_offset:db 2 dup(?)
-offset_probably:db 2 dup(?)
-north_room:	db ?			; enum earth_rooms
-south_room:	db ?			; enum earth_rooms
-east_room:	db ?			; enum earth_rooms
-west_room:	db ?			; enum earth_rooms
-ne_room:	db ?			; enum earth_rooms
-nw_room:	db ?			; enum earth_rooms
-se_room:	db ?			; enum earth_rooms
-sw_room:	db ?			; enum earth_rooms
-up_room:	db ?			; enum earth_rooms
-down_room:	db ?			; enum earth_rooms
-cw_room:	db ?			; enum earth_rooms
-ccw_room:	db ?			; enum earth_rooms
-enter_room:	db ?			; enum earth_rooms
-exit_room:	db ?			; enum earth_rooms
-inward_room:	db ?			; enum earth_rooms
-outward_room:	db ?			; enum earth_rooms
-earthRoom_t	ends
+room_t	struc ;	(sizeof=0x1A)
+	scoreBonus:		db ?		; Score bonus when entering room
+	roomFlags:		db ?		; enum roomFlags
+	verbose_offset:		db 2 dup(?)
+	terse_offset:		db 2 dup(?)
+	first_offset:		db 2 dup(?)
+	ambient_offset:		db 2 dup(?)
+	north_room:		db ?
+	south_room:		db ?
+	east_room:		db ?
+	west_room:		db ?
+	ne_room:		db ?
+	nw_room:		db ?
+	se_room:		db ?
+	sw_room:		db ?
+	up_room:		db ?
+	down_room:		db ?
+	cw_room:		db ?
+	ccw_room:		db ?
+	enter_room:		db ?
+	exit_room:		db ?
+	inward_room:		db ?
+	outward_room:		db ?
+room_t	ends
 
 ; ---------------------------------------------------------------------------
 
 hire_t		struc ;	(sizeof=0x3)
-occupied:	db ?
+hiredFlag:	db ?
 hireMsgHi:	db ?
 hireMsgLo:	db ?
 hire_t		ends
@@ -151,16 +64,17 @@ msgOffset	ends
 
 ; ---------------------------------------------------------------------------
 
-orbitStruMaybe	struc ;	(sizeof=0x3)
+landable_t	struc ;	(sizeof=0x3)
 canLandFlag:	db ?			; If 1,	the ship can land. If 0, the msg at msgHi,msgLo	is printed
 msgHi:		db ?
 msgLo:		db ?
-orbitStruMaybe	ends
+landable_t	ends
 
 object_t struct ; (sizeof=0x6)
-location:	db ?
-roomNumber:	db ?
-field_2:	db ?
-field_3:	db ?
-field_4:	db ?
-field_5:	db ?
+scoreBonus:		db ?
+field_1:		db ?
+floorMessageIndex:	db ?
+invenMessageIndex:	db ?
+location:		db ?
+roomNumber:		db ?
+

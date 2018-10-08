@@ -1,0 +1,5 @@
+g_landing_earth:	LANDABLE(canLand, s_notAllowedToLand)
+g_landing_isthur:	LANDABLE(canLand, s_notAllowedToLand)
+g_landing_gcs:		LANDABLE(cannotLand, s_shipUnidentified)
+g_landing_navier:	LANDABLE(cannotLand, s_planetQuarantined)
+g_landing_solomaw:	LANDABLE(cannotLand, s_notAllowedToLand)

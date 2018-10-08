@@ -504,11 +504,13 @@ room_solomaw_maze_37:		equ 37h
 room_solomaw_maze_38:		equ 38h
 room_solomaw_maze_39:		equ 39h
 
-; ---------------------------------------------------------------------------
-
-; enum itemCodes
-ic_carrying:	 equ 7
-ic_cantGet:	 equ 8
+; enum roomFlags
+roomFlag_verbose:		equ 80h
+roomFlag_terse:			equ 40h
+roomFlag_first:			equ 20h
+roomFlag_ambient:		equ 10h
+roomFlag_clock:			equ 08h
+roomFlag_terminal:		equ 04h
 
 ; enum bdosFunctions
 bdos_p_termcpm:		equ 0
