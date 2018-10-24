@@ -1,0 +1,3626 @@
+
+0x0011:
+
+	Welcome to 'A Galactic Experience'!
+	Would you like instructions?
+
+0x0050:
+
+	'A Galactic Experience' is the second in a series of games by the
+Creator!  It is strongly recommended that you play the original 'Adventure'
+and 'A Remarkable Experience' before attempting this game.
+	You start your adventure in Earth's spaceport, located next to a
+small Earth town.  Most of Earth is now a radioactive wasteland.  You are
+the captain of the space ship - Surge, which is a small merchant ship.
+You are searching for fame and fortune among the stars, but unknown to
+most, you are also a member of the Galactic Reserve and you should conduct
+yourself accordingly.
+	If you want extra information type 'HELP'.
+			Happy Adventuring!
+
+0x028e:
+
+	As always, sentences are limited to two words, but now I look at the
+first five letters of each word.  Even so, you'll still have to enter
+'NORTHWEST' as 'NW', 'CLOCKWISE' as 'CW', etc.  One word commands work most
+of the time.  If I need clarification, I will ask for it.  Generally, I
+know of directions, actions, and things.
+	The object of this game is to obtain points.  You receive
+points for various activities, just as in the other adventure games.  This
+is not primarily a 'find and return treasure - adventure game'.  You
+mainly get points for solving problems and carrying out the mission you
+will receive.
+	You can save your current game by typing 'SAVE'.
+	You can find out how well you are doing by typing 'SCORE'.
+	You can end your adventure early by saying 'QUIT'.
+	It is generally a good idea to check in with the local commander
+whenever you hit planet.
+	Caution and compassion are recommended when dealing with other
+intelligent beings.
+			Good Luck!
+
+0x05e4:
+
+	You're in orbit about Earth.
+
+0x0600:
+
+	You are in orbit about the planet earth.  Sensors reveal that most
+of Earth is a radioactive wasteland.  The only lifeforms registering are
+in one small pocket of civilization - in and around the spaceport.
+
+0x06bd:
+
+	You're on Earth's landing pad.
+
+0x06e0:
+
+	You are in the spacecraft 'Surge' sitting on the landing pad of
+Earth's spaceport.  Except for the terminal directly East, you are
+surrounded by a vast wasteland.
+
+0x0773:
+
+	You are standing on the landing pad of Earth's spaceport.  To the
+West, the spacecraft 'Surge' stands gleaming.  To the East is customs.
+
+0x07f1:
+
+	You are in a circular hallway before a closed door.
+
+0x0822:
+
+	You're in a circular hallway.
+
+0x0845:
+
+	The number on the door is 10.
+
+0x0868:
+
+	There is no answer.
+
+0x087d:
+
+	You have been arrested for breaking and entering, and you have
+missed liftoff.
+
+0x08ca:
+
+	The number on the door is 11.
+
+0x08ed:
+
+	The number on the door is 12.
+
+0x0910:
+
+	As you entered, Dr. Severn attacked you and broke your arm.  You
+spent liftoff in the Infirmary.
+
+0x096b:
+
+	The number on the door is 13.
+
+0x098e:
+
+	You are in a circular hallway.  To the West is the foyer.  Ahead
+of you is a closed door.
+
+0x09e2:
+
+	As you entered you were shot and killed by Practact the Pirate.
+
+0x0a21:
+
+	The number on the door is 14.
+
+0x0a44:
+
+	A sign on the walls reads:   10 < CCW   CW > 16
+
+0x0a75:
+
+	The number on the door is 15.
+
+0x0a98:
+
+	As you entered, you were rendered unconsious by Science Officer -
+Troch, and you slept through liftoff.
+
+0x0afa:
+
+	The number on the door is 16.
+
+0x0b1d:
+
+	You are in the room of Welma Fairing - communications officer.  She
+is interested in employment and will sign on your ship for the standard 3%
+of the profits.  Her papers indicate that she has been on only two
+previous assignments, but that both captains were pleased with her work.
+
+0x0c19:
+
+	You're in Welma's room.
+
+0x0c35:
+
+	Miss Fairing has been hired and will report to the ship one hour
+before liftoff tomorrow morning.
+
+0x0c90:
+
+	You are in your room.  The room is small but comfortable.
+
+0x0cc8:
+
+	You're in your room.
+
+0x0cdd:
+
+	There is a duffle bag here.
+
+0x0cf9:
+
+		Duffle Bag
+
+0x0d07:
+
+	You have discovered a laser, a geiger counter, and a small money
+pouch.
+
+0x0d4d:
+
+	There is a laser here.
+
+0x0d69:
+
+		Laser
+
+0x0d77:
+
+	There is a geiger counter here.
+
+0x0d9a:
+
+		Geiger Counter
+
+0x0daf:
+
+	There is a small money pouch here.
+
+0x0dd2:
+
+		Money Pouch
+
+0x0de0:
+
+	There are credits in the pouch.
+
+0x0e03:
+
+	There are credits here.
+
+0x0e1f:
+
+		Credits
+
+0x0e2d:
+
+	You are in the room of Parson Nigere - special equipment salesman.
+He has no equipment for sale, that you can afford, at this time.
+
+0x0ea4:
+
+	You're in Mr. Nigere's Room.
+
+0x0ec0:
+
+	You are in the room of Parson Nigere - special equipment salesman.
+He has the following equipment for sale:
+
+0x0f22:
+
+	You are in the room of Parson Nigere - special equipment salesman.
+
+0x0f61:
+
+	Navigation Computer            - 50000 Credits
+
+0x0f92:
+
+	A Portable Illusion Neutralizer- 10000 Credits
+
+0x0fc3:
+
+	A P-Suit                       - 15000 Credits
+
+0x0ff4:
+
+	A Neural Analyzer               - 25000 Credits
+
+0x1025:
+
+	There is an Installed Navigation Computer here.
+
+0x1056:
+
+	There is a portable Illusion Neutralizer here.
+
+0x1087:
+
+		Illusion Neutralizer
+
+0x10a3:
+
+	There is a P-Suit here.
+
+0x10bf:
+
+		P-Suit
+
+0x10cd:
+
+		Donned P-Suit
+
+0x10e2:
+
+	There is an Installed Neural Analyzer here.
+
+0x110c:
+
+	The cost for installing the Navigation Computer is 5000 credits.
+It will be there by takeoff.
+
+0x1167:
+
+	The cost for installing the Neural Analyzer is 5000 credits.  It will
+be there by takeoff.
+
+0x11bb:
+
+	You are in the room of Severn Acon - engineer.  He is seeking a
+position as engineer aboard any outward bound ship.  He will sign on your
+ship for the standard 5% of the profits.  No known previous assignments.
+
+0x1278:
+
+	You're in Mr. Acon's room.
+
+0x1294:
+
+	Mr. Acon has been hired and will report to the ship one hour before
+liftoff tomorrow morning.
+
+0x12ef:
+
+	You are in the room of Practact the Pirate.  As you entered, you
+were knocked unconscience and all of your credits stolen.  There is no
+sign of Practact the Pirate.
+
+0x1382:
+
+	You're in an empty room.
+
+0x139e:
+
+	You are in the room of Bob LLye - Navigator.  He is somewhat
+interested in employment and will sign on your ship for 25% of the profits,
+5% over standard fee.
+
+0x1431:
+
+	You're in Llye's room.
+
+0x144d:
+
+	Mr. LLye has been hired and will report to the ship one hour before
+liftoff.
+
+0x1493:
+
+	You are in the room of John Troch - Science Officer.  He has flown
+over 200 deep space missions and has passed normal retirement age.  However,
+he is bored and will sign on your ship at 4%, 1% under usual employment.
+
+0x1557:
+
+	You're in John Troch's room.
+
+0x1573:
+
+	Mr. Troch has been hired and will report to the ship one hour before
+liftoff.
+
+0x15c0:
+
+	You are in the communications center of Earth's spaceport.  The
+room is circular in shape and doors leave the room like spokes on a
+wheel.
+
+0x163e:
+
+	The lieutenant on duty says, 'Captain, your departure is all set
+for 0800 hours tomorrow morning.  Have you decided on your course vectors?'
+
+0x16bc:
+
+	A clock on the wall reads 1630 hours.
+
+0x16e6:
+
+	You're in the communications center.
+
+0x1709:
+
+	You are standing at the entrance to the Port Commander's office.
+A sign on the wall reads:
+		All ship captains check in with the Port Commander
+		three hours before liftoff.
+
+0x17aa:
+
+	You are at the entrance to the Port Commander's office.
+
+0x17e2:
+
+	The door is locked.
+
+0x17f7:
+
+	The door is unlocked.
+
+0x1813:
+
+	You are in the Port Commander's office, face to face with
+Commodore Williams, second in command in the Galactic Patrol.
+
+0x1883:
+
+	You're in the Port Commander's office.
+
+0x18ad:
+
+	Captain, the two 8" CP/M planetary control disks for the planet
+Isthur have been stolen and all backups destroyed.  They've managed to rig
+up temporary air control, but Isthur is running on battery reserve power
+and is literally being buried under its own garbage.  I have reactivated
+your Galactic Reserve status and I want you to get out to Isthur, recover
+those disks, and get them back in operation.  The urgency is not only for
+Isthur.  One of our officers, going under the guise of a computer technician,
+was working on a top secret formula on Isthur and he was murdered during the
+the theft.  We must know what progress he made.  His computer password was
+			ANALOG57.
+	I have set up unlimited credits in your name.  So get what you'll
+need and don't miss blastoff.
+		Good Luck!
+
+0x1b62:
+
+	You are in a foyer leading to the wing of private quarters.  This
+room contains lots of comfortable sofas and chairs.
+	A sign above the entrance reads:
+		Through these portals pass the elite of the space
+	adventurers.  Feel free to connect up to the computer using the
+	entrance code PUBLIC and the password SECRET.
+
+0x1c7a:
+
+	You're in a foyer.
+
+0x1c8f:
+
+	There is a computer CRT terminal here.
+
+0x1cb9:
+
+	User Name:
+
+0x1cc7:
+
+	Password:
+
+0x1cd5:
+
+	User Identification Number:
+
+0x1cf1:
+
+	Welcome to the universal information retrival service.
+
+	Please remember that all captains should check in with the base
+commander three hours before liftoff.
+
+	Information available on:
+		1) Planet Locations
+		2) Ship personnel seeking employment
+		3) General Gossip
+
+0x1ddf:
+
+	Enter Planet:
+
+0x1df4:
+
+	Isthur:  Coordinates: x = -12, y = -17, z = 0
+		This is a small planet with no atmosphere.  Installation
+	Gamma is the only settlement.  This settlement is more commonly
+	referred to as the Bubbles of Isthur.  Installation Gamma has
+	only recently shifted its Environmental System to complete
+	Computer Control.
+
+0x1f0c:
+
+	Navier:  Coordinates: x = 13, y = -12, z = 73
+		This is frequently referred to as the Planet of Puzzles.
+	Long ago a small group of Game Theorists broke off from the main
+	colony and formed the Underground of Navier.  There is only a
+	small group of the original colonists remaining, for all are
+	scared to enter the underground.  This portion of the colony is
+	referred to by the remaining colonists as the City of Illusions.
+
+0x2086:
+
+	Solomaw:  Coordinates: x = 56, y = 11, z = -80
+		This planet is referred to as the Planet of Wisdom.  The
+	High Priest of Solomaw is reported to have knowledge and wisdom
+	almost beyond belief.  However, all that have gone to this planet
+	in search of answers to problems they could not solve, have been
+	made to pass a series of tests to prove themselves worthy.  To
+	our knowledge, no outsider has ever returned from the planet
+	Solomaw.
+
+0x220e:
+
+	Gossip:  Rumor has it that all computer control has been suspended
+on the planet Isthur.  Everyone expects that the Galactic Patrol will soon
+be picking a team to go out to Isthur and investigate.
+
+0x22bd:
+
+	Personnel:
+	Name               Occupation            Location
+	----               ----------            --------
+	Welma Fairing      Communcations Officer Room 10
+	Severn Acon        Engineer              Room 13
+	Bob Llye           Navigator             Room 15
+	John Troch         Science Officer       Room 16
+	Will Brandon       Security Officer      Customs
+	Don Reser          Medical Officer       Infirmary
+	Alex Loren         Pilot                 Starlight Lounge
+
+0x2461:
+
+	You are in the Infirmary.  The only person in the room at this
+time is Don Reser.  He has never left Earth and wants to sign on your
+ship.  He will go for expenses and experience.
+
+0x2502:
+
+	You are in the Infirmary.  There is no one here.
+
+0x2533:
+
+	You're in the Infirmary.
+
+0x254f:
+
+	Dr. Reser will report to your ship one hour before liftoff.
+
+0x2587:
+
+	You are in the library.
+
+0x25a3:
+
+	You are in Customs.  The security guard is named Will Brandon.
+He knows that you plan to take off at 0800 hours and wants to go with
+you.  He'll make the trip for the usual 5% and will arrange for you
+to smuggle anything past customs that you cannot declare.
+
+0x268a:
+
+	You are in customs.  The security force has found your Illusion
+Neutralizer and you are being detained for attempting to smuggle this
+off planet.
+
+0x270f:
+
+	You are in customs.  The security force has caught workmen trying
+to take the Neural Analyzer you purchased aboard your ship.  There is an
+automatic fine of 50000 credits and mandatory jail sentence of 10 years.
+
+0x27cc:
+
+	You're in Customs.
+
+0x27e1:
+
+	Mr. Brandon has been hired and will report to the ship one hour
+before liftoff.  He has agreed to make sure you are not caught smuggling.
+
+0x285f:
+
+	You are in the supply depot.  A supply sergeant asks you, 'How
+many people are in your party?'
+
+0x28ba:
+
+	You're in Supply.
+
+0x28cf:
+
+	You are in the supply depot.
+
+0x28eb:
+
+	'Very good, Captain.  I'll see the supplies are on board before
+liftoff.'
+
+0x2931:
+
+	You are in the Starlight Lounge.
+
+0x2954:
+
+	You're in the Starlight Lounge.
+
+0x2977:
+
+	You are in the Starlight Lounge.  Alex Loren is here, very drunk.
+The bartender tells you that Mr. Loren used to be a crack pilot, but in
+recent years has been nothing but a drunk.  However, he is the only
+pilot currently available.
+
+0x2a49:
+
+	For 1000 credits, the bartender agrees to sober Mr. Loren up and
+have him on board in time for liftoff at 0800 hours.
+
+0x2ab9:
+
+	You are at the Main Entrance to Earth's Spaceport.  To the South
+is the town.  Two doors - one East and one West - lead to the Spaceport.
+
+0x2b37:
+
+	You're at the Main Entrance to the Spaceport.
+
+0x2b68:
+
+	You are in the town square.  A small dirt road runs East-West.
+
+0x2ba7:
+
+	You're in town square.
+
+0x2bc3:
+
+	You are on a dirt road in front of the Saloon.
+
+0x2bf4:
+
+	You are on a dirt road in front of the Inn.
+
+0x2c1e:
+
+	You are on a dirt road in front of a deserted house.
+
+0x2c4f:
+
+	You are on a dirt road in front of the Feed Store.
+
+0x2c80:
+
+	You are on a dirt road in front of the Sheriff's office.
+
+0x2cb8:
+
+	You are at the end of the road.
+
+0x2cdb:
+
+	You're on a dirt road.
+
+0x2cf7:
+
+	You're in the deserted house.  There is a skeleton here and an old
+ragged piece of paper clutched in what used to be a hand.
+
+0x2d67:
+
+	The paper disintegrates before your eyes.
+
+0x2d91:
+
+	The pirate lives somewhere in the wasteland, but it doesn't take the
+radiation long to get you.
+
+0x2dec:
+
+	You're in the deserted house.
+
+0x2e0f:
+
+	You are in what must have been, at one time, a very fancy Inn.  Now
+it is falling down and deserted.
+
+0x2e6a:
+
+	Part of the Inn's roof has collapsed and you have been hit by
+falling timber.  Your left arm is badly scratched and bruised.
+
+0x2eda:
+
+	You're in the Inn.
+
+0x2eef:
+
+	You're in the Saloon.
+
+0x2f0b:
+
+	You are in an old Saloon.  There is no evidence that the Saloon is
+still in use.
+
+0x2f58:
+
+	There is a bottle of whiskey here.
+
+0x2f7b:
+
+		Bottle of Whiskey
+
+0x2f90:
+
+	You're in the feed store.  This has been long deserted as there are
+cobwebs everywhere.  There is a printed notice on the wall which reads:
+		Everyone should move quickly to the bomb shelter.
+	The notice is yellow with age but can still be read.
+
+0x3070:
+
+	The sheriff's office is locked and you can't get in.
+
+0x30a1:
+
+	You're in the feed store.
+
+0x30bd:
+
+	You are in the sheriff's office.  The office is deserted.
+
+0x30f5:
+
+	You're in the sheriff's office.
+
+0x3118:
+
+	There is a folded piece of paper here.
+
+0x3142:
+
+		Folded Paper
+
+0x3157:
+
+	You can't; the paper is folded.
+
+0x317a:
+
+	Dear Jock,
+		I am taking with me to the shelter the repair disk
+intrusted to me.  If this is a false alarm, then I'll bring it right back.
+                                                      Ralph
+
+0x3230:
+
+		A Piece of Paper
+
+0x3245:
+
+	There is a shovel here.
+
+0x3261:
+
+		Shovel
+
+0x326f:
+
+	You are in a vast wasteland with nothing in sight but arid, dry
+land.
+
+0x32b5:
+
+	You're in a vast wasteland.
+
+0x32d1:
+
+	You are at the edge of a mile high swinging bridge.
+
+0x3302:
+
+	You are at the pirate's campsite.
+
+0x3325:
+
+	There is a sack containing 100000 credits here.
+
+0x3356:
+
+		Sack
+
+0x3364:
+
+		100000 credits
+
+0x3379:
+
+	You are at the entrance to the bomb shelter.
+
+0x33a3:
+
+	You are in the bomb shelter.  There are bodies all around you.
+
+0x33e2:
+
+	You're in the bomb shelter.
+
+0x33fe:
+
+	There is an 8" CP/M disk in its protective folder here.
+
+0x3436:
+
+		8" CP/M Repair Disk
+
+0x344b:
+
+	There is a Deep Fissure in that direction which prevents your
+passage.
+
+0x3491:
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+0x34d0:
+
+	You are in orbit about the planet Isthur.  Sensors reveal that the
+planet has no atmosphere.  The only life forms that register come from
+Installation Gamma.
+
+0x3563:
+
+	You're in orbit about Isthur.
+
+0x3586:
+
+	You are in the spacecraft 'Surge' sitting on the landing site of
+Installation Gamma.  The entrance to The Bubbles of Isthur is directly
+North.
+
+0x360b:
+
+	You're on Isthur's landing site.
+
+0x362e:
+
+	You are standing on the landing site of Isthur.  To the North,
+is the entrance to The Bubbles of Isthur.  To the South, the spacecraft
+'Surge'.
+
+0x36b3:
+
+	You are in the Entrance Chamber to Installation Gamma.
+
+0x36eb:
+
+	As you entered the Chamber, the airlock behind you cycled shut,
+and air filled the chamber.  A door to the North has just opened.
+
+0x3762:
+
+	As you entered the Chamber, the airlock behind you cycled shut,
+and air escaped the chamber.  The door to the landing site has just
+opened.
+
+0x37e0:
+
+	You are in a N-S tunnel.
+
+0x37fc:
+
+	You are in an E-W tunnel.
+
+0x3818:
+
+	You are at an intersection.  Tunnels lead North, South, East, and
+West.
+
+0x385e:
+
+	You are at an intersection.  Tunnels lead North, East, and South.
+
+0x389d:
+
+	You are in the entrance foyer to the Commandant's office.  A sign
+on the wall says 'All ship captains check in at their earliest convenience.
+
+0x3922:
+
+	You are in the Commandant's office face to face with Commandant
+Turvish.
+
+0x3968:
+
+	You're in the entrance foyer to the Commandant's office.
+
+0x39a0:
+
+	Captain, the two dead assistants were found in Bubble 39 and
+Gamma Control was a mess.  We can repair the equipment, but the control disks
+are missing and the backups destroyed.  Intelligence is on the job and has
+information for you.  Talk to Major Steering.  If we can't get Gamma Control
+back on line in the next few weeks, we'll be buried in our own garbage.  I
+sincerely hope that you'll be able to help us.
+
+0x3b0c:
+
+	Captain, I'm glad you've returned.  I've just learned that the crook
+must be on his way to Grand Central Space Station.  We've radioed ahead and
+you'll be using the code name 'PLAYER' to check in.  A Control Tower
+technician has found the coordinates for Grand Central Space Station.  They
+are:  x = 5, y = 10, z = 5.  Your cover will be observed on Grand Central
+and they will give you every assistance.  I have taken the liberty of
+refueling your ship and replacing your supplies.  Good Luck.
+
+0x3cc5:
+
+	You're in the Garbage Dumping Station.
+
+0x3cef:
+
+	The room looks grubby.
+
+0x3d0b:
+
+	The room is one-fourth full of garbage.
+
+0x3d35:
+
+	The room is half full of garbage.
+
+0x3d58:
+
+	The room is completely full of garbage.
+
+0x3d82:
+
+	You're in the Cafeteria.  The smell is not pleasant.
+
+0x3db3:
+
+	You're in the Hospital wing.
+
+0x3dcf:
+
+	You're in the Infirmary.
+
+0x3deb:
+
+	You're in the Energy Input Station.  All automated machinery is
+shut down and there is a large collection of batteries scattered everywhere.
+
+0x3e69:
+
+	You're in the Energy Input Station.
+
+0x3e8c:
+
+	You're in the Air Recycling Plant.
+
+0x3eaf:
+
+	You are in the Air Recycling Plant.  The only operation going on
+to recycle air is the use of bottled air cylinders, which are everywhere.
+
+0x3f2d:
+
+	You're in Fire Control.
+
+0x3f49:
+
+	You are in Fire Control.  Everyone here is very worried about the
+possibliity of fire, since the entire colony is on bottled oxygen.
+
+0x3fc0:
+
+	You're in the Intelligence Center.
+
+0x3fe3:
+
+	You are in the Headquarters for Intelligence.  You are face to
+face with Major Steering who tells you the results of their investigation
+to date.
+	Sir, we've psychic probed everyone on planet and I'm willing to
+swear that the thief and murderer is no longer here.  We have a vague
+description from a security guard, who caught just a glimpse of someone
+running.  Roughly  5'6", thin, black suit, and dark complexion.  
+There was a long jagged scar on his right forearm.
+
+0x4187:
+
+	You're in the Machine Shop.
+
+0x41a3:
+
+	You are in the Machine Shop.  The people working are trying to
+repair a lot of broken equipment.
+
+0x41fe:
+
+	You're in the Design Center.
+
+0x421a:
+
+	You are in the Design Center.  The people are working overtime
+trying to design a computer control program.
+
+0x427c:
+
+	You're in the Waste Recycling Plant.
+
+0x429f:
+
+	You are in the Waste Recycling Plant.  The room is deserted.
+
+0x42d7:
+
+	You're in the Control Tower.
+
+0x42f3:
+
+	You are in the Control Tower.  The attendant on duty says:
+	'Sir, only one ship has raised planet since the theft and murder,
+and that was the 'Wonderlust' headed for Grand Central Space Station.
+
+0x43a2:
+
+	You're in the Laundry.
+
+0x43be:
+
+	You're in the Water Recycling Plant.
+
+0x43e1:
+
+	There is a degaussing coil here.
+
+0x4404:
+
+		Degaussing Coil
+
+0x4419:
+
+	You're in Bubble 39.
+
+0x442e:
+
+	There is a small purse half hidden in the corner of the room.
+
+0x446d:
+
+	There is a small purse here.
+
+0x4489:
+
+		Small Purse
+
+0x4497:
+
+	The purse is empty, but written on the lining is the following
+sequence of numbers:  39   22   37.
+
+0x44f2:
+
+	You're at the entrance to Gamma Control.
+
+0x451c:
+
+	You are at the entrance to Gamma Control.  The door is currently
+locked since the technicians are trying to repair the damage.
+
+0x4593:
+
+	You are at the entrance to Gamma Control.  The damage has been
+repaired and the door is now unlocked.
+
+0x45f5:
+
+	You're in Gamma Control.
+
+0x4611:
+
+	You are in Gamma Control.  The door to the computer room has been
+unlocked so that you may insert the repaired disks.
+
+0x4681:
+
+	You're in the Computer Center.
+
+0x46a4:
+
+	The computer prints out a page of gibberish and instructs you to
+return this page to the Earth's Commodore of the Galactic Patrol.
+
+0x471b:
+
+	The disks do not work.  They have been damaged as they have been
+carried around the Universe.
+
+0x4776:
+
+		Computer Paper Page
+
+0x478b:
+
+	There is a Computer Paper Page here.
+
+0x47ae:
+
+	Captain, I have just heard the terrible news.  I have heard rumors
+that there is a planet where the people are extremely wise.  I wonder if
+they could tell us how to fix the partially destroyed disks.  I don't
+know the name of the planet, but I do know it exists.
+
+0x489c:
+
+	Captain, I thank you for the wonderful job that you have done.  I
+know that you are eager to return to Earth, so I won't keep you.  Your
+ship is refueled and your supplies have been taken care of.  If I can ever
+be of assistance in the future, let me know.
+
+0x4983:
+
+	You're in Security Control.
+
+0x499f:
+
+	You are in Security Control.  The place is currently deserted.
+
+0x49de:
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+0x4a24:
+
+	You're in Deep Space.
+
+0x4a40:
+
+	You are in Deep Space, light years from any inhabited star system.
+
+0x4a7f:
+
+	I am taking the liberty of ending this game now, as there is very
+little else you can do.
+
+0x4ad3:
+
+	There is no way to go that direction.
+
+0x4afd:
+
+	I don't know how to apply that word here.
+
+0x4b27:
+
+	I don't know that word!
+
+0x4b43:
+
+	I don't understand that!
+
+0x4b5f:
+
+	What!
+
+0x4b6d:
+
+	You're using words I don't know!
+
+0x4b90:
+
+	You didn't find anything!
+
+0x4bac:
+
+	I don't know how to do that here!
+
+0x4bcf:
+
+	Nothing happens!
+
+0x4be4:
+
+	Which way?
+
+0x4bf2:
+
+	Ok!
+
+0x4bf9:
+
+	Don't be ridiculous!
+
+0x4c0e:
+
+	There is no way to do that!
+
+0x4c2a:
+
+	You're already carrying it!
+
+0x4c46:
+
+	You can't carry anything else.
+
+0x4c69:
+
+	You have no shovel!
+
+0x4c7e:
+
+	It's beyond your power to do that!
+
+0x4ca1:
+
+	Please answer the question.
+
+0x4cbd:
+
+	You aren't carrying anything!
+
+0x4ce0:
+
+	You didn't find anything!
+
+0x4cfc:
+
+	You are currently carrying the following:
+
+0x4d26:
+
+	Do you really want to quit now?
+
+0x4d49:
+
+	You're not carrying it!
+
+0x4d65:
+
+	You'll have to talk louder!
+
+0x4d81:
+
+	Don't use so many words!
+
+0x4d9d:
+
+	I don't know how to do that!
+
+0x4db9:
+
+	Enter the exact name of the file you wish to save:
+
+0x4dea:
+
+	Bad File Name!
+
+0x4dff:
+
+	No Room on Media!
+
+0x4e14:
+
+	Done!
+
+0x4e22:
+
+	It is clear that you are just beginning.
+
+0x4e4c:
+
+	You are Ship's Apprentice grade 1.
+
+0x4e6f:
+
+	You are Ship's Apprentice grade 2.
+
+0x4e92:
+
+	You are Ship's Apprentice grade 3.
+
+0x4eb5:
+
+	You are Ship's Apprentice grade 4.
+
+0x4ed8:
+
+	You are Ship's Apprentice grade 5.
+
+0x4efb:
+
+	You are Ship's Apprentice grade 6.
+
+0x4f1e:
+
+	You are Ship's Apprentice grade 7.
+
+0x4f41:
+
+	You are Chief Petty Officer.
+
+0x4f5d:
+
+	You are Midshipman grade 1.
+
+0x4f79:
+
+	You are Midshipman grade 2.
+
+0x4f95:
+
+	You are Midshipman grade 3.
+
+0x4fb1:
+
+	You are Midshipman grade 4.
+
+0x4fcd:
+
+	You are Midshipman grade 5.
+
+0x4fe9:
+
+	You are Warrant Officer.
+
+0x5005:
+
+	You are Captain Dunsel.
+
+0x5021:
+
+	You are Captain grade 1.
+
+0x503d:
+
+	You are Captain Respectus, an adventurer specialist.
+
+0x506e:
+
+	I knew I could depend on you, Captain.  You have done an excellent
+job.  The galaxy salutes you.
+
+0x50c9:
+
+wHJGqF       fat   vaaaasaaasaaasaaasaaasaaac          pSTORAGE SPACEq                  Y!        `          `544`545`546`547`548`                                         Y"        `          eaaauaaauaaauaaauaaat      MOVE USING THE NUMERIC             Y#        `                              `      KEYPAD TO THE RIGHT.               Y$        `                              `                                         Y%        `          faaasaaasaaasaaasaaat      STOP DIRECTLY IN FRONT             Y&        `          `439`440`441`442`443`      OF THE CORRECT LOCKER              Y'        `          vaaabaaabaaabaaabaaat      TO ATTEMPT TO OPEN IT.             Y(        `          `334`335`336`337`338`                                         Y)        `          eaaauaaauaaauaaauaaat                                         Y*        `                              `                                         Y+        `                              `                                         Y,        vaaasaaasaaasaaasaaasaaac      `                                         Y-        `228`229`230`231`232`233`      `                                         Y.        vaaauaaabaaabaaabaaabaaat      `                                         Y/        `VENDING`124`125`126`127`      `                                         Y0        vaaaaaaauaaauaaauaaauaaad      `                                         Y1        u                              `                                         Y2                                       `                                         Y3        s                              `                                         Y4        vaaasaaasaaasaaasaaasaaac      `                                         Y5        `018`019`020`021`022`023`      `                                         Y6        eaaauaaauaaauaaauaaauaaauat   vd                                         Y7                                                                                 GqY6 
+0x57c2:
+
+	You are in your ship again.
+
+0x57de:
+
+	You are in your ship which is parked in the landing bay at Grand
+Central Space Station.
+
+0x5832:
+
+	There is a P-suit near the door.
+
+0x5855:
+
+	You are not carrying a P-suit.
+
+0x5878:
+
+	You are wearing a P-suit.
+
+0x5894:
+
+	Your ship is not cleared for lifting.  A security guard is posted
+outside your door.
+
+0x58e1:
+
+	You are in the Landing Bay.  An armed security quard places you
+under arrest.  He handcuffs you and escorts you to Headquarters.
+
+0x5958:
+
+	You consume all the ship's beverages and are quite tipsy.
+
+0x5990:
+
+	You rest for an hour and awake from a terrible nightmare.
+
+0x59c8:
+
+	You are unable to do that now.
+
+0x59eb:
+
+	The USS Surge is cleared for takeoff.  Lift is in 10 seconds.
+Please secure your harness.
+
+0x5a3f:
+
+	You did not supervise the re-fueling of your ship and the tanks now
+read empty.  Your ship has become an orbiting tomb around Alpha Centuri.
+
+0x5abd:
+
+	You are in the Landing Bay.
+
+0x5ad9:
+
+	You are in the Landing Bay of Grand Central Space Station.  The
+passage toward the hub proceeds inward.  Your ship is parked here.
+Another ship is docked and under repair.
+
+0x5b73:
+
+	Your ship appears to be in fine condition and refueling has begun.
+Work on the other ship is nearing completion.  The maintenance crew advises
+you that only one more part is needed to make it space ready.  That part is
+being constructed in engineering.
+
+0x5c53:
+
+	OK.  The tanks are filled.
+
+0x5c6f:
+
+	OK!  Refueling your ship has begun.
+
+0x5c92:
+
+	The supplies are not stored here.
+
+0x5cb5:
+
+	Lucky for you, the landing bay doors were closed.  You have been
+frozen solid by the sub-zero temperature in the Landing Bay during a metal
+stress test.  Efforts to revive you are being made by the maintenance
+crew.
+
+0x5d79:
+
+	You are unable to travel in your present condition.
+
+0x5daa:
+
+	You are in the landing bay - frozen solid.
+
+0x5dd4:
+
+	Re-heating your body is successful but since you were not prepared
+for quick freezing, you suffer neural damage.
+
+0x5e3d:
+
+	The Landing Bay doors were open.  You are explosively decomposed by
+the vacuum of space.  Efforts to revive you would be too messy to discuss.
+
+0x5ec2:
+
+	You are in the passageway, near a CRT terminal.
+
+0x5ef3:
+
+	You are in a long, narrow passageway between the airlock and the
+Landing Bay.
+
+0x5f40:
+
+	Enter name:  
+
+0x5f55:
+
+	Identification check is in progress.
+	Completed.
+	Standing orders will now be displayed.
+
+0x5fa9:
+
+	This unit confirms your recall to active duty.  You are entitled to
+all the rank and privileges of Grade Senior Commander.  Your mission has
+been classified - TOP SECRET - VERBAL COMMAND ONLY.
+	Commandant Perry is your immediate supervisor and only contact for
+orders and reports.
+	You should report to Headquarters, as soon as possible.
+
+0x60d6:
+
+	Almost unlimited funds are available but you will be asked to justify
+your expenses.  Your computer password is ZEBRA.  Your cover is that of a
+merchant and ship's pilot using your own identity and background.  Your
+code name is Captain Player.
+
+0x61af:
+
+	Which Way?
+
+0x61bd:
+
+	You must proceed through the air locks to get there from here.
+
+0x61fc:
+
+	Enter your user identification number:  
+0x6226:
+
+	Enter password:  
+0x623b:
+
+        Identification check completed.  Your account has been charged for
+parking fees, locker rental, fuel, and supplies.  Lift costs will be added.
+
+0x62c7:
+
+        Please log off.
+
+0x62e3:
+
+        You have entered incorrect codes.  Please log off correctly.
+
+0x6322:
+
+	You are escorted through the airlock and marched to Headquarters.
+
+0x6361:
+
+	Identification check completed.  Captain Player, the Commandant
+wishes to see you before you lift off.  He requests your immediate return 
+to Headquarters on a matter of vital urgency.
+
+0x6409:
+
+	You are in the outer airlock.
+
+0x642c:
+	
+	You are in an outer airlock which connects the passageway and the 
+inner airlock.  Both doors are closed.  A sign flashes above the inner
+door.  There is a warning on the outer door.
+
+0x64d4:
+
+	Welcome.  You may proceed into Grand Central Space Station. 
+
+0x650c:
+
+	WARNING:    Do not proceed outward without wearing P-suit.
+
+0x6544:
+
+	You are in the inner airlock.
+
+0x6567:
+
+	This is the inner airlock which admits you to Grand Central 
+Space Station or the outer airlock.  There is a bulletin board here.
+
+0x65de:
+
+	If you are traveling inward you may remove your P-suit.
+
+	If you are traveling outward you should put on your P-suit.
+
+	Ships arriving thus far today:  
+		U.S.S. Surge   --   Captain Player
+		U.S.S. Wonderlust  --  Pilot H. Ray Goode
+		     Passengers:  Lorayne Davies
+		                  Lucinda Davies
+ 		                  Ronald Hershey
+		                  J. Harold Holson
+Safety is your business.  We have been 37 days without an accident or injury.
+
+0x6774:
+
+	If you are traveling inward you may remove your P-suit.
+
+	If you are traveling outward you should put on your P-suit.
+
+	Ships arriving thus far today:    None
+
+Safety is your business.  We have been  0 days without an accident or injury.
+
+0x684d:
+
+	Sorry, it's too big.
+
+0x6862:
+
+	There is a P-suit here.
+
+0x687e:
+
+	You are in the Storage Space.
+
+0x68a1:
+
+	You are in the Storage Space.  There is a vending machine here.
+The room is filled with rows of floor-to-ceiling steel cabinets with locked
+doors.
+
+0x6926:
+
+	A sign flashes on the front of the machine.  Lockers are available
+for 10 Credits per 24 hour period.  Charges will be added to your billing
+at lift off.  Enter your user identification number:  
+0x69d5:
+
+		               Enter your password:  
+0x69ff:
+
+	A key drops from the mouth of the vending machine.
+
+0x6a30:
+
+	A key is here.
+
+0x6a45:
+
+	Your locker number is 
+0x6a61:
+
+	You have entered incorrect codes.  Try again.  
+Enter your user identification number:  
+0x6ab5:
+
+                  Enter your password:  
+0x6adf:
+
+	Error.  You are not able to rent a locker at this time.
+
+0x6b17:
+
+	The soft swish of the airlock door can occasionally be heard.
+
+0x6b56:
+
+	You're in the inner corridor.
+
+0x6b79:
+
+	You're in the outer corridor.
+
+0x6b9c:
+
+	You're not strong enough to carry it.
+
+0x6bc6:
+
+	Use the numerical key pad to move through the Storage Space.
+
+0x6bfe:
+
+	This locker is closed and locked.  You are unable to open it.
+
+0x6c3d:
+
+	Your key does not open this locker.
+
+0x6c60:
+
+	There is an open locker here.
+
+0x6c83:
+
+	You have no key.
+
+0x6c98:
+
+	There is a P-suit in an open locker here.
+
+0x6cc2:
+
+	You are not carrying a P-suit.
+
+0x6ce5:
+
+	There is a closed locker here.
+
+0x6d08:
+
+	There is a locked locker here.
+
+0x6d2b:
+
+	You must deposit your key in the vending machine before you
+can exit via the airlock.  
+
+0x6d7f:
+
+	The vending machine has swallowed your key.
+
+0x6da9:
+
+	There is an attache' case in locker 548.
+
+0x6dd3:
+
+	The case has been blasted open and appears to be empty.
+
+0x6e0b:
+
+	Stuck in the bottom corner of the lining you find a scrap of paper.
+
+0x6e4a:
+
+		The code is gray.
+		But not today, nor
+		One day after 'morrow.
+
+0x6e89:
+
+	You're in the inner corridor.  There is a door here.
+
+0x6eba:
+
+	You don't see anything unusual.
+
+0x6edd:
+
+	You don't hear anything unusual.
+
+0x6f00:
+
+	You do not have the proper key.
+
+0x6f23:
+
+	What do you wish to read?
+
+0x6f3f:
+
+	ENGINEERING
+
+0x6f4d:
+
+	This section of the corridor is a clean, well-lighted place.
+
+0x6f85:
+
+		COMPUTER CENTER  --  AUTHORIZATION CODE REQUIRED
+
+0x6fb6:
+
+	There's nothing of significance here.
+
+0x6fe0:
+
+	The door isn't locked.
+
+0x6ffc:
+
+		SUPPLY ROOM
+
+0x700a:
+
+		DOCTOR'S OFFICE
+
+0x701f:
+
+		HEADQUARTERS
+	GRAND CENTRAL SPACE STATION
+
+		Samuel J. Perry
+		Commandant
+
+0x7065:
+
+	It is apparent no one has cleaned here in years.  The floor is
+dusty and there are cobwebs in the corners.
+
+0x70c7:
+
+	You are in a dank, dark, curved hall.
+
+0x70f1:
+
+		STORAGE SPACE
+
+0x7106:
+
+	Faint rumblings of ship's engines can be heard from the Landing Bay.
+
+0x7145:
+
+	You peek over the swinging, louvered doors and see a smokey, crowded
+bar filled with crew members, station employees and staff, guests... in
+short, humans and aliens of all types.
+
+0x71e6:
+
+	There is nothing written there.
+
+0x7209:
+
+	You're in the outer corridor.  There is a door here.
+
+0x723a:
+
+		Restaurante' La Galactica
+
+0x7256:
+
+	The sound of construction work can be heard as though muffled 
+through walls.
+
+0x72a3:
+
+		BARRACKS
+
+0x72b1:
+
+		GYMNASIUM
+
+0x72bf:
+
+		MAINTENANCE  DEPARTMENT
+
+0x72db:
+
+	There is nothing to read here.
+
+0x72fe:
+
+		HOSPITAL
+           Emergency Entrance
+
+0x7328:
+
+	There is a slight smell of antiseptic cleaning solutions here.
+
+0x7367:
+
+	Soft music wafts gently to your ear.
+
+0x738a:
+
+	You catch a brief glimpse of a robot through the frosted
+glass doors.
+
+0x73d0:
+
+	You are in Headquarters.
+
+0x73ec:
+
+	You are in the Headquarters of Grand Central Space Station.
+
+0x7424:
+
+	The Commandant is not in.
+
+0x7440:
+
+	The Commandant is in conference and cannot be disturbed.
+
+0x7478:
+
+	You have been arrested and brought to Headquarters.
+
+0x74a9:
+
+	The Commandant is looking perturbed at you with an obvious lecture 
+on the tip of his tongue.
+
+0x7504:
+
+	You are still under guard and not allowed to leave.
+
+0x7535:
+
+	Captain Player, after all you have been through on this dangerous
+mission, it is understandable that you could forget your computer access 
+codes.  Your new user identification number:  
+0x75dd:
+
+	Your password is still ZEBRA.
+	But now, see here, we have too much to do to run special retinal
+identity checks, so don't let this happen again."
+
+0x7662:
+
+	Commandant Perry will see you now.  In fact, he has important 
+information for you.
+
+0x76af:
+
+	"Captain Player, the dead woman has been identified as Lorayne Davies,
+the computer systems analyst and operations research expert from Isthur.
+We are unable to locate her sister, because she abandoned her key (#548)
+backstage in the bar.  Security is on full alert.  Everyone is edgy.  We
+are also attempting to apprehend Lucinda's manager, Ron Hershey, the talent
+agent.  Be on the lookout for either, but do not attempt capture, as they
+are believed to be armed.  Contact security if you see them."
+
+0x786f:
+
+	You are in Headquarters, having been arrested for attempted unauthorized
+Computer Center entry.  You have been questioned, and a complete identification
+check has been run.  You are being released with a grave warning from the 
+Administrative Assistant.
+
+0x7956:
+
+	"Player, don't mess around the Computer Center.  You have not been
+authorized entry and will not be authorized entry if I have any say about it.
+I don't know what you think you want there, but this station will not have
+any shenanigans with its computer programs.  Stay away from the Computer
+Center."
+
+0x7a67:
+
+	Only the Commandant can do that.
+
+0x7a8a:
+
+	"Captain Player, I know you are eager to be on your way.  Verbal
+command only requires that I tell you this new information in person.
+First, you are probably concerned and would like to know that the Professor
+has been hospitalized and is under treatment.  Prognosis is guarded, but he
+is responding.  The doctor is broken-hearted, but functioning.  His career
+has always been his life, yet his discovery of the twins momentarily opened
+a door he thought was closed, only to have it slammed again.  He has poured
+his energy into helping the Professor recover and that effort may be his
+own salvation.  
+	Most importantly, the Wonderlust has lifted off.  We believe the
+singer and the talent agent coerced the pilot to help them escape.  From
+their vector and angle, it seems their destination could be Navier."
+
+0x7d54:
+
+	You are in Engineering.
+
+0x7d70:
+
+	You are in Engineering.  It is a bee hive of activity with a major
+inventory control examination obviously in process, as well as many repairs
+in progress.
+
+0x7dfc:
+
+	The chief engineer is grumbling and in a very aggitated state.
+
+0x7e3b:
+
+	"Oh, yes, Captain Player, your ship inspection is completed...
+That report is here somewhere.  Just a moment.  Although, I don't see
+how we've gotten any work done.  What with security disrupting us con-
+stantly and those two hoodlums whisking off Captain Goode, threatening my
+staff, stealing that engine part -- I don't know how I'll account for that.
+HQ is screaming about cost overruns as it is.  Speaking of screaming, those 
+three may never get off station, the way they were quarreling.  For example,
+that pretty blond dropped her brief case (the handle seemed to be broken
+and the catch busted), but I thought that Hershey fellow was going to blast
+her for being clumsy.  Then, too, I never heard anyone argue like Goode did
+with a blaster in his back.  Oh, yes, here's your report.  Your ship is in
+A-1 shape, no repairs, standard inspection, routine fee.  You're logged
+mechanically clear to lift off at your convenience.
+
+0x816e:
+
+	You're in the hospital.
+
+0x818a:
+
+	The hospital is a typical space station, emergency-care medical
+facility.  There is an advanced life support system and extensive medical
+equipment here.
+
+0x8216:
+
+	You're in the hospital having just received emergency treatment for 
+exposure to extreme cold.  The resident in charge gives you medication to 
+alleviate the dizziness and advises you to wear thermal underwear and avoid
+further exposure to cold for the next 48 hours.
+
+0x8304:
+
+	You're in the hospital with the dark-haired beauty you found near
+death in the maintenance department.  A team of specialists is working 
+frantically to save her.  However, she seems resigned to death.
+
+0x83ba:
+
+	You hear the dying girl call out weakly, "I loved you all --
+my sister, my teacher, my father, my life..."
+
+0x841c:
+
+	You're in the hospital, recovering from having your stomach pumped.
+The medic assures you it was not food poisoning.  Further lab tests will
+be necessary to analyze the complex poison used.
+
+0x84cb:
+
+	The medic ponders, "You must have some powerful enemies, or some-
+one is very afraid of you and what you might discover."
+
+0x853b:
+
+	You are in no condition to do that now.
+
+0x8565:
+
+	You're in the restaurant.
+
+0x8581:
+
+	"Welcome to Restaurante' La Galactica, Captain Player.  Rohost,
+here at your service.  Follow me, please.
+
+0x85e3:
+
+	You're in the restaurant.  Rohost informs you there are no seats
+available.  "May I suggest you come back later, as there will be an approxi-
+mately two hour delay in seating you.  Very good, sir."  Rohost rolls away.
+
+0x86a7:
+
+	Your steak and mushrooms are delicious.  However, just as you finish
+you become violently ill.
+
+0x8702:
+
+	You're seated in the restaurant.  Professor Holson is sitting beside
+you.  "Well, well, young man, how good to see you again.  Have you continued
+our research on homotrophic spaces?  No matter, I too have left that work
+behind.  I'm here studying computer programming--actually, learning program-
+ming from a former student.  She's a brilliant child, or I should say a 
+beautiful woman..."
+	Professor Holson's description is interrupted by a loud roll of the
+drums from center stage where a beautiful blond begins singing.  The Professor
+excuses himself quietly, explaining he has an appointment to meet with his
+protege', or rather instructor.
+
+0x8939:
+
+	You're in the bar.
+
+0x894e:
+
+	"Welcome to Spaceman's Reef Bar.  I am Rohost, your mechanical
+maitre d'.  May I show you to your seat, Captain Player?  Perhaps, I should
+explain.  There are two seats available at the bar.  Would you prefer to sit
+beside Dr. Jack Davies or H. Ray Goode, a ship's pilot like yourself.  Don't
+look so surprised, sir, part of my function as a superior peripheral of this
+station's master computer is to maintain awareness of our guests' locations
+via the locker keys most carry.  In the event of emergencies or messages
+I am better able to serve my betters.  Your choice of seats, sir?"
+
+0x8b54:
+
+	"Welcome, again to Spaceman's Reef Bar.  I am sorry, sir, but there are
+no seats available at the present time.  I will put your name on the waiting
+list and signal when there is a seat for you.  Very good, sir."
+
+0x8c11:
+
+	"Welcome, again to Spaceman's Reef Bar,  Captain Player.  There is
+a seat available.  This way, please."
+
+0x8c73:
+
+	Your drink is delicious byt seems terribly strong.  You become very
+sleepy and lay your head down on the table to rest your eyes a moment.
+
+0x8cf1:
+
+	You awake on a bunk in the barracks with a splitting headache.
+
+0x8d30:
+
+	H. Ray Goode is sitting beside you in the bar.  "Greetings Captain.
+I heard your ship arrived.  Repairs?  Of course, there's not much cargo to
+pick up here.  My 'Wonderlust' is being repaired, but if my plans work out
+I'll never sail again.  I'll be a happily married mechanic just as soon as I
+can convince her to say 'yes'.  She's a beauty - tall, dark, sophisticated
+and a genius.  She's a..."
+	The rest of the pilot's words are lost as a loud roll of the drums
+stills the crowded room.  A beautiful voice drifts forth from a beautiful
+blond "...he made the green wood around him sing, he charmed the heart of
+a lady..."  
+	"That song is inspired," whispers the pilot.  "I think I'll go
+charm the heart of my lady, if I can find Lorayne and a quiet spot in
+which to propose matrimony.  Wish me luck|"
+
+0x8ff3:
+
+	The mechanical waiter has not yet arrived with your drink.
+
+0x902b:
+
+	Dr. Jack Davies is sitting beside you in the bar.  "Hello, Old
+Buddy|  Long time, no see.  Seems like years ago we were on Solomaw, the
+Wisdom Planet, wasn't it?  Oh|  Excuse me, allow me to introduce my newly
+discovered..."
+	The remainder of the doctor's speech is obscured by the roll of the
+drums from center stage...A beautiful, blond guitarist steps to the stage
+and begins playing and singing an ancient Earth ballad.  "...came riding 
+through the woods, a-singing his song so gayly..."  As a hush falls over the
+crowd, the doctor whispers.  "She's my daughter, too.  I never knew about their
+birth or I'd have returned to Earth years ago."  The raven beauty, who the
+doctor attempted to introduce earlier, slips quietly from the smoke-filled
+room.  She is carrying a black, leather attache' case.
+
+0x92ee:
+
+	"...she waved goodbye forever."  The folk singer concludes her song
+and begins talking to the audience.  "That song was dedicated to my father,
+who claims I sing like an angel -- but what does he know?  He always loved
+my sister best.  My sister and I are perfect opposites.  She's a dark
+beauty and I'm the ugly, yellow twin sister -- even named for Cinderella...
+This is Lucinda Davies, making music for you and accepting requests from the
+audience."  The petite, young lady begins another song.
+
+0x94a7:
+
+	At his urging, the doctor and you follow the tall, dark and mysterious
+young lady across the smoky, crowded room.  Losing her trail, you chose the
+door to the inner corridor and the doctor leaves to search the outer corridor.
+You arrange to meet in the doctor's office later.
+
+0x959c:
+
+	You're in the Doctor's Office.
+
+0x95bf:
+
+	The Doctor is out.  His office is empty.
+
+0x95e9:
+
+	The Doctor is sitting at his desk in a state of stupor.  His eyes are
+vacant and glassy.  There is an ancient bottle of old Earth Scotch empty on
+the floor.
+
+0x9675:
+
+	The doctor explains.  "I was saving this ole Scotch to toast my
+retirement.  Instead I'm celebrating finding and losing two daughters -- no,
+I've lost both.  Lucinda might as well be as dead as Lorayne.  Sure she did it.
+What's more she made Lorayne's life miserable before she killed her.  She hated
+her sweet, gentle sister almost as much as she hated me.  I only knew them a
+few hours, now they're both gone..."
+
+0x97e8:
+
+	You awake to find yourself lying on an examination table in the
+doctor's office.  Your vital signs are normal, but you have an excruciating
+headache and a very tender knot on the back of your head.
+
+0x989e:
+
+	You are in the Library.
+
+0x98ba:
+
+	The Professor is here muttering to himself.  He seems to be sobbing.
+He's leaning his head on his folded arms, crying on the table where he's
+sitting.
+
+0x9946:
+
+	There are tables, chairs, a few antique books and every imaginable
+type of VRT tape here.  There are also music tapes and players.
+
+0x99bd:
+
+	The Professor is here crying and whispering.  "We can repair them.
+She knows how and she has taught me . . . We can fix them.  We can."
+
+0x9a3b:
+
+	You find a large manila envelope under the Professor's arm.  It is
+covered with tears.
+
+0x9a8f:
+
+	There are two eight inch CP/M disks here.
+
+0x9ab9:
+
+		A large manila envelope
+
+0x9ad5:
+
+	TOP SECRET  --  FOR EYES ONLY
+
+0x9af8:
+
+	There is a large manila envelope here.
+
+0x9b22:
+
+	Sorry, you don't have a Grand Central Station Library Card.
+
+0x9b5a:
+
+	Your application is being processed.  It should be completed in about
+six weeks.  In the meantime, we would be glad to hold some items for you.
+
+0x9bdf:
+
+	You're in the barracks.
+
+0x9bfb:
+
+	There is a black, leather attache' case under one of the bunks.
+
+0x9c3a:
+
+	This lock is classified:  TOP SECRET - VERBAL COMMAND ONLY
+
+0x9c72:
+
+		attache' case
+
+0x9c87:
+
+	There is a black, leather attache' case here.
+
+0x9cb8:
+
+	The gymnasium is temporarily closed for repairs.
+
+0x9ce9:
+
+	You are in the gymnasium attempting to work off some anger and
+frustration.  Ron Hershey, the talent agent is also exercising here.  He trys
+to talk you into a game of racketball.  You decline tactfully.  He suggests
+other combative games and becomes insulting, insisting on horseshoes or some-
+thing.  You reluctantly concede to meet him in the Library later for a game
+of chess.
+
+0x9e39:
+
+	You are in the foyer of the computer center.  A force field guards
+the inner door.  
+
+0x9e86:
+
+	Please log on.  Enter user identification number:  
+0x9eb7:
+
+	Enter password:  
+0x9ecc:
+
+	Identification check completed.  Admittance to the Computer Center
+is strictly by authorization code.  Proceed with caution.
+
+0x9f3c:
+
+	A security team arrives, places you under arrest and escorts you to
+Headquarters.
+
+0x9f89:
+
+	A security team arrives, and, in attempting to arrest you, an
+over-zealous guard shoots and kills you.
+
+0x9feb:
+
+	You're in the computer center.
+
+0xa00e:
+
+	You are in the computer center.  The staff is working desperately in
+an attempt to re-write the Environmental Control Program for the planet
+Isthur.
+
+0xa093:
+
+	The Professor is pacing the floor of the Computer Center.  He seems
+oblivious to the surroundings and attempts to communicate with him are very
+unsuccessful.
+
+0xa126:
+
+	The Professor keeps repeating, "We could've repaired them.  We could've
+repaired them...."
+
+0xa17a:
+
+	You're in the supply room.
+
+0xa196:
+
+	There is a note on the door which states:  The supply officer is
+on a caffeine break and will return shortly.
+
+0xa1ff:
+
+	The supply room is closed and locked.
+
+0xa229:
+
+	You pry open the supply room door and step inside.  It's very dark.
+As you are looking for the light switch, something hits you over the head.
+You slip to the floor in a semi-conscious state.  You can barely hear angry
+voices.
+
+0xa2f4:
+
+	"Okay, the supplies are ordered.  Stuff those papers in your P-suit
+and let's get out of here."
+	"I don't have my P-suit.  It's in my locker.  Where's my key?"
+	"Come on, will you?  We've got to move|"
+	"Where's my key?"
+	"We'll blast the locker door, like we did the attache' case.  Hustle|"
+	You drift off into unconsciousness.
+
+0xa41a:
+
+	You requisition standard rations and supplies to be delivered to
+your ship.
+
+0xa460:
+
+	You're in the maintenance department.
+
+0xa48a:
+
+	The maintenance department is filled with repair equipment and cleaning
+apparatus.
+
+0xa4d7:
+
+	The door to maintenance is locked.
+
+0xa4fa:
+
+	You find a beautiful, black-haired girl slumped in a corner.  She seems
+to be dying.
+
+0xa547:
+
+		a beautiful, dying girl
+
+0xa563:
+
+	You hear the dying girl mumble, "Forgive me, Ray... I'm sorry... We
+could have fixed them."
+
+0xa5b7:
+
+		A Locker Key
+
+0xa5cc:
+
+	There is an empty Scotch bottle here.
+
+0xa5f6:
+
+		An Empty Scotch Bottle
+
+0xa612:
+
+		Two Eight Inch CP/M Disks
+
+0xa62e:
+
+	There is a beautiful dying girl here.
+
+0xa658:
+
+	There is a dead girl here.
+
+0xa674:
+
+	You are in synchronous orbit with Grand Central Space Station.
+
+0xa6b3:
+
+	You have just received a communique from Control that your ship has
+not been identified, and you may not land.
+
+0xa71c:
+
+	You may not land.
+
+0xa731:
+
+	You're in orbit about the planet Navier.
+
+0xa75b:
+
+	You are in orbit about the planet Navier.  Sensors reveal that this
+is an Earth Normal planet.  The main body of life forms registering are in
+and near the City of Illusions.
+
+0xa7fc:
+
+	You're on Navier's Landing Field.
+
+0xa81f:
+
+	You are in the spacecraft 'Surge', sitting on the landing field of
+Navier's City of Illusions.  Directly North is the entrance to the City
+of Illusions.
+
+0xa8ab:
+
+	You have just received a subspace communication informing you that
+the planet is in quarantine and you may not land.
+
+0xa914:
+
+	You are standing on the landing field of Navier.  To the North is
+the entrance to the City of Illusions.  To the East is your spacecraft.
+
+0xa992:
+
+	You are at the entrance to the City of Illusions.
+
+0xa9c3:
+
+	You are in a North-South passage.  A small Eastern corridor starts
+here.
+
+0xaa09:
+
+	You are in a small room.
+
+0xaa25:
+
+	You are in a small room with a sign on the wall.  The sign reads:
+		BEWARE THE CITY OF ILLUSIONS.  REALITY OR ILLUSION.
+		          WHO CAN TELL THE DIFFERENCE?
+
+0xaab8:
+
+	You're in a long North-South passage.
+
+0xaae2:
+
+	You're at a dead end.
+
+0xaafe:
+
+	You are in Psychic Control.  There is a lot of complicated
+machinery here.  A sign on the wall says:
+		THIS CONTROL CENTER INSURES A SEMBLANCE OF
+		REALITY WHEN YOU ARE AWAY FROM THE UNDERGROUND.
+
+0xabad:
+
+	You are in a North-South passage.  A small Western corridor starts
+here.
+
+0xabf3:
+
+	You're in an East-West corridor.
+
+0xac16:
+
+	You are at the entrance to the Overlord's Chamber.
+
+0xac47:
+
+	You are in the Overlord's Chamber.  There is no one here.
+
+0xac7f:
+
+	You are in the Overlord's Chamber.  You are looking directly at
+the Overlord.
+	Captain, this city is mainly a vast underground founded by Game
+Theorists.  They have made this the City of Illusions and made the galaxy
+nick-name us the Puzzle Planet.  Once you enter the underground, I will
+not be able to offer you assistance.  I do know the one you seek is within
+sight of the lake region.  Our computer technician Buker was found murdered
+at the dry lake bed.
+
+0xae15:
+
+	You are in the Overlord's Chamber.  You are looking directly at the
+Overlord, but you are being ignored.
+
+0xae77:
+
+	You're in the Overlord's Chamber.
+
+0xae9a:
+
+	You're in a North-South passage.
+
+0xaebd:
+
+	You are at the main entrance to the underground.  A huge sign on
+the door reads:
+		YIIZ LORGHTAL GUEARLLY HEAT HU ZERCEO,
+		RERIMUG GIG ORT YIRF UDETZ RAT PERCEO.
+		JOR MIDILTU, WUG YOP VOTTZ YHATT,
+		SYHEIFR ZP SDA DDUL LAW THT DAOGA BT.
+
+0xaf96:
+
+	You're at the main entrance to the underground.
+
+0xafc7:
+
+	You are at the main entrance to the underground.  There is a
+passage leading South and a tunnel sloping down to the North.
+
+0xb037:
+
+	You are in a sloping tunnel.
+
+0xb053:
+
+	You are at five points.
+
+0xb06f:
+
+	You're in the dining room.
+
+0xb08b:
+
+	You are in a large, empty dining room.  The table and chairs are
+all of Oak, intricately carved and polished to a dull sheen.
+
+0xb102:
+
+	You're in the kitchen.
+
+0xb11e:
+
+	You are in the kitchen.  Everything is spotless.  The Larder is
+full.  From appearances, the underground is prosperous.
+
+0xb18e:
+
+	You're in a small foyer leading to the servants' quarters.
+
+0xb1c6:
+
+	You're in the servants' quarters.
+
+0xb1e9:
+
+	You are in the servants' quarters.  The underground must get its
+servants' from rich sightseers who venture too far and never return.  All
+around you are signs of well-to-do people.
+
+0xb291:
+
+	You're in a narrow tunnel.
+
+0xb2ad:
+
+	You're in a gently sloping corridor.
+
+0xb2d0:
+
+	You're at the barrack's entrance.
+
+0xb2f3:
+
+	You are at the entrance to what appears to be a small barracks.
+There are three small rooms to the NE, E, and SE.
+
+0xb35c:
+
+	You're in a small bedroom.
+
+0xb378:
+
+	You are in a small bedroom.  Six bunks line the walls.  Other than
+the bunks, the room is empty.
+
+0xb3d3:
+
+	You are in a small bedroom.  Six bunks line the walls.
+
+0xb40b:
+
+	There is a keying card here.
+
+0xb427:
+
+		Keying Card
+
+0xb435:
+
+	You're at entrance level one.
+
+0xb458:
+
+	You are standing at entrance level one.  Proceed at your own risk.
+
+0xb497:
+
+	Congratulations!  You have solved the puzzle.  Don't worry, though,
+there are lots to come.  The crook is here.  It is fortunate for you that
+we do not believe in direct assault.  But we've enough puzzles to stop you
+for good.
+
+0xb562:
+
+	You're at a four-way intersection.
+
+0xb585:
+
+	You're in an East-West tunnel.
+
+0xb5a8:
+
+	You're at the Volcano.
+
+0xb5c4:
+
+	You are standing beside what used to be an active Volcano.  There is
+ashe everywhere and no sign of life.  To the North you can make out a dry
+lake bed, but your way North is cut off by a deep gorge.
+
+0xb67a:
+
+	You're standing in an old lava bed.
+
+0xb69d:
+
+	You are standing knee deep in an old lava bed.  The light rock has
+been crushed by the ages and is now of a very soft sand-like consistency.
+
+0xb71b:
+
+	There are diamonds here.
+
+0xb737:
+
+	In attempting to get the diamonds, you have slipped through the
+thin crust underneath and have been buried alive in the lava.
+
+0xb7ae:
+
+	Mr. Troch has managed to drag you out, and you do not seem to be
+hurt.
+
+0xb7f4:
+
+	You're in curving canyon.
+
+0xb810:
+
+	You are in curving canyon.  A narrow path leads to the West, while
+the canyon is curving Northwest.
+
+0xb86b:
+
+	You are beside the dry lake bed.
+
+0xb88e:
+
+	You're in the dry lake bed.
+
+0xb8aa:
+
+	You are in the dry lake bed.  The place where Buker was killed is
+evident, and scratched in the crusty surface is a short message:
+			MORE      Airlock
+
+0xb936:
+
+	You're in a North-South canyon.
+
+0xb959:
+
+	You are in a box canyon.  Scrawled in large print on the end of
+the canyon is a long message:
+	A puzzle for the ages.  You never can tell when the answer to a
+good puzzle will come in handy.
+		THE PRESENT SUM OF THE AGES OF MARY AND ANN IS
+		44 YEARS.  MARY IS TWICE AS OLD AS ANN WAS WHEN
+		MARY WAS HALF AS OLD AS ANN WILL BE WHEN SHE IS
+		THREE TIMES AS OLD AS MARY WAS WHEN SHE WAS THREE
+		TIMES AS OLD AS ANN. HOW OLD ARE MARY AND ANN?
+
+0xbae1:
+
+	There are Irridium crystals here.
+
+0xbb04:
+
+	As you try to get the Irridium crystals, they vanish.  They must
+have been only an illusion.
+
+0xbb58:
+
+	You are at entry level two.
+
+0xbb74:
+
+	You are at entry level two.  You may turn back, but you may not
+move on unless you know Ann's age in months.
+
+0xbbd6:
+
+	You're in the room of lockable doors.
+
+0xbc00:
+
+	You are in the room of lockable doors.  You will need a four digit
+combination to lock the doors.  But beware!  You'll need a five digit
+combination to get them open again.  Northward opens onto a large lake.
+
+0xbcbd:
+
+	The Western and Eastern doors are open.
+
+0xbce7:
+
+	The Western and Eastern doors are locked.
+
+0xbd11:
+
+	You're on the edge of the lake.
+
+0xbd34:
+
+	There is a rowboat here.
+
+0xbd50:
+
+	There is a rowboat with oars here.
+
+0xbd73:
+
+	There is a rowboat with a tie rope here.
+
+0xbd9d:
+
+	There is a rowboat with a tie rope and oars here.
+
+0xbdce:
+
+	The rowboat is on the lake.
+
+0xbdea:
+
+	Since you had no oars, you drifted with the tide until you starved
+to death.
+
+0xbe30:
+
+	The rowboat is near the shelf in front of the airlock.
+
+0xbe68:
+
+	You are on the shelf in front of the airlock.
+
+0xbe99:
+
+	Your rowboat has drifted away, since you forgot to tie it.
+
+0xbed1:
+
+	In place of your rowboat is a very small rowboat.
+
+0xbf02:
+
+	There is a very small rowboat here.
+
+0xbf25:
+
+	You are carrying too much.  You'll have to drop something before the
+boat will hold you.
+
+0xbf79:
+
+	Science officer Troch is walking beside you.
+
+0xbfa3:
+
+	Science officer Troch is sitting beside you in the boat.
+
+0xbfdb:
+
+	Lucinda the crook is here.
+
+0xbff7:
+
+	Lucinda the crook is sitting beside you in the boat.
+
+0xc028:
+
+	Lucinda the crook has vanished.
+
+0xc04b:
+
+	Troch has killed Lucinda, who was trying to escape.
+
+0xc07c:
+
+	Lucinda has destroyed the 8" CP/M disk.
+
+0xc0a6:
+
+	There is an 8" CP/M disk here.
+
+0xc0c9:
+
+		Disk A
+
+0xc0d7:
+
+	Lucinda is walking beside you.
+
+0xc0fa:
+
+	You are on the shelf in front of the airlock.
+
+0xc12b:
+
+	The door is locked.
+
+0xc140:
+
+	Enter the combination:
+
+0xc15c:
+
+	You're in the airlock.
+
+0xc178:
+
+	You should have worn your P-suits.  All the air has been pumped
+out of the airlock, and that has left you in a horrible condition.
+
+0xc1ef:
+
+	You are in the airlock.  The door behind you locked, and the air
+has been exhausted.  New air has taken its place, and the Northern door
+awaits your departure.
+
+0xc282:
+
+	The Northern door is locked.
+
+0xc29e:
+
+	The Northern door is open.
+
+0xc2ba:
+
+	You are in the airlock.  The door behind you locked, and the air
+has been exhausted.  New air has taken its place, and the Southern door
+is open and awaits your departure.
+
+0xc354:
+
+	You are in the computer center.  There is a large computer and
+many whirling floppy disks here.
+
+0xc3af:
+
+	You're in the computer center.
+
+0xc3d2:
+
+	The small rowboat is on the edge of the shelf.
+
+0xc403:
+
+	You're in a long featureless corridor.
+
+0xc42d:
+
+	You are in a long featureless corridor with passages off in both
+directions.  At the end of the corridor is a staircase going down.
+
+0xc4a4:
+
+	You are in an empty storeroom.
+
+0xc4c7:
+
+	You are in an old dusty storeroom.
+
+0xc4ea:
+
+	There are oars here.
+
+0xc4ff:
+
+		Oars
+
+0xc50d:
+
+	You're at the bottom of the stairs.
+
+0xc530:
+
+	You are at the bottom of the stairs.  There are rooms to the NE
+E, and SE.
+
+0xc576:
+
+	You are in a puzzle testing room.  There are five or six people
+working very hard on a puzzle.  The puzzle is written in bold letters on
+the blackboard on one wall.
+
+		     SEND
+		   + MORE
+		   ------
+		    MONEY
+
+	The object is to replace each letter by a number so that the
+addition is correct.  You must follow two rules:
+	1)  No two different letters can be replaced by the same number.
+	2)  No two letters which are the same can be replaced by different
+	    numbers.
+
+0xc71a:
+
+	You're in a puzzle testing room.
+
+0xc73d:
+
+	You're in the Chamber of Tomorrow.
+
+0xc760:
+
+	You are in the Chamber of Tomorrow.  There are bits and pieces of
+brightly covered material scattered everywhere.  Volumes of notes litter
+the many tables.  Many people are hard at work and no one pays the least
+bit of attention to you.
+
+0xc832:
+
+	You're in a barren room.
+
+0xc84e:
+
+	You are in a barren room.  There is a passageway South.
+
+0xc886:
+
+	You are at the bottom of a pit.
+
+0xc8a9:
+
+	You're at a Dead End.
+
+0xc8c5:
+
+	You are at the top of a pit.
+
+0xc8e1:
+
+	There is a rope here.
+
+0xc8fd:
+
+		Rope
+
+0xc90b:
+
+	When using the Neural Analyzer on Lucinda, you have discovered that
+the second disk is hidden in the Chamber of Tomorrow.
+
+0xc97b:
+
+	You have discovered a second 8" CP/M disk hidden here.
+
+0xc9b3:
+
+		Disk B
+
+0xc9c1:
+
+	You can not question Lucinda, for you do not have a Neural Analyzer.
+
+0xca00:
+
+	Captain, we took care of fuel and supplies while you were gone.
+
+0xca3f:
+
+	You can't do that yet.
+
+0xca5b:
+
+wHJGqY 'Pictured below is a box with six cavities and five crystals.  ToY! make the doorsCopen simply interchange the blue and red crystals.  TheY" only method of moving a crystal is to slide it into an empty space.  ToY# slide a crystal simply type in its color.  Once you start, you have onlyY$ 25 moves to interchange the crystals or the box will explode!FY&/faaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac  Y'/`CiiiiiiiiiiC iiiiiiiiii  iiiiiiiiiiC`C Y(/` iiORANGEiiY(=iiYELLOWii  ii RED  ii `C Y)/` iiiiiiiiii  iiiiiiiiii  iiiiiiiiii `C Y*/` iiiiiiiiii  iiiiiiiiii  iiiiiiiiii `C Y+                `Y+T`C Y,/`             iiiiiiiiii  iiiiiiiiii `C Y-/`   Y-7      iiGREEN ii  ii BLUE ii `C Y./`Y.7      iiiiiiiiii  iiiiiiiiii `C Y//`Y/7      iiiiiiiiii  iiiiiiiiii `C Y0/eaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad  Y1/ pGTiming: F  25G moves until detonation!qFY28      Y39    Y4:   GqY6 
+0xcd8e:
+
+	You are in orbit about the planet Solomaw.  Sensors reveal a
+remarkably Earth-like planet.  There is only one landing field on the
+planet, near a small city.  The atmosphere is Earth-normal.
+
+0xce3d:
+
+	You have just received a subspace communication informing you that
+the planet is not currently available to visitors.  Fuel and supplies are
+being transferred to you via a small space shuttle, and you must be on your
+way.
+
+0xcf08:
+
+	I'm sorry but you are not allowed to land at this time.
+
+0xcf40:
+
+	You're in orbit about the planet Solomaw.
+
+0xcf6a:
+
+	You are in the spacecraft 'Surge', sitting on the landing field of
+Solomaw.  The entrance to the city is directly to the West.
+
+0xcfe1:
+
+	You're on Solomaw's landing field.
+
+0xd004:
+
+	You are standing on the landing field of Solomaw.  To the West is
+the Port Authority Exchange.  To the East, the spacecraft 'Surge'.
+
+0xd07b:
+
+	You are in Port Authority Exchange.
+
+0xd09e:
+
+	You are told that the High Priest's office is directly ahead and
+that you are expected.
+
+0xd0f2:
+
+	You're in Port Authority Exchange.
+
+0xd115:
+
+	You are at the entrance to the office of the High Priest.  A sign
+on the door says:
+		All visitors are to check in with the High Priest upon
+		arrival.
+
+0xd1a1:
+
+	You are in the office of the High Priest.
+
+0xd1cb:
+
+	You are in the office of the High Priest.  He is sitting in his
+chair and appears to be in deep thought.
+
+0xd22d:
+
+	Sir, solve me riddles three and bring me the Platinum Claw, the
+Silver Lance, and the Crystal Statue.  Then I'll tell you how to go
+about repairing the two 8" CP/M disks.  I can do it, for I know all.
+Otherwise, how would I know what you seek.  Go North from Port Authority
+to find the room of directions.  There you will learn the locations of
+the three riddles.
+
+	The High Priest returns to deep thought, and it is clear that your
+interview is over.
+
+0xd3bc:
+
+	Behind lead shielding at the edge of a radioactive wasteland is a
+sector-recovery 8" CP/M disk.  Find this disk and take it, together with
+your two disks to be repaired, to programmer JHH on Grand Central Space
+Station.  You may find this skeleton key useful.  But beware!  Don't
+try to take the key onto Grand C.
+
+0xd4d4:
+
+	There is a large skeleton key here.
+
+0xd4f7:
+
+		Large Skeleton Key
+
+0xd50c:
+
+	You are in the room of directions.  There is a large sign on the
+Northern wall:
+	There is an order to the Universe, and there is an order here.
+	First, West to the Artifact Room.  Solve a riddle and return the
+Platinum Claw.
+	Second, North to the Museum.  Solve the riddle of the many
+directions and return the Silver Lance.
+	Only then should you even attempt to go East to the Maze of Death.
+This way you will get to live longer.
+
+0xd68d:
+
+	You're in the room of directions.
+
+0xd6b0:
+
+	You're in a curving corridor.
+
+0xd6d3:
+
+	You are at the entrance to the Artifact Room.
+
+0xd704:
+
+	There is a nine foot tall guard that refuses to open the door for
+you unless you can riddle him this:
+
+	Three men worked all day in their Irridium Mine finding between
+five and ten crystals each in an hour.  At the end of the day they were
+all so tired that they decided to pitch their tent right there and wait
+until morning to divide the crystals.  Soon they were all fast asleep.
+But the first man had trouble sleeping.  So he quietly got up and went
+outside to the crystals.  There he divided the crystals into three equal
+piles except that he had one left over that he threw to a peasant.  Then
+he hid his third, pushed the other two-thirds together and returned to the
+tent and fell asleep.  Well, the second man had the same troubles.  He went
+outside, divided the pile of crystals into thirds, had one left over which
+he threw to a peasant, hid his third, pushed the other two-thirds together
+and returned to the tent to fall asleep.  The third man did the same.  The
+next morning the three men went outside to split up their take.  They
+divided the pile into equal thirds, and there was one left over which they
+threw to a peasant.  Then each took his third.  The question is: How many
+Irridium crystals did the men find the previous day?
+
+	One answer only to a customer.  A lot of guesses will not be
+permitted.
+
+0xdb8e:
+
+	You have had your chance.  You did not answer the riddle correctly.
+You will not be permitted to pass.
+
+0xdbf0:
+
+	You are correct.  I will not stand in your way.
+
+0xdc21:
+
+	You're in the Artifact Room.
+
+0xdc3d:
+
+	You are in the Artifact Room.
+
+0xdc60:
+
+	There is a Platinum Claw here.
+
+0xdc83:
+
+		Platinum Claw
+
+0xdc98:
+
+	You're in a North-South corridor.
+
+0xdcbb:
+
+	You have not yet answered the riddle I gave you.  You will not
+be permitted to pass.
+
+0xdd08:
+
+	You're at the entrance to the Museum.
+
+0xdd32:
+
+wHJGqY 'You are at the entrance to the Museum.  A rather large three-headedY! snake says you will not be permitted to pass until you answer the following:Y#'The picture below is a small protion of a city map.  To go fromY$ the point A to the point B in the picture can be done in a number ofY% ways.  The question is this:  How many ways can one go from point A toY& point B walking only on eleven streets and never leaving the streetsY' pictured?Y'+To get you started, one way would be to walk up five streets andY( then walk over six streets.  Another would be up, over, up, over, up, over,Y) up, over, up, over, over.FY*MBY+4faaasaaasaaasaaasaaasaaacY,%               `   `   `   `   `   `   `Y-%               vaaabaaabaaabaaabaaabaaatY.%               `   `   `   `   `   `   `Y/%               vaaabaaabaaabaaabaaabaaatY0%               `   `   `   `   `   `   `Y1%               vaaabaaabaaabaaabaaabaaatY2%               `   `   `   `   `   `   `Y3%               vaaabaaabaaabaaabaaabaaatY4%               `   `   `   `   `   `   `Y5%               eaaauaaauaaauaaauaaauaaadY62 AGqY6 
+0xe10d:
+
+	You are in the Museum.
+
+0xe129:
+
+	You're in the Museum.
+
+0xe145:
+
+	There is a Silver Lance here.
+
+0xe168:
+
+		Silver Lance.
+
+0xe17d:
+
+	You're in an East-West corridor.
+
+0xe1a0:
+
+	You are at the entrance to the Maze of Death.  A sign over the
+door reads as follows:
+	Herein lies the Maze of Death.  Cyanide poisoning awaits those
+who do not finish their task before the fifteenth locked door.  The
+maze is a square with a corridor beneath it.  Each square in the maze
+has doors.  Some are locked, some are not.  You won't know until you
+try.  In one of the rooms is the Crystal Statue waiting for you.  The
+corridor beneath the maze has six doors.  Any or all of them may lead
+to the statue.  Will you be the first?  Once you start, there is no turning
+back.
+
+0xe39f:
+
+	You're at the entrance to the Maze of Death.
+
+0xe3c9:
+
+	You are in the beginning corridor of the Maze of Death.  There is
+a door to the North.
+
+0xe41d:
+
+	You're in the beginning corridor.
+
+0xe440:
+
+	The door to the West is locked.
+
+0xe463:
+
+	The door to the West is unlocked.
+
+0xe486:
+
+	You are in the Maze of Death.  There are doors to the North, South,
+East, and West.
+
+0xe4d3:
+
+	You're in the Maze of Death.
+
+0xe4ef:
+
+	That door is locked.
+
+0xe504:
+
+	You are in the Maze of Death.  There are doors to the North, South,
+and West.
+
+0xe551:
+
+	You are in the Maze of Death.  There are doors to the North, South,
+and East.
+
+0xe59e:
+
+	You are in the Maze of Death.  There are doors to the South, East,
+and West.
+
+0xe5e4:
+
+	You are in the Maze of Death.  There are doors to the South and
+East.
+
+0xe62a:
+
+	You are in the Maze of Death.  There are doors to the South and
+West.
+
+0xe670:
+
+	There is a Crystal Statue here.
+
+0xe693:
+
+		Crystal Statue
+
+0xe6a8:
+
+	When you dropped the Statue, it broke into a thousand pieces.
+
+0xe6e7:
+
+	Unfortunately, you have just tried the fifteenth door.  The
+cyanide gas was quick and very efficient.
+
+0xe749:
+
+wHJGqY 'All the same does the trick.  One color will cause the click.Y! The other color, you'll barelyCsee, for security quickly comesCforCthee.  Y" To change some colors, pick a tunnel, drop a marble in the funnel.FY$4y GC F xY$>y  G FCxY$HyC G F xY%2faa    aaaaaa    aaaaaa    aac          Y&2`CiiiiiipY&>      qY&HiiiiiiC`Y'2`CiiiiiiY'= p      qY'HiiiiiiC`Y(2`CiiiiiipY(>      qY(HiiiiiiC`Y)2`Y)8yY)?xY)ByY)IxY)O`Y*2`Y*9yY*>xY*CyY*HxY*O`Y+2`pY+9      Y+C      qY+O`Y,2`pY,9      Y,C      qY,O`Y-2`pY-9      Y-C      qY-O`Y.2`Y.9xY.>yY.CxY.HyY.O`Y/2`Y/8xY/?yY/BxY/IyY/O`Y02`CiiiiiipY0>      qY0HiiiiiiC`Y12`CiiiiiipY1>      qY1HiiiiiiC`Y22`CiiiiiipY2>      qY2HiiiiiiC`Y32eaaaaaaaaaaaaaaaaaaaaaaaaaaaadpGY40Timing:  10 until Security arrivalGqY6 
+0xea44:
+
+	You are in the rowboat on the lake.
+
+0xea67:
+
+	You can't swim!
+
+0xea7c:
+
+	You're in the rowboat.
+
+0xea98:
+
+	You are in the rowboat near the shelf in front of the airlock.
+
+0xead7:
+
+	You're in box canyon.
+
+0xeaf3:
+
+	Destination Coordinates relative to Earth
+		Enter Coordinates  x,y,z
+
+0xeb32:
+
+	Course plotted and laid in.
+
+0xeb4e:
+
+	You travel in space for several days.
+
+0xeb78:
+
+	You will not be permitted to pass unless you answer the question!
+
+0xebb7:
+
+	You are in the passageway.
+
+0xebd3:
+
+	You're in the foyer of the computer center.
+
+0xebfd:
+
+	I'm sorry.  You'll have to be more specific.  There is more than
+one way out here.
+
+0xec4a:
+
+	There is a sign on the door.
+
+0xec66:
+
+	They are not required to hit planet with you and decline to come.
+
+0xeca5:
+
+	He is not required to hit planet with you and declines to come.
+
+0xece4:
+
+	She is not required to hit planet with you and declines to come.
+
+0xed23:
+
+	I suggest that a science officer might be of help.
+
+0xed54:
+
+	There is a piece of paper here.
+
+0xed77:
+
+	Science Officer Troch is here.
+
+0xed9a:
+
+	It's too bad someone was not here to help you.
+
+0xedcb:
+
+		Radiation Suit
+
+0xede0:
+
+	There is a Radiation Suit here.
+
+0xee03:
+
+	There is a piece of paper here.
+
+0xee26:
+
+	Science officer Troch is here.
+
+0xee49:
+
+	Please log on:
+
+0xee5e:
+
+	The CRT terminal is temporiarly down.  Please be patient.
+
+0xee96:
+
+	You did not store your P-Suit in your locker.  Sorry, it's not here.
+
+0xeed5:
+
+	Did you forget to lock your locker?
+
+0xeef8:
+
+	Enter User Name:
+
+0xef0d:
+
+	Enter Password:
+
+0xef22:
+
+	Incorrect response!  Logon sequence aborted!
+
+0xef4c:
+
+	Incorrect response!  Planet Location sequence aborted!
+
+0xef84:
+
+	Enter Planet Name:
+
+0xef99:
+
+	Information available on:
+		1) Planet Locations
+		2) Ship personnel seeking employment
+		3) General Gossip
+
+0xeffb:
+
+	Logoff procedure completed.
+
+0xf017:
+
+	Your current course settings make this impossible.
+
+0xf048:
+
+	No information is available on this planet.
+
+0xf072:
+
+	Planet locations procedure terminated.
+
+0xf09c:
+
+	You're not carrying a duffle bag!
+
+0xf0bf:
+
+	You're not carrying a purse!
+
+0xf0db:
+
+	I don't see anything to read!
+
+0xf0fe:
+
+	There is a Navigation Computer here.
+
+0xf121:
+
+	There is a Neural Analyzer here.
+
+0xf144:
+
+	I don't understand what you want to do.
+
+0xf16e:
+
+	You have discovered a laser and a geiger counter.
+
+0xf19f:
+
+	Your geiger counter is making a lot of clicking noises.
+
+0xf1d7:
+
+	You have discovered a second 8" CP/M disk hidden under all the paper.
+
+0xf21d:
+
+	He is not for hire.
+
+0xf232:
+
+	You can't!  He is too drunk to understand you!
+
+0xf263:
+
+	You have already hired this person!
+
+0xf286:
+
+		A Dead Girl
+
+0xf294:
+
+		Donned Radiation Suit
+
+0xf2b0:
+
+	Parson Nigere has called security and you have been arrested for
+stealing.  You spent the morning in detention and missed liftoff.
+
+0xf327:
+
+	I don't know how to get such a thing.
+
+0xf351:
+
+	There is no way to buy that.
+
+0xf36d:
+
+	You can't wear both a P-Suit and a Radiation Suit.
+
+0xf39e:
+
+	You did not get your ship off planet in time.  You have missed
+liftoff.
+
+0xf3e4:
+
+		LIBRARY
+
+0xf3f2:
+
+	I don't know what you want me to read.
+
+0xf41c:
+
+	It is not yet your departure time.
+
+0xf43f:
+
+	You've already bought it!
+
+0xf45b:
+
+	You aren't carrying any paper!
+
+0xf47e:
+
+	You have died of radiation poisoning!
+
+0xf4a8:
+
+	Lucinda has escaped!
+
+0xf4bd:
+
+	(C) Copyright    Hoyle and Hoyle Software
+			 716 S. Elam Ave.
+			 Greensboro, NC 27403
+			 (919)-378-1050
+	If you are playing for the first time, simply hit return.
+
+	Enter saved game file name:  
+0xf56c:
+
+	This file must be in the form   (-:--------.---).  For example,
+  B:JOHN.CAV.
+	Which Game?  
+0xf5c0:
+
+	Something is wrong with file  "GALACTIC.BGN".
+
+0xf5f1:
+
+	Something is wrong with the game data file.
+
+0xf61b:
+
+	Something is wrong with file  "GALACTIC.MSG".
+
+0xf64c:
+
+	Enter the exact name of the file you wish to save.  For example,
+  B:CREATOR.CAV.  If you name the file  "GALACTIC.BGN", then you will lose
+the original game file, so do be careful.
+	Enter File Name:  
+0xf702:
+
+	You answer 8 and he responds:
+
+0xf725:
+
+	You did not wear your P-Suit.  Your resulting decompression was not
+pleasant to watch!
+
+0xf779:
+
+	Captain, we have just tried the disks that you brought us and they
+do not work.  They must have been damaged as they were carried around the
+universe.  Maybe you can figure out some way to repair them.
+
+0xf82f:
+
+	Captain, the disks are working!  The Bubbles of Isthur are saved!
+This has been too close for comfort.  Thank you.  Now if you will excuse
+us, we have a lot of cleaning up to do.
+
+0xf8d0:
+
+	You were carrying too much and your boat capsized!!
+
+0xf901:
+
+	It is not yet your departure time!
+
+0xf924:
+
+	You have run out of supplies!
+
+0xf947:
+
+	Welcome to Grand Central Space Station's Computer access network.
+
+0xf986:
+
+	Your options available are:
+		1)  Receive Standing Orders
+
+0xf9be:
+
+	Sorry!  The computer is temporarily down.  Your standing orders are
+apparently unchanged.  Proceed on that assumption.
+
+0xfa2e:
+
+	I don't see a machine!
+
+0xfa4a:
+
+	You were not in time.  The box has exploded!
+
+0xfa74:
+
+	What do you want to hit?
+
+0xfa90:
+
+	I don't recommend drinking now.
+
+0xfab3:
+
+	You have discovered two 8" CP/M disks.
+
+0xfadd:
+
+	It has the number 335 on it.
+
+0xfaf9:
+
+	I'd advise against that!
+
+0xfb15:
+
+	The Professor, the Grand Central Space Station Computer Center Staff
+and you struggle through the night in a valiant and ultimately successful
+effort to repair (and in many places rewrite) the environmental control
+program for the Planet of Isthur.  The problems inherent in this complex,
+unique, first-of-its-kind program are so significant and their solutions so
+effective, that the professor has been nominated for the coveted Hughes Award
+because of his "Special Contribution to the Survival of the Human Race."
+	You have been ordered to report to the Commandant of Earth after
+returning the repaired disks to the Beautiful Bubbles of Isthur.  Your
+supplies are loaded and you are cleared to lift off.
+
+0xfd84:
+
+	You currently have 
+0xfd99:
+ out of a possible 850 points.
+
+	Do you want to quit now?  
+0xfdd1:
+
+	You have scored 
+0xfde6:
+ out of a possible 850 points.

@@ -1,6 +1,6 @@
 include(`constants.m4')dnl
 include(`messages.m4')dnl
-include(`macros.m4')dnl
+include(`macros-bgn.m4')dnl
 baseBGNAddress:			db [ 20 ] 0
 g_currentScore:			dw 40
 g_verboseCountdown:		db 0Ah		; The game randomly prints the verbose message
