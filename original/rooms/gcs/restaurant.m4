@@ -1,0 +1,60 @@
+; ---------------------------------------------------------------------------
+; Condition: (g_gcs_restaurantEntered == 0)
+;   - Actions:
+;     - Set g_gcs_restaurantEntered to 1
+;     - Set g_gcs_professorState to 1
+;     - Set scoreBonus of room_gcs_library to 5
+;     - Add roomFlag_first to room_gcs_library.roomFlag
+;     - Set first_offset of room_gcs_library to s_first_gcsLibrary
+;     - Add 5 to score
+;     - Set location of large envelope to location_gcs
+; Condition: (g_gcs_restaurantEntered == 1)
+;   - Actions:
+;     - Print no seats
+; ---------------------------------------------------------------------------
+l_room_gcsRestaurant:
+		ld	a, (g_gcs_restaurantEntered)
+		cp	0
+		jp	nz, l_gcsRestaurant_noSeats
+
+		printMessage(s_restaurantGreeting)
+		printMessage(s_holsonMessage)
+
+		ld	a, 1
+		ld	(g_gcs_restaurantEntered), a
+		ld	(g_gcs_professorState), a
+
+		ld	a, (g_currentRoomNumber)
+		push	af
+
+		ld	a, room_gcs_library
+		ld	(g_currentRoomNumber), a
+		call	getRoomData
+		ld	hl, (g_currentRoomData)			; room_t.scoreBonus
+		ld	(hl), 5
+
+		inc	hl					; room_t.roomFlag
+		ld	a, (hl)
+		or	roomFlag_first
+		ld	(hl), a
+
+		ld	de, 5
+		add	hl, de					; room_t.first_offset (HI)
+		ld	(hl), HI_BYTE(s_first_gcsLibrary)
+		inc	hl
+		ld	(hl), LO_BYTE(s_first_gcsLibrary)
+		pop	af
+
+		ld	(g_currentRoomNumber), a
+		call	getRoomData
+
+		IncreaseScore(5)
+
+		ld	a, location_gcs
+		ld	(item_largeEnvelope.location), a
+		jp	l_advanceClock
+; ---------------------------------------------------------------------------
+
+l_gcsRestaurant_noSeats:
+		printMessage(s_restaurantNoSeats)
+		jp	l_advanceClock

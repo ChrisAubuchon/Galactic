@@ -1,0 +1,36 @@
+#!/bin/bash
+
+verbose=
+
+while getopts "cv" opt; do
+	case ${opt} in
+		c)
+			addCall="1"
+			;;
+		v)
+			verbose="1"
+			;;
+		*)
+			exit 1
+			;;
+	esac
+done
+
+shift $((OPTIND - 1))
+
+oldVar="$1"
+
+if [ -z "${oldVar}" ]; then
+	echo "No variable name"
+	exit 1
+fi
+
+if [ -n "${addCall}" ]; then
+	oldVar="CALL(${oldVar}"
+fi
+
+if [ -z "${verbose}" ]; then
+	find . \( -name '*.m4' -and -not -name thief.m4 \) -exec grep -l "${oldVar}" {} \;
+else
+	find . \( -name '*.m4' -and -not -name thief.m4 \) -exec grep -H "${oldVar}" {} \;
+fi

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+oldVar="$1"
+newVar="$2"
+
+if [ -z "${oldVar}" ]; then
+	echo "No old variable name"
+	exit 1
+fi
+
+if [ -z "${newVar}" ]; then
+	echo "No new variable name"
+	exit 1
+fi
+
+for file in `find . -name '*.m4' -exec grep -l "${oldVar}" {} \;`; do
+	LC_CTYPE=C sed -e "s/${oldVar}/${newVar}/g" < ${file} > ${file}.tmp
+	if [ $? -ne 0 ]; then
+		exit 1
+	fi
+	mv ${file}.tmp ${file}
+done
+
+exit 0
