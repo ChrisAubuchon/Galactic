@@ -3,6 +3,7 @@
 ;         s_verbose_navier_overlordIgnored
 ; ---------------------------------------------------------------------------
 l_room_navierOverlordChamber:
+		; `setVerboseOffset(s_verbose_navier_overlordIgnored)'
 		ld	hl, (g_currentRoomData)
 		inc	hl
 		inc	hl					; room_t.verbose_offset

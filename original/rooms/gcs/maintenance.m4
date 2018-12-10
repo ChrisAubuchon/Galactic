@@ -9,18 +9,10 @@
 ;     - Set dyingGirl.location to location_gcs
 ; ---------------------------------------------------------------------------
 l_room_gcsMaintenance:
-		ld	a, (g_gcs_foundDyingGirl)
-		cp	TRUE
-		jp	z, l_advanceClock
-
+		ifVariableEq(g_gcs_foundDyingGirl, TRUE, l_advanceClock)
 		printMessage(s_dyingGirlMessage1)
 		printMessage(s_dyingGirlMessage2)
-
-		ld	a, TRUE
-		ld	(g_gcs_foundDyingGirl), a
-
-		IncreaseScore(5)
-
-		ld	a, location_gcs
-		ld	(item_dyingGirl.location), a
+		setVariable(g_gcs_foundDyingGirl, TRUE)
+		increaseScore(5)
+		setItemLocation(item_dyingGirl, location_gcs)
 		jp	l_advanceClock

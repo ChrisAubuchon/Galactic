@@ -348,7 +348,7 @@ l_marble_success:
 
 		printMessage(s_disksFixed)
 
-		IncreaseScore(12)
+		increaseScore(12)
 		jp	l_mainLoopEntry
 ; ---------------------------------------------------------------------------
 
@@ -386,9 +386,7 @@ l_marble_fail:
 		ld	(g_currentRoomNumber), a
 		call	getRoomData
 
-		ld	b, 0Ah
-		call	subtractFromScore
-
+		decreaseScore(10)
 		printMessage(s_gcs_hqArrested1)
 		printMessage(s_gcs_hqArrested2)
 		jp	l_mainLoopEntry

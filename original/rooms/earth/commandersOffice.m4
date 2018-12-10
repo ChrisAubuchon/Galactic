@@ -1,15 +1,12 @@
 ; ---------------------------------------------------------------------------
 ; ---------------------------------------------------------------------------
 l_room_earthCmdrOffice:
-		ld	a, (gameWonFlagMaybe)
-		cp	1
-		jp	z, loc_4C0
-
+		ifVariableEq(gameWonFlagMaybe, TRUE, loc_4C0)
 		ld	a, (g_currentRoomNumber)
 
 		push	af
-		ld	a, room_earth_supply
-		ld	(g_currentRoomNumber), a
+
+		setCurrentRoom(room_earth_supply)
 		call	getRoomData
 
 		ld	hl, (g_currentRoomData)
@@ -17,8 +14,7 @@ l_room_earthCmdrOffice:
 		add	hl, de				; room_t.verbose_offset (LO)
 		ld	(hl), LO_BYTE(s_verbose_earth_supply)
 
-		ld	a, room_earth_parson
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_earth_parson)
 		call	getRoomData
 
 		ld	hl, (g_currentRoomData)
@@ -46,13 +42,8 @@ l_room_earthCmdrOffice:
 		jp	l_advanceClock
 
 loc_4C0:
-		IncreaseScore(24)
-
+		increaseScore(24)
 		printMessage(s_galaxySalutes)
-
-		ld	a, (item_computerPage.location)
-		cp	location_inventory
-		jp	nz, loc_F1B
-
-		IncreaseScore(30)
+		ifItemNotInInventory(item_computerPage, loc_F1B)
+		increaseScore(30)
 		jp	loc_F1B

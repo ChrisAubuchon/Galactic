@@ -2,17 +2,9 @@ l_inline_sendMoreMoney:
 		cp	p_puzzleMoney
 		jp	nz, loc_11AC
 
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_lockableDoors
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (item_lockingDoors.floorMessageIndex)
-		cp	floorMsg_ewDoors_open
-		jp	nz, loc_1189
+		ifCurrentPlanetNe(location_navier, l_dolat_dontKnowHowHere)
+		ifCurrentRoomNe(room_navier_lockableDoors, l_dolat_dontKnowHowHere)
+		ifItemFloorMessageNe(item_lockingDoors, floorMsg_ewDoors_open, loc_1189)
 
 l_inline_noWayToDo:
 		printMessage(s_noWayToDo)
@@ -20,12 +12,10 @@ l_inline_noWayToDo:
 ; ---------------------------------------------------------------------------
 
 loc_1189:
-		ld	a, (item_keyingCard.location)
-		cp	location_inventory
-		jp	nz, l_inline_noWayToDo
+		ifItemNotInInventory(item_keyingCard, l_inline_noWayToDo)
 		printMessage(s_okay)
-		ld	a, floorMsg_ewDoors_open
-		ld	(item_lockingDoors.floorMessageIndex), a
+		setItemFloorMessage(item_lockingDoors, floorMsg_ewDoors_open)
+
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Ch
 		add	hl, de
@@ -39,25 +29,12 @@ loc_11AC:
 		cp	p_puzzleSend
 		jp	nz, loc_11EC
 
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_lockableDoors
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (item_lockingDoors.floorMessageIndex)
-		cp	floorMsg_ewDoors_locked
-		jp	z, l_inline_noWayToDo
-
-		ld	a, (item_keyingCard.location)
-		cp	location_inventory
-		jp	nz, l_inline_noWayToDo
-
+		ifCurrentPlanetNe(location_navier, l_dolat_dontKnowHowHere)
+		ifCurrentRoomNe(room_navier_lockableDoors, l_dolat_dontKnowHowHere)
+		ifItemFloorMessageEq(item_lockingDoors, floorMsg_ewDoors_locked, l_inline_noWayToDo)
+		ifItemNotInInventory(item_keyingCard, l_inline_noWayToDo)
 		printMessage(s_okay)
-		ld	a, floorMsg_ewDoors_locked
-		ld	(item_lockingDoors.floorMessageIndex), a
+		setItemFloorMessage(item_lockingDoors, floorMsg_ewDoors_locked)
 
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Ch
@@ -72,16 +49,10 @@ loc_11EC:
 		cp	p_puzzleMore
 		jp	nz, l_inline_museumAnswer
 
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, l_dolat_dontKnowHowHere
+		ifCurrentPlanetNe(location_navier, l_dolat_dontKnowHowHere)
+		ifCurrentRoomNe(room_navier_airlock, l_dolat_dontKnowHowHere)
+		setItemFloorMessage(item_nDoor, floorMsg_nDoor_open)
 
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_airlock
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, floorMsg_nDoor_locked
-		ld	(item_nDoor.floorMessageIndex), a
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Ah
 		add	hl, de

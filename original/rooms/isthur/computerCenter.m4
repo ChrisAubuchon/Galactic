@@ -7,47 +7,42 @@
 ;    - Set first_offset to s_isthur_cmdtMessage_goodJob
 ; ---------------------------------------------------------------------------
 l_room_isthurComputerCenter:
-		ld	a, (g_isthur_computerCenterTrigger)
-		cp	1
-		jp	nz, l_advanceClock
+		ifVariableNe(g_isthur_computerCenterTrigger, TRUE, l_advanceClock)
 
 		; Makes the game unwinnable if you don't have all of the
 		; disks in your inventory.
 		;
 		; Check should be after both disk checks
 		;
-		ld	a, 0
-		ld	(g_isthur_computerCenterTrigger), a
-
-		ld	a, (item_cpmDiskA.location)
-		cp	location_inventory
-		jp	nz, l_advanceClock
-
-		ld	a, (item_cpmDiskB.location)
-		cp	location_inventory
-		jp	nz, l_advanceClock
-
+		setVariable(g_isthur_computerCenterTrigger, FALSE)
+		ifItemNotInInventory(item_cpmDiskA, l_advanceClock)
+		ifItemNotInInventory(item_cpmDiskB, l_advanceClock)
 		printMessage(s_disksWork)
+
+		; `setItemLocation(item_cpmDiskA, location_none)'
+		; `setItemLocation(item_cpmDiskB, location_none)'
 		ld	a, location_none
 		ld	(item_cpmDiskA.location), a
 		ld	(item_cpmDiskB.location), a
-		ld	a, (carriedItemCount)
-		sub	2
-		ld	(carriedItemCount), a
+
+		decreaseItemCount(2)
 
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_isthur_cmdtOffice
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_isthur_cmdtOffice)
 		call	getRoomData
+
+		; `setCurrentRoomScore(25)'
 		ld	hl, (g_currentRoomData)
 		ld	(hl), 25				; room_t.scoreBonus
 
+		; `addCurrentRoomFlag(roomFlag_first)'
 		inc	hl
 		ld	a, (hl)					; room_t.roomFlag
 		or	roomFlag_first
 
+		; `setCurrentRoomFirstMessage(s_isthur_cmdtMessage_goodJob)'
 		ld	(hl), a
 		ld	de, 5
 		add	hl, de					; room_t.first_offset

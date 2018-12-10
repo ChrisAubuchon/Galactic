@@ -4,9 +4,7 @@
 ; boat capsizes if the player is carrying more than one item
 ; ---------------------------------------------------------------------------
 l_room_navierInRowboat:
-		ld	a, (g_navier_computerCenterTrigger)
-		cp	FALSE
-		jp	z, l_advanceClock
+		ifVariableEq(g_navier_computerCenterTrigger, FALSE, l_advanceClock)
 
 		ld	b, 0
 		ld	hl, g_itemList.location

@@ -1,56 +1,46 @@
 l_inline_examine:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_isthur
-		jp	z, l_examine_isthur
-		cp	location_navier
-		jp	z, l_examine_navier
-		cp	location_gcs
-		jp	z, l_examine_gcs
+		loadCurrentPlanet()
+		jumpEq(location_isthur, l_examine_isthur)
+		jumpEq(location_navier, l_examine_navier)
+		jumpEq(location_gcs, l_examine_gcs)
+		; RETURN - 'jp	l_inline_didntFindAnything'
 
+; RETURN - Move to return label section
+;
 l_inline_didntFindAnything:
 		printMessage(s_didntFindAnything)
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
 l_examine_isthur:
+		; Load item_purse.location to HL instead of A. The location can
+		; be updated under proper conditions so save a load by loading to HL
 		ld	hl, item_purse.location
 		ld	a, (hl)
-		cp	location_none
-		jp	nz, l_inline_didntFindAnything
-		ld	a, (g_currentRoomNumber)
-		cp	room_isthur_bubble39
-		jp	nz, l_inline_didntFindAnything
+
+		jumpNe(location_none, l_inline_didntFindAnything)
+		ifCurrentRoomNe(room_isthur_bubble39, l_inline_didntFindAnything)
+
 		ld	(hl), location_isthur		; Mark purse as being on Isthur
 		printMessage(s_floor_purseHidden)
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
 l_examine_navier:
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_tomorrowChamber
-		jp	nz, l_examine_navier_diskA
+		ifCurrentRoomNe(room_navier_tomorrowChamber, l_examine_navier_diskA)
 
 		ld	hl, item_cpmDiskB.location
 		ld	a, (hl)
-		cp	location_none
-		jp	nz, l_inline_didntFindAnything
 
-		ld	a, (g_analyzerUsedOnLucinda)
-		cp	0
-		jp	z, l_inline_didntFindAnything
+		jumpNe(location_none, l_inline_didntFindAnything)
+		ifVariableEq(g_analyzerUsedOnLucinda, 0, l_inline_didntFindAnything)
 
 		ld	(hl), location_navier			; hl = &item_cpmDiskB.location
 		printMessage(s_foundSecondCpmDisk)
 
-		ld	a, 1
-		ld	(g_shipSuppliedFlag), a
-
-		; Mark Isthur as landable
-		ld	a, canLand
-		ld	(g_landing_isthur.canLandFlag), a
-
-		ld	a, 1
-		ld	(g_isthurGammaControlTrigger), a
+		setVariable(g_shipSuppliedFlag, 1)
+		setVariable(g_landing_isthur.canLandFlag, canLand)
+		setVariable(g_isthurGammaControlTrigger, 1)
 
 		; Mark the other planets as unlandable
 		ld	a, cannotLand
@@ -81,10 +71,8 @@ l_examine_navier:
 		push	af
 
 		; Open up the entrance to Gamma Control
-		ld	a, location_isthur
-		ld	(g_currentPlanetNumber), a
-		ld	a, room_isthur_gammaEntrance
-		ld	(g_currentRoomNumber), a
+		setCurrentPlanet(location_isthur)
+		setCurrentRoom(room_isthur_gammaEntrance)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 3
@@ -102,9 +90,8 @@ l_examine_navier:
 ; ---------------------------------------------------------------------------
 
 l_examine_gcs:
-		ld	a, (g_currentRoomNumber)
-		cp	room_gcs_examinable_low
-		jp	nc, loc_3B71
+		loadCurrentRoom()
+		jumpGe(room_gcs_examinable_low, loc_3B71)
 
 		printMessage(s_dontSeeUnusual)
 		jp	l_mainLoop
@@ -125,17 +112,12 @@ loc_3B71:
 ; ---------------------------------------------------------------------------
 
 l_examine_navier_diskA:
-		cp	room_navier_computerCenter
-		jp	nz, l_inline_didntFindAnything
+		jumpNe(room_navier_computerCenter, l_inline_didntFindAnything)
 
 		ld	hl, item_cpmDiskA.location
 		ld	a, (hl)
-		cp	location_none
-		jp	nz, l_inline_didntFindAnything
-
-		ld	a, (item_trochObject.location)		; Need Troch
-		cp	location_withPlayer
-		jp	nz, l_inline_didntFindAnything
+		jumpNe(location_none, l_inline_didntFindAnything)
+		ifItemNotWithPlayer(item_trochObject, l_inline_didntFindAnything)
 
 		ld	(hl), location_navier
 		printMessage(s_floor_cpmDiskFolder)

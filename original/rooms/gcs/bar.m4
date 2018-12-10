@@ -29,10 +29,8 @@
 ;
 ; ---------------------------------------------------------------------------
 l_room_gcsBar:
-		ld	a, (g_gcs_barState)
-		cp	gcsBar_unentered
-		jp	nz, loc_9F2
-
+		loadVariable(g_gcs_barState)
+		jumpNe(gcsBar_unentered, loc_9F2)
 		printMessage(s_barWelcome)
 
 loc_939:
@@ -72,31 +70,21 @@ l_gcsBar_twoWord:
 ; ---------------------------------------------------------------------------
 
 l_gcsBar_sitWithGoode:
-		ld	a, (g_gcs_barState)
-		add	a, gcsBar_satWithGoode
-		ld	(g_gcs_barState), a
-
+		addToVariable(g_gcs_barState, gcsBar_satWithGoode)
 		printMessage(s_goodeMessage1)
 		printMessage(s_goodeMessage2)
-
-		IncreaseScore(5)
-
+		increaseScore(5)
 		jp	l_advanceClock
 ; ---------------------------------------------------------------------------
 
 l_gcsBar_sitWithDavies:
-		ld	a, (g_gcs_barState)
-		add	a, gcsBar_satWithDavies
-		ld	(g_gcs_barState), a
-
-		ld	a, location_gcs
-		ld	(item_attacheCase.location), a
+		addToVariable(g_gcs_barState, gcsBar_satWithDavies)
+		setItemLocation(item_attacheCase, location_gcs)
 
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_gcs_outerCorridor_21
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_outerCorridor_21)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 16h
@@ -112,18 +100,14 @@ l_gcsBar_sitWithDavies:
 
 		printMessage(s_daviesMessage1)
 		printMessage(s_daviesMessage2)
-
-		ld	a, room_gcs_innerCorridor_25 
-		ld	(g_currentRoomNumber), a
-
-		IncreaseScore(5)
+		setCurrentRoom(room_gcs_innerCorridor_25)
+		increaseScore(5)
 
 		jp	l_mainLoopEntry
 ; ---------------------------------------------------------------------------
 
 loc_9F2:
-		cp	gcsBar_noSeats
-		jp	nz, loc_A01
+		jumpNe(gcsBar_noSeats, loc_A01)
 		printMessage(s_barNoSeats)
 		jp	l_advanceClock
 ; ---------------------------------------------------------------------------

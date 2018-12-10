@@ -17,12 +17,8 @@
 ;     - Set north_room and cw_room to room_solomaw_artifact
 ; ---------------------------------------------------------------------------
 l_room_solomawArtifactEntrance:
-		ld	a, (g_solomaw_riddleComplete)
-		cp	TRUE
-		jp	z, l_advanceClock
-
-		ld	a, TRUE
-		ld	(g_solomaw_riddleComplete), a
+		ifVariableEq(g_solomaw_riddleComplete, TRUE, l_advanceClock)
+		setVariable(g_solomaw_riddleComplete, TRUE)
 
 		call	parseInput
 		ld	a, (g_inputWordCount)
@@ -36,13 +32,16 @@ l_room_solomawArtifactEntrance:
 		cp	p_solomawCrystalAnswer
 		jp	nz, l_advanceClock
 
-		IncreaseScore(20)
-
+		increaseScore(20)
 		printMessage(s_youAreCorrect)
+
 		ld	hl, (g_currentRoomData)
+
+		; `addCurrentRoomFlag(roomFlag_verbose)'
 		inc	hl				; room_t.roomFlag
 		ld	(hl), roomFlag_verbose
 
+		; `setRoomInDirection(north, room_solomaw_artifact)'
 		ld	de, 9
 		add	hl, de				; room_t.north_room
 		ld	(hl), room_solomaw_artifact
@@ -50,6 +49,7 @@ l_room_solomawArtifactEntrance:
 		; XXX - This should probably be 0Ch to get
 		; hl to room_t.enter_room
 		;
+		; `setRoomInDirection(cw, room_solomaw_artifact)'
 		ld	de, 0Ah				; room_t.cw_room
 		add	hl, de
 		ld	(hl), room_solomaw_artifact

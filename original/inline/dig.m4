@@ -2,17 +2,9 @@ l_inline_dig:
 		cp	p_dig
 		jp	nz, l_inline_analog
 
-		ld	a, (g_itemList.location)
-		cp	location_inventory
-		jp	nz, l_inline_unableToDoNow
-
-		ld	a, (g_currentPlanetNumber)
-		cp	location_earth
-		jp	nz, l_inline_didntFindAnything
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_earth_wasteland_29
-		jp	nz, l_inline_didntFindAnything
+		ifItemNotInInventory(item_shovel, l_inline_unableToDoNow)
+		ifCurrentPlanetNe(location_earth, l_inline_didntFindAnything)
+		ifCurrentRoomNe(room_earth_wasteland_29, l_inline_didntFindAnything)
 
 		ld	hl, (g_currentRoomData)
 		ld	de, 13h				; room_t.down_room

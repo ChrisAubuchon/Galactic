@@ -2,42 +2,30 @@
 ; "analyze lucinda"
 ; ---------------------------------------------------------------------------
 l_inline_analyzeLucinda:
-		ld	a, (g_currentRoomNumber)
-		cp	room_inOrbit
-		jp	z, loc_40B3
-
-		cp	room_inShip
-		jp	z, loc_40B3
+		loadCurrentRoom()
+		jumpEq(room_inOrbit, loc_40B3)
+		jumpEq(room_inShip, loc_40B3)
 
 l_analyzeLucinda_dontKnowHow:
 		printMessage(s_dontKnowHowHere)
 		jp	l_mainLoop
 
 loc_40B3:
-		ld	a, (item_lucindaObject.location)
-		cp	location_withPlayer
-		jp	z, l_analyzeLucinda_fail
-
-		ld	a, (item_lucindaObject.roomNumber)
-		cp	room_inOrbit
-		jp	z, l_analyzeLucinda_fail
-
-		cp	room_inShip
-		jp	z, l_analyzeLucinda_fail
-
+		ifItemInLocation(item_lucindaObject, location_withPlayer, l_analyzeLucinda_checkAnalyzer)
+		loadItemRoomNumber(item_lucindaObject)
+		jumpEq(room_inOrbit, l_analyzeLucinda_checkAnalyzer)
+		jumpEq(room_inShip, l_analyzeLucinda_checkAnalyzer)
 		jp	l_analyzeLucinda_dontKnowHow
 ; ---------------------------------------------------------------------------
 
-l_analyzeLucinda_fail:
-		ld	a, (analyzerInstalledFlag)
-		cp	1
-		jp	z, l_analyzeLucinda_success
+l_analyzeLucinda_checkAnalyzer:
+		ifVariableEq(analyzerInstalledFlag, 1, l_analyzeLucinda_success)
 		printMessage(s_cantAnalyzeLucinda)
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
 l_analyzeLucinda_success:
 		printMessage(s_analyzeLucinda)
-		ld	a, 1
-		ld	(g_analyzerUsedOnLucinda), a
+
+		setVariable(g_analyzerUsedOnLucinda, 1)
 		jp	l_mainLoop

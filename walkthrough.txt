@@ -1,0 +1,795 @@
+west					# Customs
+hire brandon
+ccw					# Library
+south					# Starlight Lounge
+hire bartender
+north					# Library
+ccw					# Infirmary
+hire reser
+ccw					# Private Foyer
+east					# Room 14
+cw					# Room 15
+cw					# Room 16
+knock					# Knock until they answer
+hire troch
+exit					# Room 16
+ccw					# Room 15
+knock					# Knock until they answer
+hire llye
+exit					# Room 15
+ccw					# Room 14
+ccw					# Room 13
+knock					# Knock until they answer
+hire severn
+exit					# Room 13
+ccw					# Room 12
+ccw					# Room 11
+ccw					# Room 10
+knock					# Knock until they answer
+hire welma
+exit					# Room 10
+cw					# Room 11
+enter					# My room
+take duffle
+examine duffle
+look					# Score: 44
+drop duffle
+take laser
+exit					# Room 11
+cw					# Room 12
+cw					# Room 13
+cw					# Room 14
+west					# Private Foyer
+ccw					# Port Commander's Foyer
+(wait)					# I type 'e' until I enter the commander's office
+east					# Score: 49
+west					# Port Commander's Foyer
+se					# Private Foyer
+east					# Room 14
+ccw					# Room 13
+ccw					# Room 12
+knock					# Score: 61
+buy p-suit
+buy computer
+take p-suit
+take computer
+exit					# Room 12
+cw					# Room 13
+cw					# Room 14
+west					# Private Foyer
+west					# Communications Center
+south					# Supply				Score: 70
+north					# Communications Center
+west					# Customs
+west					# Landing Pad
+west					# Ship
+blast off
+drop laser
+set course
+-12,-17,0
+leave orbit
+land
+wear p-suit
+exit					# Landing Pad
+north					# Gamma Entrance
+north					# N-S Tunnel
+north					# NSEW Intersection
+west					# E-W Tunnel
+west					# Commandant's Foyer
+west					# Commandant's Office			Score: 80
+east					# Commandant's Foyer
+east					# E-W Tunnel
+east					# NSEW Intersection
+east					# E-W Tunnel
+east					# Garbage Dump
+west					# E-W Tunnel
+west					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+east					# E-W Tunnel
+east					# Garbage Dump				Score: 83
+west					# E-W Tunnel
+west					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+east					# E-W Tunnel
+east					# Garbage Dump				Score: 85
+west					# E-W Tunnel
+west					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+east					# E-W Tunnel
+east					# Garbage Dump				Score: 86
+west					# E-W Tunnel
+west					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+north					# N-S Tunnel
+north					# Hospital
+north					# N-S Tunnel
+north					# Infirmary
+west					# E-W Tunnel
+west					# Energy Input
+take radia
+west					# E-W Tunnel
+west					# Fire Control
+south					# N-S Tunnel
+south					# Intel Headquarters			Score: 96
+north					# N-S Tunnel
+north					# Fire Control
+east					# E-W Tunnel
+east					# Energy Input
+east					# E-W Tunnel
+east					# Infirmary
+south					# N-S Tunnel
+south					# Hospital
+south					# N-S Tunnel
+south					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+east					# E-W Tunnel
+east					# Machine shop
+north					# N-S Tunnel
+north					# Design Center
+east					# E-W Tunnel
+east					# Control Tower				Score: 101
+west					# E-W Tunnel
+west					# Design Center
+north					# N-S Tunnel
+north					# Waste Plant				Score: 106
+south					# N-S Tunnel
+south					# Design Center
+south					# N-S Tunnel
+south					# Machine Shop
+south					# N-S Tunnel
+south					# Bubble 39
+search
+look					#					Score: 110
+take purse
+examine purse
+drop purse
+north					# N-S Tunnel
+north					# Machine Shop
+west					# E-W Tunnel
+west					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+west					# E-W Tunnel
+west					# Commandant's Foyer
+west					# Commandant's Office			Score: 125
+east					# Commandant's Foyer
+east					# E-W Tunnel
+east					# NSEW Intersection
+south					# N-S Tunnel
+south					# Gamma Entrance
+south					# Landing pad
+enter					# Ship
+blast off
+remove p-suit
+drop radiation
+wear p-suit
+set course
+5,10,5
+leave orbit
+land					#					Score: 135
+exit
+inward					# Airless passage
+login
+player
+1
+logout					#					Score: 140
+inward					# Outer airlock
+inward					# Inner airlock
+inward					# Storage space
+hit machine
+take key
+outward					# Outer corridor
+cw					# Outer corridor
+cw					# Outer corridor
+inward					# Restaurant				Score: 155
+inward					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+outward					# Library				Score: 166
+take envelope
+examine envelope
+drop envelope
+look					#					Score: 170
+inward					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+outward					# Bar
+davies					# 					Score: 185
+outward					# Bar					Score: 190
+outward					# Outer corridor
+cw					# Outer corridor
+cw					# Outer corridor
+inward					# Barracks				Score: 205
+outward					# Outer corridor
+cw					# Outer corridor
+inward					# Gymnasium				Score: 215
+outward					# Outer corridor
+cw					# Outer corridor
+inward					# Maintenance				Score: 220
+take girl
+outward					# Outer corridor
+ccw					# Outer corridor
+ccw					# Outer corridor
+ccw					# Outer corridor
+ccw					# Outer corridor
+ccw					# Outer corridor
+inward					# Storage space
+inward					# Inner corridor
+ccw					# Inner corridor
+inward					# hospital
+outward					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+inward					# Doctor's Office
+outward					# Inner corridor
+cw					# Inner corridor
+outward					# Headquarters				Score: 224
+inward					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+outward					# Storage space
+remove p-suit
+find locker
+>>> Move dot to the front of locker 335
+open locker
+drop p-suit
+close locker
+deposit key
+inward					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+outward					# Doctor's Office			Score: 219
+outward					# Inner corridor
+ccw					# Inner corridor
+outward					# Supply				Score: 224
+inward					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+inward					# Engineering				Score: 238
+outward					# Inner corridor
+cw					# Inner corridor
+inward					# Computer Foyer
+login
+player
+zebra
+1
+logout					#					Score: 248
+outward					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+outward					# Headquarters				Score: 253
+inward					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+outward					# Storage space
+hit machine
+take key
+open locker
+take p-suit
+wear p-suit
+find locker
+> (move to locker 548)
+open locker
+look					#					Score: 258
+deposit key
+ccw					# Inner airlock
+outward					# Outer airlock
+outward					# Airless passage
+outward					# Landing Bay
+enter					# Ship
+blast off
+set course
+0,0,0
+leave orbit
+land
+exit					# Landing pad
+east					# Customs
+east					# Communications center
+east					# Private Foyer
+east					# Room 14
+ccw					# Room 13
+ccw					# Room 12
+knock
+buy analyzer
+buy neutralizer
+take analyzer
+take neutralizer
+exit					# Room 12
+cw					# Room 13
+cw					# Room 14
+west					# Private Foyer
+west					# Communications Center
+south					# Supply				Score: 260
+north					# Communications Center
+west					# Customs
+west					# Landing pad
+enter					# Ship
+blast off
+set course
+13,-12,73
+leave orbit
+land					# Ship					Score: 285
+take troch
+take laser
+exit					# Landing field
+north					# City Entrance
+north					# Passage - NSE
+north					# Passage - NSW
+west					# E-W Corridor
+west					# Overlord entrance
+west					# Overlord chamber			Score: 295
+east					# Overlord entrance
+east					# E-W Corridor
+east					# Passage - NSW
+north					# Passage - NS
+north					# Underground Main
+dolat
+north					# Sloping Tunnel			Score: 325
+north					# Five points
+north
+> G, B, R, Y
+> B, G, O, B
+> G, R, Y, G
+> R, Y, G, R
+> B, O, Y, G
+> R, B
+north					# NSEW Intersection			Score: 349
+north					# Curving Canyon
+west					# Beside lake bed
+west					# Lake bed				Score: 354
+east					# Beside lake bed
+east					# Curving canyon
+nw					# N-S Canyon
+north					# Box Canyon				Score: 359
+south					# N-S Canyon
+se					# Curving Canyon
+south					# NSEW Intersection
+east					# Entry level two			Score: 364
+198
+north					# Lockable doors			Score: 391
+east					# Long corridor
+east					# Long corridor
+east					# Long corridor
+south					# Old storeroom
+take oars
+north					# Long corridor
+east					# Stair bottom
+se					# Barren room
+south					# Pit bottom
+up					# Pit top
+take rope
+down					# Pit bottom
+north					# Barren room
+nw					# Stair bottom
+west					# Long corridor
+west					# Long corridor
+west					# Long corridor
+west					# Lockable doors
+north					# Lake edge
+attach rope
+attach oars
+tie boat
+launch boat
+north					# In rowboat on lake			Score: 396
+untie boat
+north					# In rowboat near shelf
+tie boat
+north					# On shelf
+north					# Airlock				Score: 410
+1085
+north					# Computer center			Score: 427
+search
+look					#					Score: 438
+take disk
+take lucinda
+drop troch
+south					# Airlock
+south					# On shelf
+drop laser
+drop disk
+remove suit
+drop suit
+drop illus
+inward					# In rowboat near shelf
+untie boat
+inward					# In rowboat on lake
+inward					# Lake edge
+tie boat
+inward					# Lockable doors
+enter					# Level two entrance
+drop lucinda
+outward					# Lockable doors
+outward					# Lake edge
+outward					# In rowboat on lake
+untie boat
+outward					# In rowboat near shelf
+tie boat
+outward					# On shelf
+take laser
+inward					# In rowboat near shelf
+untie boat
+inward					# In rowboat on lake
+tie boat
+inward					# Lake edge
+drop laser
+outward					# In rowboat on lake
+untie boat
+outward					# In rowboat near shelf
+tie boat
+outward					# On shelf
+take disk
+inward					# In rowboat near shelf
+untie boat
+inward					# In rowboat on lake
+tie boat
+inward					# Lake edge
+drop disk
+outward					# In rowboat on lake
+untie boat
+outward					# In rowboat near shelf
+tie boat
+outward					# On shelf
+take suit
+inward					# In rowboat near shelf
+untie boat
+inward					# In rowboat on lake
+tie boat
+inward					# Lake edge
+drop suit
+outward					# In rowboat on lake
+untie boat
+outward					# In rowboat near shelf
+tie boat
+outward					# On shelf
+take neutralizer
+s					# In rowboat near shelf
+untie boat
+s					# In rowbat on lake
+tie boat
+s					# Lake edge
+take laser
+take p-suit
+wear p-suit
+take disk
+south					# Lockable doors
+west					# Level two entrance
+take lucinda
+west					# NSEW Intersection
+south					# Level one entrance
+south					# Five points
+south					# Sloping tunnel
+south					# Underground main
+south					# NS Passage
+south					# NSW Passage
+south					# NSE Passage
+south					# City entrance
+south					# Landing field
+east					# Ship
+analyze lucinda
+exit					# Landing field
+drop lucinda
+north					# City entrance
+north					# NSE Passage
+north					# NSW Passage
+north					# NS Passage
+north					# Underground main
+north					# Sloping tunnel
+north					# Five points
+north					# Level one entrance
+north					# NSEW Intersection
+east					# Level two entrance
+north					# Lockable doors
+east					# Long corridor
+east					# Long corridor
+east					# Long corridor
+east					# Stair bottom
+east					# Tomorrow chamber
+search
+look					#					Score: 451
+take disk
+west					# Stair bottom
+west					# Long corridor
+west					# Long corridor
+west					# Long corridor
+west					# Lockable doors
+west					# Level two entrance
+west					# NSEW Intersection
+south					# Level one entrance
+south					# Five points
+south					# Sloping tunnel
+south					# Underground main
+south					# NS Passage
+south					# NSW Passage
+south					# NSE Passage
+south					# City entrance
+south					# Landing field
+drop laser
+drop neutralizer
+east					# Ship
+blast off
+set course
+-12,-17,0				# Isthur
+leave orbit
+land
+exit					# Landing pad
+north					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+east					# E-W Tunnel
+east					# Machine shop
+south					# N-S Tunnel
+south					# Bubble 39
+east					# E-W Tunnel
+east					# Gamma control entrance
+east					# Gamma control				Score: 456
+west					# Gamma control entrance
+west					# E-W Tunnel
+west					# Bubble 39
+north					# N-S Tunnel
+north					# Machine shop
+west					# E-W Tunnel
+west					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+west					# E-W Tunnel
+west					# Commandant's foyer
+west					# Commandant's office			Score: 476
+east					# Commandant's foyer
+east					# E-W Tunnel
+east					# NSEW Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+south					# Landing pad
+south					# Ship
+blast off
+set course
+56,11,-80
+leave orbit				#					Score: 488
+land					# Ship					Score: 497
+west					# Landing field
+west					# Port authority			Score: 501
+west					# Priest entrance
+west					# High priest				Score: 516
+east					# Priest entrance
+east					# Port authority
+north					# Directions
+west					# Curving corridor
+nw					# Curving corridor
+north					# Artifact entrance
+160					#					Score: 536
+north					# Artifact				Score: 565
+take claw
+south					# Artifact entrance
+south					# Curving corridor
+se					# Curving corridor
+east					# Directions
+north					# N-S Corridor
+north					# Museum entrance			Score: 599
+462
+north					# Museum
+take lance
+south					# Museum entrance
+south					# N-S Corridor
+south					# Directions
+east					# E-W Corridor
+east					# Maze entrance				Score: 602
+east					# Maze begin				Score: 607
+east					# Maze begin
+east					# Maze begin
+east					# Maze begin
+east					# Maze begin
+north					# Maze
+north					# Maze
+north					# Maze
+west					# Maze
+west					# Maze
+west					# Maze
+north					# Maze
+east					# Maze
+east					# Maze
+north					# Maze
+north					# Maze
+east					# Maze
+south					# Maze
+east					# Maze
+take statue				# 					Score: 646
+west					# Maze
+north					# Maze
+west					# Maze
+south					# Maze
+south					# Maze
+west					# Maze
+west					# Maze
+south					# Maze
+east					# Maze
+east					# Maze
+east					# Maze
+south					# Maze
+south					# Maze
+south					# Maze 
+west					# Maze begin
+west					# Maze begin
+west					# Maze begin
+west					# Maze begin
+west					# Maze entrance
+west					# E-W Corridor
+west					# Directions
+south					# Port authority
+west					# Priest entrance
+west					# High priest
+deliver lance				#					Score: 651
+deliver claw				#					Score: 656
+deliver statue				#					Score: 675
+look					#					Score: 682
+take key
+east					# Priest entrance
+east					# Port authority
+east					# Landing field
+east					# Ship
+blast off
+set course
+0,0,0					# Earth
+leave orbit
+land
+remove suit
+drop suit
+take radia
+wear radia
+exit					# Landing pad
+north					# Wasteland
+north					# Sheriff front
+open door
+enter					# Sheriff's office			Score: 698
+take paper
+unfold paper
+read paper
+drop paper
+take shovel
+exit					# Sheriff front
+south					# Wasteland
+nw					# Wasteland
+sw					# Wasteland
+dig
+down					# Bomb shelter				Score: 715
+take disk
+up					# Wasteland
+drop key
+ne					# Landing pad
+east					# Customs
+east					# Communications center
+south					# Supply				Score: 716
+north					# Communication center
+west					# Customs
+west					# Landing pad
+enter					# Ship
+remove suit
+drop radia
+take p-suit
+wear p-suit
+blast off
+set course
+5,10,5
+leave orbit
+land					# GCS
+exit					# Landing bay
+inward					# Airless passage
+inward					# Outer airlock
+inward					# Inner airlock
+inward					# Storage space
+inward					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+cw					# Inner corridor
+inward					# Computer foyer
+inward					# Computer center			Score: 728
+3
+(1s until done)				#					Score: 753
+outward					# Computer foyer
+outward					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+ccw					# Inner corridor
+outward					# Storage space
+ccw					# Inner airlock
+outward					# Outer airlock
+outward					# Airless passage
+outward					# Landing bay
+enter					# Ship
+blast off
+set course
+-12,-17,0
+leave orbit
+land
+exit
+north					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSEW Intersection
+north					# N-S Tunnel
+north					# NSE Intersection
+east					# E-W Tunnel
+east					# Cafeteria
+east					# E-W Tunnel
+east					# Machine shop
+south					# N-S Tunnel
+south					# Bubble 39
+east					# E-W Tunnel
+east					# Gamma control entrance
+east					# Gamma control			
+east					# Computer center			Score: 758
+analog57				#					Score: 771
+look
+take page
+west					# Gamma control
+west					# Gamma control entrance
+west					# E-W Tunnel
+west					# Bubble 39
+north					# N-S Tunnel
+north					# Machine shop
+west					# E-W Tunnel
+west					# Cafeteria
+west					# E-W Tunnel
+west					# NSE Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+west					# E-W Tunnel
+west					# Commandant's foyer
+west					# Commandant's office			Score: 796
+east					# Commandant's foyer
+east					# E-W Tunnel
+east					# NSEW Intersection
+south					# N-S Tunnel
+south					# NSEW Intersection
+south					# Landing pad
+enter
+blast off
+set course
+0,0,0
+leave orbit
+land
+exit					# Landing pad
+east					# Customs
+cw					# Commander Foyer
+east					# Commander's Office			Score: 850
+
+# Win with 846 points

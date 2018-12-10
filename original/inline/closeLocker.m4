@@ -8,33 +8,13 @@ l_inline_closeLocker:
 		cp	0
 		jp	z, l_parse_depositKey
 
-		ld	a, (g_currentPlanetNumber)
-		cp	location_gcs
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_gcs_storageSpace
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (g_gcs_locker335_open)
-		cp	0
-		jp	z, l_inline_ridiculous
-
+		ifCurrentPlanetNe(location_gcs, l_dolat_dontKnowHowHere)
+		ifCurrentRoomNe(room_gcs_storageSpace, l_dolat_dontKnowHowHere)
+		ifVariableEq(g_gcs_locker335_open, 0, l_inline_ridiculous)
 		printMessage(s_lockerLocked)
-
-		ld	a, (item_pSuit.location)
-		cp	location_gcs
-		jp	nz, loc_1A40
-
-		ld	a, (item_pSuit.roomNumber)
-		cp	room_gcs_storageSpace
-		jp	nz, loc_1A40
-
-		ld	a, location_none
-		ld	(item_pSuit.location), a
+		ifItemNotInLocation(item_pSuit, location_gcs, loc_1A40)
+		ifItemNotInRoom(item_pSuit, room_gcs_storageSpace, loc_1A40)
 
 loc_1A40:
-		ld	a, 0
-		ld	(g_gcs_locker335_open), a
-
+		setVariable(g_gcs_locker335_open, 0)
 		jp	l_mainLoop

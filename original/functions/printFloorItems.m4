@@ -20,7 +20,7 @@ loc_1CB7:
 
 loc_1CC4:
 		ld	a, (g_currentRoomNumber)
-		cp	2
+		cp	room_noPlanet_high
 		jp	nc, loc_1CD4
 		ld	a, 0
 		ld	(tmpPlanet), a
@@ -89,7 +89,7 @@ sub_1D02:
 		ld	(hl), 0
 
 loc_1D1D:
-		inc	hl				; hl = &g_itemList.field_1
+		inc	hl				
 		inc	hl				; hl = &g_itemList.floorMessageIndex
 		ld	a, (hl)
 		sub	1

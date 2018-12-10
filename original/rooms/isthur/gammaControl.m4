@@ -8,9 +8,7 @@
 ;     - Set first_offset to cmdtOffice to s_isthur_cmdtMessage_disks
 ; ---------------------------------------------------------------------------
 l_room_isthurGammaControl:
-		ld	a, (g_isthurGammaControlTrigger)
-		cp	1
-		jp	nz, l_advanceClock
+		ifVariableNe(g_isthurGammaControlTrigger, TRUE, l_advanceClock)
 
 		; XXX - If both disks aren't in the players inventory when
 		; entering the room with the trigger set, then the game becomes
@@ -18,31 +16,27 @@ l_room_isthurGammaControl:
 		; to zero. It's not possible to get the trigger set to one again.
 		; This code should be after the disk checks
 		;
-		ld	a, 0
-		ld	(g_isthurGammaControlTrigger), a
-
-		ld	a, (item_cpmDiskA.location)
-		cp	location_inventory
-		jp	nz, l_advanceClock
-
-		ld	a, (item_cpmDiskB.location)
-		cp	location_inventory
-		jp	nz, l_advanceClock
-
+		setVariable(g_isthurGammaControlTrigger, FALSE)
+		ifItemNotInInventory(item_cpmDiskA, l_advanceClock)
+		ifItemNotInInventory(item_cpmDiskB, l_advanceClock)
 		printMessage(s_disksDontWork)
 
 		ld	a, (g_currentRoomNumber)
 		push	af
-		ld	a, room_isthur_cmdtOffice
-		ld	(g_currentRoomNumber), a
+
+		setCurrentRoom(room_isthur_cmdtOffice)
 		call	getRoomData
+
+		; `setCurrentRoomScore(20)'
 		ld	hl, (g_currentRoomData)			; room_t.scoreBonus
 		ld	(hl), 20
 
+		; `addCurrentRoomFlag(roomFlag_first)'
 		inc	hl					; room_t.roomFlag
 		ld	a, (hl)
 		or	roomFlag_first
 
+		; `setCurrentRoomFirstMessage(s_isthur_cmdtMessage_disks)'
 		ld	(hl), a
 		ld	de, 5
 		add	hl, de					; room_t.first_offset (HI)

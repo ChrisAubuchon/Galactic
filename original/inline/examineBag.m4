@@ -11,20 +11,16 @@ loc_1642:
 		cp	0
 		jp	z, loc_1695
 
-		ld	a, (item_duffleBag.location)
-		cp	location_inventory
-		jp	z, loc_1660
-
+		ifItemInInventory(item_duffleBag, loc_1660)
 		printMessage(s_notCarryingDuffle)
 		jp	l_mainLoop
 
 loc_1660:
-		ld	a, (g_currentRoomNumber)
+		loadCurrentRoom()
 		ld	c, a
-		cp	room_noPlanet_high
-		jp	c, loc_1670
 
-		ld	a, (g_currentPlanetNumber)
+		jumpLt(room_noPlanet_high, loc_1670)
+		loadCurrentPlanet()
 		ld	b, a
 		jp	loc_1672
 ; ---------------------------------------------------------------------------

@@ -12,25 +12,13 @@
 ;     - Kill player
 ; ---------------------------------------------------------------------------
 l_room_gcsLandingBay:
-		ld	a, (g_wearingSuitFlag)
-		cp	wearingSuit_pSuit
-		jp	z, l_advanceClock
-
-		ld	a, (g_gcsLandingBay_warning)
-		cp	FALSE
-		jp	nz, loc_920
-
-		ld	a, TRUE
-		ld	(g_gcsLandingBay_warning), a
-
-		ld	a, room_gcs_hospital
-		ld	(g_currentRoomNumber), a
-
+		ifVariableEq(g_wearingSuitFlag, wearingSuit_pSuit, l_advanceClock)
+		ifVariableNe(g_gcsLandingBay_warning, FALSE, loc_920)
+		setVariable(g_gcsLandingBay_warning, TRUE)
+		setCurrentRoom(room_gcs_hospital)
 		printMessage(s_bayDoorsClosed)
 		printMessage(s_thawSuccessful)
-
-		ld	b, 30
-		call	subtractFromScore
+		decreaseScore(30)
 
 		ld	b, 10
 loc_916:

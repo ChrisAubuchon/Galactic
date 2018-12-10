@@ -4,13 +4,8 @@ l_inline_museumAnswer:
 		cp	p_museumAnswer
 		jp	nz, l_inline_dig
 
-		ld	a, (g_currentPlanetNumber)
-		cp	location_solomaw
-		jp	nz, l_inline_nothingHappens
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_solomaw_museumEntrance
-		jp	nz, l_inline_nothingHappens
+		ifCurrentPlanetNe(location_solomaw, l_inline_nothingHappens)
+		ifCurrentRoomNe(room_solomaw_museumEntrance, l_inline_nothingHappens)
 
 		ld	hl, (g_currentRoomData)
 		ld	de, 3

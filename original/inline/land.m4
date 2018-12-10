@@ -1,9 +1,7 @@
 ; ---------------------------------------------------------------------------
 ; ---------------------------------------------------------------------------
 l_inline_land:
-		ld	a, (g_currentRoomNumber)
-		cp	room_inOrbit
-		jp	z, l_doLand_checkCanLand
+		ifCurrentRoomEq(room_inOrbit, l_doLand_checkCanLand)
 		printMessage(s_dontKnowHowToApply)
 		jp	l_mainLoop
 
@@ -30,6 +28,5 @@ l_doLand_checkCanLand:
 		jp	l_mainLoop
 
 l_doLand_changeRoom:
-		ld	a, room_inShip
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_inShip)
 		jp	l_mainLoopEntry

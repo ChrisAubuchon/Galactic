@@ -1,23 +1,19 @@
 ; ---------------------------------------------------------------------------
 ; ---------------------------------------------------------------------------
 l_inline_setCourse:
-		ld	a, (g_currentRoomNumber)
-		cp	room_inOrbit
-		jp	z, loc_30E2
+		ifCurrentRoomEq(room_inOrbit, loc_30E2)
 		printMessage(s_dontKnowHowHere)
 		jp	l_mainLoop
 
 loc_30E2:
-		ld	a, (g_computerInstalledFlag)
-		cp	0
-		jp	nz, loc_30F4
+		ifVariableNe(g_computerInstalledFlag, FALSE, loc_30F4)
 
 l_inline_unableToDoNow:
 		printMessage(s_unableToDoNow)
 		jp	l_mainLoop
 
 loc_30F4:
-		ld	a, (g_crew_lyle.hiredFlag)
+		ld	a, (g_crew_llye.hiredFlag)
 		cp	isHired
 		jp	z, l_inline_unableToDoNow
 		printMessage(s_enterCoordinates)

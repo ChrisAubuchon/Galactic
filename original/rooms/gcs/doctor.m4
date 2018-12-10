@@ -1,7 +1,7 @@
 ; ---------------------------------------------------------------------------
-; Condition: (l_gcs_doctorTrigger == TRUE)
+; Condition: (g_gcs_doctorTrigger == TRUE)
 ;   - Actions:
-;     - Set l_gcs_doctorTrigger to FALSE
+;     - Set g_gcs_doctorTrigger to FALSE
 ;     - Set scoreBonus of room_gcs_headquarters to 4
 ;     - Add roomFlag_first to room_gcs_headquarters roomFlag
 ;     - Set first_offset of room_gcs_headquarters to s_first_gcsHeadquarters
@@ -10,18 +10,13 @@
 ;     - Print doctor messages
 ; ---------------------------------------------------------------------------
 l_room_gcsDoctor:
-		ld	a, (l_gcs_doctorTrigger)
-		cp	1
-		jp	nz, l_advanceClock
-
-		ld	a, FALSE
-		ld	(l_gcs_doctorTrigger), a
+		ifVariableNe(g_gcs_doctorTrigger, TRUE, l_advanceClock)
+		setVariable(g_gcs_doctorTrigger, FALSE)
 
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_gcs_headquarters
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_headquarters)
 		call	getRoomData
 
 		ld	hl, (g_currentRoomData)			; room_t.scoreBonus
@@ -38,8 +33,7 @@ l_room_gcsDoctor:
 		inc	hl
 		ld	(hl), LO_BYTE(s_first_gcsHeadquarters)
 
-		ld	a, room_gcs_innerCorridor_19
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_innerCorridor_19)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 16h

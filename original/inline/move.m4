@@ -17,9 +17,7 @@ l_inline_move:
 		cp	0
 		jp	z, loc_E26
 
-		ld	a, (item_neutralizer.location)
-		cp	location_inventory
-		jp	z, loc_E26
+		ifItemInInventory(item_neutralizer, loc_E26)
 
 		pop	af
 		ld	b, a

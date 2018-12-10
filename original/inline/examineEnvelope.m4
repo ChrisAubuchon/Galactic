@@ -8,14 +8,10 @@ loc_1705:
 		cp	0
 		jp	z, loc_1747
 
-		ld	a, (item_largeEnvelope.location)
-		cp	location_inventory
-		jp	nz, loc_16D1
-
-		ld	a, (g_currentRoomNumber)
+		ifItemNotInInventory(item_largeEnvelope, loc_16D1)
+		loadCurrentRoom()
 		ld	c, a
-		cp	room_noPlanet_high
-		jp	nc, loc_1727
+		jumpGe(room_noPlanet_high, loc_1727)
 
 		ld	b, location_ship
 		jp	loc_172B

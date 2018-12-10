@@ -2,24 +2,11 @@
 ; "launch boat"
 ; ---------------------------------------------------------------------------
 l_inline_launchBoat:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, l_caseOar_dontKnowHow
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_lakeEdge
-		jp	nz, l_caseOar_dontKnowHow
-
-		ld	a, (item_rowboat.location)
-		cp	location_navier
-		jp	nz, l_caseOar_noWayToDo
-
-		ld	a, location_none
-		ld	(item_rowboat.location), a
-
-		ld	a, (g_navier_boatTiedFlag)
-		cp	1
-		jp	z, loc_3F9E
+		ifCurrentPlanetNe(location_navier, l_caseOar_dontKnowHow)
+		ifCurrentRoomNe(room_navier_lakeEdge, l_caseOar_dontKnowHow)
+		ifItemNotInLocation(item_rowboat, location_navier, l_caseOar_noWayToDo)
+		setItemLocation(item_rowboat, location_none)
+		ifVariableEq(g_navier_boatTiedFlag, 1, loc_3F9E)
 
 l_launchBoat_boatDrifted:
 		printMessage(s_boatDriftedAway)

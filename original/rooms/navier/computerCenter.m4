@@ -12,44 +12,44 @@
 ;       - Set room_navier_shelf roomFlag to (roomFlag_terse | roomFlag_illusion)
 ; ---------------------------------------------------------------------------
 l_room_navierComputerCenter:
-		ld	a, location_none
-		ld	(item_nDoor.location), a
+		setItemLocation(item_nDoor, location_none)
+		setVariable(g_navier_shelfTrigger, TRUE)
 
-		ld	a, TRUE
-		ld	(g_navier_shelfTrigger), a
-
-		ld	a, room_navier_airlock
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_airlock)
 		call	getRoomData
+
+		; `addCurrentRoomFlag(roomFlag_verbose | roomFlag_illusion)'
 		ld	hl, (g_currentRoomData)
 		inc	hl					; room_t.roomFlag
 		ld	(hl), roomFlag_verbose | roomFlag_illusion
+
+		; `setVerboseOffset(s_verbose_navier_airlock_alt)')
 		inc	hl					; room_t.verbose_offset(HI)
 		ld	(hl), HI_BYTE(s_verbose_navier_airlock_alt)
 		inc	hl					; room_t.verbose_offset(LO)
 		ld	(hl), LO_BYTE(s_verbose_navier_airlock_alt)
+
+		; `setRoomInDirection(north, room_doorLocked)'
 		ld	de, 7
 		add	hl, de					; room_t.north_room
 		ld	(hl), room_doorLocked
+
+		; `setRoomInDirection(south, room_navier_shelf)'
 		inc	hl					; room_t.south_room
 		ld	(hl), room_navier_shelf
 
-		ld	a, (g_navier_computerCenterTrigger)
-		cp	TRUE
-		jp	z, loc_D38
+		ifVariableEq(g_navier_computerCenterTrigger, TRUE, loc_D38)
+		setVariable(g_navier_computerCenterTrigger, TRUE)
 
-		ld	a, TRUE
-		ld	(g_navier_computerCenterTrigger), a
-
-		ld	a, room_navier_shelf
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_shelf)
 		call	getRoomData
+
+		; `addCurrentRoomFlag(roomFlag_terse | roomFlag_illusion)'
 		ld	hl, (g_currentRoomData)
 		inc	hl					; room_t.roomFlag
 		ld	(hl), roomFlag_terse | roomFlag_illusion
 
 loc_D38:
-		ld	a, room_navier_computerCenter
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_computerCenter)
 		call	getRoomData
 		jp	l_advanceClock

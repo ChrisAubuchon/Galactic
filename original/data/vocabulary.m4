@@ -1,9 +1,9 @@
-g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabulary+2Bo
+g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0
 		db p_coords_isthur	; field_5
 		db _0, _comma, _0, _comma, _0; field_0
 		db p_coords_earth	; field_5
 		db _1, __, __, __, __	; field_0
-		db p_1			; field_5
+		db token_numberOne			; field_5
 		db _1, _0, _6, _5, _2	; field_0
 		db p_puzzleMoney		; field_5
 		db _1, _0, _8, _5, __	; field_0
@@ -15,9 +15,9 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _1, _9, _8, __, __	; field_0
 		db p_annsAge		; field_5
 		db _2, __, __, __, __	; field_0
-		db p_2			; field_5
+		db token_numberTwo			; field_5
 		db _3, __, __, __, __	; field_0
-		db p_3			; field_5
+		db token_numberThree			; field_5
 		db _4, _6, _2, __, __	; field_0
 		db p_museumAnswer		; field_5
 		db _5, _comma, _1, _0, _comma; field_0
@@ -31,7 +31,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _A, _C, _C, _E, _L	; field_0
 		db p_accel		; field_5
 		db _A, _C, _O, _N, __	; field_0
-		db p_acon		; field_5
+		db token_severnAcon		; field_5
 		db _A, _I, _R, _L, _O	; field_0
 		db p_airlock		; field_5
 		db _A, _L, _E, _X, __	; field_0
@@ -63,7 +63,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _B, _O, _A, _T, __	; field_0
 		db p_boat		; field_5
 		db _B, _O, _B, __, __	; field_0
-		db p_bob		; field_5
+		db token_bobLlye		; field_5
 		db _B, _O, _O, _K, __	; field_0
 		db p_book		; field_5
 		db _B, _O, _O, _K, _S	; field_0
@@ -71,7 +71,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _B, _O, _T, _T, _L	; field_0
 		db p_bottle		; field_5
 		db _B, _R, _A, _N, _D	; field_0
-		db 0A3h			; field_5
+		db p_willBrandon		; field_5
 		db _B, _U, _L, _L, _E	; field_0
 		db p_bulletin		; field_5
 		db _B, _U, _Y, __, __	; field_0
@@ -85,7 +85,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _C, _A, _T, _C, _H	; field_0
 		db p_lift		; field_5
 		db _C, _C, _W, __, __	; field_0
-		db p_ccw		; field_5
+		db token_dir_ccw		; field_5
 		db _C, _E, _N, _T, _R	; field_0
 		db p_central		; field_5
 		db _C, _L, _A, _W, __	; field_0
@@ -115,9 +115,9 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _C, _U, _S, _T, _O	; field_0
 		db p_customs		; field_5
 		db _C, _W, __, __, __	; field_0
-		db p_cw			; field_5
+		db token_dir_cw			; field_5
 		db _D, __, __, __, __	; field_0
-		db p_down		; field_5
+		db token_dir_down		; field_5
 		db _D, _A, _V, _I, _E	; field_0
 		db p_jack_davies	; field_5
 		db _D, _E, _E, _P, __	; field_0
@@ -149,7 +149,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _D, _O, _O, _R, _S	; field_0
 		db p_door		; field_5
 		db _D, _O, _W, _N, __	; field_0
-		db p_down		; field_5
+		db token_dir_down		; field_5
 		db _D, _R, __, __, __	; field_0
 		db p_jack_davies	; field_5
 		db _D, _R, _I, _N, _K	; field_0
@@ -163,7 +163,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _E, __, __, __, __	; field_0
 		db p_e			; field_5
 		db _E, _A, _R, _T, _H	; field_0
-		db 56h			; field_5
+		db p_earth		; field_5
 		db _E, _A, _S, _T, __	; field_0
 		db p_e			; field_5
 		db _E, _A, _T, __, __	; field_0
@@ -171,7 +171,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _E, _M, _B, _A, _R	; field_0
 		db p_enter		; field_5
 		db _E, _M, _P, _L, _O	; field_0
-		db 50h			; field_5
+		db p_static		; field_5
 		db _E, _N, _D, __, __	; field_0
 		db p_quit		; field_5
 		db _E, _N, _G, _I, _N	; field_0
@@ -207,7 +207,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _G, _E, _T, __, __	; field_0
 		db p_lift		; field_5
 		db _G, _I, _R, _L, __	; field_0
-		db 87h			; field_5
+		db p_girl		; field_5
 		db _G, _O, __, __, __	; field_0
 		db p_walk		; field_5
 		db _G, _O, _O, _D, _E	; field_0
@@ -293,7 +293,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _L, _I, _F, _T, __	; field_0
 		db p_lift		; field_5
 		db _L, _L, _Y, _E, __	; field_0
-		db p_bob		; field_5
+		db token_bobLlye		; field_5
 		db _L, _O, _C, _A, _T	; field_0
 		db p_find		; field_5
 		db _L, _O, _C, _K, __	; field_0
@@ -309,7 +309,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _L, _O, _G, _O, _N	; field_0
 		db p_login		; field_5
 		db _L, _O, _G, _O, _U	; field_0
-		db 4Ah			; field_5
+		db p_logoff		; field_5
 		db _L, _O, _O, _K, __	; field_0
 		db p_look		; field_5
 		db _L, _O, _R, _E, _N	; field_0
@@ -319,7 +319,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _L, _U, _C, _I, _N	; field_0
 		db p_lucinda		; field_5
 		db _M, __, __, __, __	; field_0
-		db p_letterM		; field_5
+		db p_menu		; field_5
 		db _M, _A, _C, _H, _I	; field_0
 		db p_machine		; field_5
 		db _M, _A, _I, _N, _T	; field_0
@@ -327,7 +327,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _M, _A, _N, _I, _L	; field_0
 		db p_envelope		; field_5
 		db _M, _E, _N, _U, __	; field_0
-		db 4Bh			; field_5
+		db p_menu		; field_5
 		db _M, _O, _V, _E, __	; field_0
 		db p_walk		; field_5
 		db _N, __, __, __, __	; field_0
@@ -343,9 +343,9 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _N, _E, _U, _T, _R	; field_0
 		db p_neutralizer	; field_5
 		db _N, _I, _G, _E, _R	; field_0
-		db 98h			; field_5
+		db token_parsonNigere		; field_5
 		db _N, _O, __, __, __	; field_0
-		db 0FEh			; field_5
+		db p_no			; field_5
 		db _N, _O, _R, _T, _H	; field_0
 		db p_n			; field_5
 		db _N, _W, __, __, __	; field_0
@@ -361,7 +361,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _O, _N, __, __, __	; field_0
 		db p_on			; field_5
 		db _O, _N, _E, __, __	; field_0
-		db p_1			; field_5
+		db token_numberOne			; field_5
 		db _O, _P, _E, _N, __	; field_0
 		db p_open		; field_5
 		db _O, _R, _B, _I, _T	; field_0
@@ -381,7 +381,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _P, _A, _P, _E, _R	; field_0
 		db p_paper		; field_5
 		db _P, _A, _R, _S, _O	; field_0
-		db 98h			; field_5
+		db token_parsonNigere		; field_5
 		db _P, _A, _S, _S, _A	; field_0
 		db p_passage		; field_5
 		db _P, _E, _R, _S, _O	; field_0
@@ -389,7 +389,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _P, _I, _E, _C, _E	; field_0
 		db p_pieceOfPaper	; field_5
 		db _P, _I, _R, _A, _T	; field_0
-		db 9Ah			; field_5
+		db token_practactPirate		; field_5
 		db _P, _L, _A, _N, _E	; field_0
 		db p_planet		; field_5
 		db _P, _L, _A, _T, _I	; field_0
@@ -399,7 +399,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _P, _L, _O, _T, __	; field_0
 		db p_lay		; field_5
 		db _P, _R, _A, _C, _T	; field_0
-		db 9Ah			; field_5
+		db token_practactPirate		; field_5
 		db _P, _R, _O, _C, _E	; field_0
 		db p_enter		; field_5
 		db _P, _U, _B, _L, _I	; field_0
@@ -423,7 +423,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _R, _E, _A, _D, _Y	; field_0
 		db p_ready		; field_5
 		db _R, _E, _C, _E, _I	; field_0
-		db 0DDh			; field_5
+		db p_orders		; field_5
 		db _R, _E, _M, _O, _V	; field_0
 		db p_remove		; field_5
 		db _R, _E, _P, _A, _I	; field_0
@@ -459,7 +459,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _S, _E, _T, __, __	; field_0
 		db p_set		; field_5
 		db _S, _E, _V, _E, _R	; field_0
-		db p_acon		; field_5
+		db token_severnAcon		; field_5
 		db _S, _H, _A, _K, _E	; field_0
 		db p_hit		; field_5
 		db _S, _H, _I, _P, __	; field_0
@@ -469,9 +469,9 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _S, _I, _G, _N, __	; field_0
 		db p_sign		; field_5
 		db _S, _I, _L, _V, _E	; field_0
-		db 80h			; field_5
+		db p_lance		; field_5
 		db _S, _K, _E, _L, _E	; field_0
-		db 7Eh			; field_5
+		db p_skeletonKey	; field_5
 		db _S, _K, _I, _P, __	; field_0
 		db p_walk		; field_5
 		db _S, _L, _E, _E, _P	; field_0
@@ -485,7 +485,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _S, _P, _E, _E, _D	; field_0
 		db p_speed		; field_5
 		db _S, _T, _A, _N, _D	; field_0
-		db 0DDh			; field_5
+		db p_orders		; field_5
 		db _S, _T, _A, _R, _L	; field_0
 		db p_lounge		; field_5
 		db _S, _T, _A, _T, _I	; field_0
@@ -515,7 +515,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _T, _E, _R, _M, _I	; field_0
 		db p_terminal		; field_5
 		db _T, _H, _R, _E, _E	; field_0
-		db p_3			; field_5
+		db token_numberThree			; field_5
 		db _T, _H, _R, _O, _T	; field_0
 		db p_accel		; field_5
 		db _T, _H, _R, _O, _W	; field_0
@@ -529,7 +529,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _T, _R, _O, _C, _H	; field_0
 		db p_troch		; field_5
 		db _T, _W, _O, __, __	; field_0
-		db p_2			; field_5
+		db token_numberTwo			; field_5
 		db _U, __, __, __, __	; field_0
 		db p_up			; field_5
 		db _U, _N, _F, _O, _L	; field_0
@@ -547,7 +547,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _W, _A, _L, _K, __	; field_0
 		db p_walk		; field_5
 		db _W, _A, _R, _N, _I	; field_0
-		db 0EEh			; field_5
+		db p_warning		; field_5
 		db _W, _A, _R, _P, __	; field_0
 		db p_warp		; field_5
 		db _W, _E, _A, _R, __	; field_0
@@ -557,7 +557,7 @@ g_vocabulary:	db _dash, _1, _2, _comma, _dash; field_0 ; DATA	XREF: searchVocabu
 		db _W, _E, _S, _T, __	; field_0
 		db p_west		; field_5
 		db _W, _I, _L, _L, __	; field_0
-		db 0A3h			; field_5
+		db p_willBrandon	; field_5
 		db _Y, __, __, __, __	; field_0
 		db p_yes		; field_5
 		db _Y, _E, _S, __, __	; field_0

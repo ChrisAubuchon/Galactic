@@ -29,7 +29,7 @@ loc_1B68:
 		add	hl, de
 		ld	a, (hl)
 		cp	location_inventory
-		jp	nz, l_doDrop_ambiguous_disk
+		jp	nz, l_drop_ambiguous_disk
 
 		ld	(hl), location_none
 
@@ -37,7 +37,7 @@ loc_1B68:
 		sub	1
 		ld	(carriedItemCount), a
 
-		IncreaseScore(5)
+		increaseScore(5)
 
 		ld	a, (g_deliveredItemCount)
 		add	a, 1
@@ -47,7 +47,7 @@ loc_1B68:
 
 		printMessage(s_recoveryDiskLocation)
 
-		IncreaseScore(0Eh)
+		increaseScore(14)
 
 		ld	a, location_solomaw
 		ld	(item_skeletonKey.location), a

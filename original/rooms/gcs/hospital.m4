@@ -4,14 +4,16 @@
 ;     - Set dyingGirl location to location_none
 ;     - Print hospital messages
 ;     - Remove dyingGirl object from inventory
-;     - Set l_gcs_doctorTrigger to TRUE
+;     - Set g_gcs_doctorTrigger to TRUE
 ; ---------------------------------------------------------------------------
 l_room_gcsHospital:
+		; `ifItemNotInInventory(item_dyingGirl, l_advanceClock)'
 		ld	hl, item_dyingGirl.location
 		ld	a, (hl)
 		cp	location_inventory
 		jp	nz, l_advanceClock
 
+		; `ifItemFloorMessageEq(floorMsg_dyingGirl, l_advanceClock)'
 		dec	hl
 		dec	hl
 		ld	a, (hl)				; object_t.floorMessageIndex
@@ -24,11 +26,6 @@ l_room_gcsHospital:
 
 		printMessage(s_hospitalMessage1)
 		printMessage(s_hospitalMessage2)
-
-		ld	a, (carriedItemCount)
-		sub	1
-		ld	(carriedItemCount), a
-
-		ld	a, TRUE
-		ld	(l_gcs_doctorTrigger), a
+		decreaseItemCount(1)
+		setVariable(g_gcs_doctorTrigger, TRUE)
 		jp	l_advanceClock

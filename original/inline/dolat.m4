@@ -1,20 +1,17 @@
 l_inline_dolat:
 		cp	p_dolat
 		jp	nz, l_inline_sleep
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	z, loc_FFB
+
+		ifCurrentPlanetEq(location_navier, loc_FFB)
 
 l_inline_nothingHappens:
 		printMessage(s_nothingHappens)
 		jp	l_mainLoop
 
 loc_FFB:
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_undergroundMain
-		jp	nz, l_inline_nothingHappens
+		ifCurrentRoomNe(room_navier_undergroundMain, l_inline_nothingHappens)
 
-		ld	hl, (g_currentRoomData)
+		ld	hl, (g_currentRoomNumber)'
 		inc	hl
 		inc	hl					; room_t.verbose_offset (HI)
 		ld	a, (hl)

@@ -27,8 +27,7 @@ l_earthPirate_moveItems:
 		ld	a, (g_currentRoomNumber)
 
 		push	af
-		ld	a, room_earth_hallway_14
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_earth_hallway_14)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 16h				; room_t.enter_room

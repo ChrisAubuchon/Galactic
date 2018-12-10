@@ -32,8 +32,8 @@ g_item_floorMessageList:	dw s_floor_shovel			; 00
 				dw s_floor_troch			; 1f
 				dw s_floor_lucinda			; 20
 				dw s_floor_cpmDisk			; 21
-				dw s_floor_nDoorOpen			; 22
-				dw s_floor_nDoorLocked			; 23
+				dw s_floor_nDoorLocked			; 22
+				dw s_floor_nDoorOpen			; 23
 				dw s_floor_oars				; 24
 				dw s_floor_rope				; 25
 				dw s_floor_twoDisks			; 26

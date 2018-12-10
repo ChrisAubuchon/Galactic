@@ -82,7 +82,8 @@ g_gcsRoomData:		ROOM(``room_gcs_inOrbit'', 0,
 				room_cantGo, room_mustDepositKey,
 				room_cantApply, room_multipleExits,
 				room_gcs_innerCorridor_24, room_gcs_outerCorridor_1C)
-			ROOM(``room_gcs_computerFoyer'', 10, 84h,
+			ROOM(``room_gcs_computerFoyer'', 10, 
+				BITMASK(roomFlag_verbose, roomFlag_terminal)
 				s_verbose_computerFoyer, s_verbose_computerFoyer,
 				s_none, s_none,
 				room_cantApply, room_cantApply,

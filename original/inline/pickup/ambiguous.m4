@@ -3,12 +3,9 @@ l_pickup_ambiguousItems:
                 jp      nz, loc_37B4
 
 		; tmpObject == p_paper
-		ld	a, (g_currentPlanetNumber)
-		cp	location_earth
-		jp	nz, l_pickup_paper_changeObject
-		ld	a, (g_currentRoomNumber)
-		cp	room_earth_house
-		jp	nz, l_pickup_paper_changeObject
+		ifCurrentPlanetNe(location_earth, l_pickup_paper_changeObject)
+		ifCurrentRoomNe(room_earth_house, l_pickup_paper_changeObject)
+
 		ld	hl, (g_currentRoomData)		; hl = &room_t.scoreBonus
 		inc	hl				; hl = &room_t.roomFlags
 		inc	hl				; hl = &room_t.verboseOffset (HI)
@@ -34,16 +31,14 @@ loc_37B4:
                 jp      nz, loc_37E6
 
 		; tmpObject = Irridium Crystals
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, loc_37DE
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_boxCanyon
-		jp	nz, loc_37DE
+		ifCurrentPlanetNe(location_navier, loc_37DE)
+		ifCurrentRoomNe(room_navier_boxCanyon, loc_37DE)
+
 		ld	hl, item_irridium.location
 		ld	a, (hl)
 		cp	location_navier
 		jp	nz, loc_37DE
+
 		ld	(hl), location_none
 		printMessage(s_irridiumIllusion)
 		jp	l_mainLoop

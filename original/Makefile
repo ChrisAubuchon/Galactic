@@ -1,10 +1,10 @@
 all: galactic.asm bgn.asm
 
 galactic.asm: galactic.m4
-	m4 -I. < galactic.m4 > galactic.asm
+	m4 -I. -Im4/ -I../gameData < galactic.m4 > galactic.asm
 
 bgn.asm: bgn.m4
-	m4 -I. < bgn.m4 > bgn.asm
+	m4 -I. -Im4/  -I../gameData < bgn.m4 > bgn.asm
 
 clean:
 	-rm galactic.asm bgn.asm

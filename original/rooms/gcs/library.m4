@@ -1,12 +1,8 @@
 ; ---------------------------------------------------------------------------
-; Condition: (g_gcs_professorState == 1)
-;   Actions: Set g_gcs_professorState to 2
+; Condition: (g_gcs_professorState == gcsProfessor_met)
+;   Actions: Set g_gcs_professorState to gcsProfessor_pacing
 ; ---------------------------------------------------------------------------
 l_room_gcsLibrary:
-		ld	a, (g_gcs_professorState)
-		cp	gcsProfessor_met
-		jp	nz, l_advanceClock
-
-		ld	a, gcsProfessor_pacing
-		ld	(g_gcs_professorState), a
+		ifVariableNe(g_gcs_professorState, gcsProfessor_met, l_advanceClock)
+		setVariable(g_gcs_professorState, gcsProfessor_pacing)
 		jp	l_advanceClock

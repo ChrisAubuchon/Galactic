@@ -8,27 +8,29 @@ l_room_isthurNsTunnel4:
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_isthur_gammaEntrance
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_isthur_gammaEntrance)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 
+		; `addCurrentRoomFlag(roomFlag_first)'
 		inc	hl					; room_t.roomFlags
 		ld	a, (hl)	
 		or	roomFlag_first
 
+		; `setCurrentRoomFirstMessage(s_isthur_airlockSouthOpen)'
 		ld	(hl), a
 		ld	de, 5
 		add	hl, de					; room_t.first_offset
-
 		ld	(hl), HI_BYTE(s_isthur_airlockSouthOpen) 
 		inc	hl
 		ld	(hl), LO_BYTE(s_isthur_airlockSouthOpen)
 
+		; `setRoomInDirection(north, room_cantGo)'
 		ld	de, 3
 		add	hl, de					; room_t.north_room
 		ld	(hl), room_cantGo
 
+		; `setRoomInDirection(south, room_isthur_landingPad)'
 		inc	hl					; room_t.south_room
 		ld	(hl), room_isthur_landingPad
 

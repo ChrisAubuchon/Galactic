@@ -64,7 +64,7 @@ loc_1C5A:
 		call	c, printComputerTerminal	; call printComputerTerminal if
 							; roomFlag_terminal is set
 		call	printFloorItems
-		ld	hl, (g_currentRoomData)	; hl = &room_t.scoreBonus
+		ld	hl, (g_currentRoomData)		; hl = &room_t.scoreBonus
 		inc	hl				; hl = &room_t.roomFlags
 		ld	a, (currentRoomFlags)
 		ld	(hl), a				; Write updated roomFlags to room_t

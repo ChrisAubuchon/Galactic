@@ -1,23 +1,19 @@
 l_inline_read:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_earth
-		jp	z, l_doRead_earth
-		cp	location_gcs
-		jp	z, l_doRead_gcs
+		loadCurrentPlanet()
+		jumpEq(location_earth, l_read_earth)
+		jumpEq(location_gcs, l_read_gcs)
 
-l_doRead_nothing:
+l_read_nothing:
 		printMessage(s_nothingToRead)
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
-l_doRead_earth:
-		ld	a, (g_currentRoomNumber)
-		cp	room_earth_house
-		jp	z, l_doRead_desertedHouse
-		cp	room_earth_hallway_low
-		jp	c, l_doRead_nothing
-		cp	room_earth_hallway_high
-		jp	nc, l_doRead_nothing
+l_read_earth:
+		loadCurrentRoom()
+		jumpEq(room_earth_house, l_read_desertedHouse)
+		jumpLt(room_earth_hallway_low, l_read_nothing)
+		jumpGe(room_earth_hallway_high, l_read_nothing)
+
 		sub	room_earth_hallway_low
 		rlca
 		ld	e, a
@@ -31,21 +27,20 @@ l_doRead_earth:
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
-l_doRead_desertedHouse:
+l_read_desertedHouse:
 		ld	hl, (g_currentRoomData)		; hl = &scoreBonus
 		ld	de, 3
 		add	hl, de				; hl = &verbose (low byte)
 		ld	a, (hl)
 		cp	LO_BYTE(s_verbose_house)	; If the verbose message is original, then
-		jp	nz, l_doRead_nothing		; the paper can be read
+		jp	nz, l_read_nothing		; the paper can be read
 		printMessage(s_pirateLivesMessage)
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 
-l_doRead_gcs:
-		ld	a, (g_currentRoomNumber)
-		cp	room_gcs_readable_low
-		jp	nc, loc_3C0B
+l_read_gcs:
+		loadCurrentRoom()
+		jumpGe(room_gcs_readable_low, loc_3C0B)
 
 		printMessage(s_nothingToReadHere)
 		jp	l_mainLoop

@@ -16,24 +16,11 @@ l_parse_depositKey:
 		jp	z, loc_1A8F
 
 l_inline_depositKey:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_gcs
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_gcs_storageSpace
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, (item_lockerKey.location)
-		cp	location_inventory
-		jp	nz, l_dolat_dontKnowHowHere
-
-		ld	a, location_none
-		ld	(item_lockerKey.location), a
-
+		ifCurrentPlanetNe(location_gcs, l_dolat_dontKnowHowHere)
+		ifCurrentRoomNe(room_gcs_storageSpace, l_dolat_dontKnowHowHere)
+		ifItemNotInInventory(item_lockerKey, l_dolat_dontKnowHowHere)
+		setItemLocation(item_lockerKey, location_none)
 		printMessage(s_machineSwallowKey)
+		decreaseItemCount(1)
 
-		ld	a, (carriedItemCount)
-		sub	1
-		ld	(carriedItemCount), a
 		jp	l_mainLoop

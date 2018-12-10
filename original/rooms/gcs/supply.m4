@@ -26,24 +26,13 @@
 ;     - Set g_gcs_engineeringTrigger to TRUE
 ; ---------------------------------------------------------------------------
 l_room_gcsSupply:
-		ld	a, (g_gcs_supplyState)
-		cp	gcsSupply_unentered
-		jp	nz, l_gcsSupply_resupplied
-
-		ld	b, 15
-		call	subtractFromScore
-
-		ld	a, gcsSupply_knockedOut
-		ld	(g_gcs_supplyState), a
-
-		ld	a, wearingSuit_none
-		ld	(g_wearingSuitFlag), a
-
+		ifVariableNe(g_gcs_supplyState, gcsSupply_unentered, l_gcsSupply_resupplied)
+		decreaseScore(15)
+		setVariable(g_gcs_supplyState, gcsSupply_knockedOut)
+		setVariable(g_wearingSuitFlag, wearingSuit_none)
 		printMessage(s_darkSupplyMessage1)
 		printMessage(s_darkSupplyMessage2)
-
-		ld	a, room_gcs_doctor
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_doctor)
 
 		; XXX - This might make the game unwinnable. This loop sets the
 		; location of all items on the floor of GCS and all items in
@@ -91,15 +80,9 @@ gcs_removeItem:
 loc_B23:
 		printMessage(s_doctorMessage1)
 		printMessage(s_doctorMessage2)
-
-		ld	a, FALSE
-		ld	(g_lockerRentedFlag), a
-
-		ld	a, TRUE
-		ld	(g_gcs_caseInLocker), a
-
-		ld	a, 5
-		ld	(item_attacheCase.scoreBonus), a
+		setVariable(g_lockerRentedFlag, FALSE)
+		setVariable(g_gcs_caseInLocker, TRUE)
+		setItemScoreBonus(item_attacheCase, 5)
 		jp	l_mainLoopEntry
 ; ---------------------------------------------------------------------------
 
@@ -107,17 +90,19 @@ l_gcsSupply_resupplied:
 		cp	gcsSupply_knockedOut
 		jp	nz, l_advanceClock
 
-		ld	a, gcsSupply_resupplied
-		ld	(g_gcs_supplyState), a
-
+		setVariable(g_gcs_supplyState, gcsSupply_resupplied)
 		printMessage(s_gcsResupplied)
+		increaseScore(5)
 
-		IncreaseScore(5)
-
+		; `setVariable(g_shipSuppliedFlag, TRUE)'
+		; `setVariable(g_earth_supplyState, earthSupply_enableNavier)'
+		; `setLanding(g_landing_earth'
+		; `setVariable(g_landing_earth.canLandFlag, canLand)'
 		ld	a, TRUE
 		ld	(g_shipSuppliedFlag), a
 		ld	(g_earth_supplyState), a		; earthSupply_enableNavier
 		ld	(g_landing_earth.canLandFlag), a
+
 		ld	a, FALSE
 		ld	(g_landing_isthur.canLandFlag), a
 		ld	(g_landing_gcs.canLandFlag), a
@@ -127,14 +112,16 @@ l_gcsSupply_resupplied:
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_gcs_innerCorridor_19
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_innerCorridor_19)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 
+		; `setRoomInDirection(enter, room_supplyClosed)'
 		ld	de, 16h
 		add	hl, de					; room_t.enter_room
 		ld	(hl), room_supplyClosed
+
+		; `setRoomInDirection(outward, room_supplyClosed)'
 		inc	hl
 		inc	hl
 		inc	hl					; room_t.outward_room
@@ -144,6 +131,5 @@ l_gcsSupply_resupplied:
 		ld	(g_currentRoomNumber), a
 		call	getRoomData
 
-		ld	a, TRUE
-		ld	(g_gcs_engineeringTrigger), a
+		setVariable(g_gcs_engineeringTrigger, TRUE)
 		jp	l_advanceClock

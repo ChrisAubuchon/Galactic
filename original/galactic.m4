@@ -1,6 +1,7 @@
 include(`messages.m4')dnl
 include(`constants.m4')dnl
-include(`macros.m4')dnl
+include(`functions.m4')dnl
+include(`dataMacros-stubs.m4')dnl
 include(`structs.m4')
 
 		ds 5
@@ -116,8 +117,7 @@ loc_266:
 		cp	0
 		jp	z, l_mainLoopEntry
 		printMessage(s_introduction)
-		ld	b, 20
-		call	subtractFromScore
+		decreaseScore(20)
 
 l_mainLoopEntry:
 		call	getRoomData
@@ -677,7 +677,7 @@ loc_14A2:
 
 loc_14B1:
 		ld	b, p_set
-		ld	c, p_down
+		ld	c, token_dir_down
 		call	compareTwoWordInput
 		cp	0
 		jp	z, loc_14C0
@@ -891,56 +891,8 @@ loc_1638:
 		jp	l_mainLoop
 ; ---------------------------------------------------------------------------
 include(`inline/examineBag.m4')
-; ---------------------------------------------------------------------------
-
-loc_1695:
-		ld	b, p_examine
-		ld	c, p_purse
-		call	compareTwoWordInput
-		cp	0
-		jp	z, loc_16BD
-		ld	a, (item_purse.location)
-		cp	location_inventory
-		jp	z, loc_16B3
-		printMessage(s_notCarryingPurse)
-		jp	l_mainLoop
-; ---------------------------------------------------------------------------
-
-loc_16B3:
-		printMessage(s_purseMessage)
-		jp	l_mainLoop
-; ---------------------------------------------------------------------------
-
-loc_16BD:
-		ld	b, p_examine
-		ld	c, p_case
-		call	compareTwoWordInput
-		cp	0
-		jp	z, loc_1705
-		ld	a, (item_attacheCase.location)
-		cp	location_inventory
-		jp	z, loc_16DB
-
-loc_16D1:
-		printMessage(s_notCarrying)
-		jp	l_mainLoop
-; ---------------------------------------------------------------------------
-
-loc_16DB:
-		ld	a, (g_caseTrigger)
-		cp	1
-		jp	z, loc_16ED
-
-loc_16E3:
-		printMessage(s_didntFindAnything)
-		jp	l_mainLoop
-; ---------------------------------------------------------------------------
-
-loc_16ED:
-		printMessage(s_caseMessage1)
-		printMessage(s_caseMessage2)
-		printMessage(s_caseMessage3)
-		jp	l_mainLoop
+include(`inline/examinePurse.m4')
+include(`inline/examineCase.m4')
 include(`inline/examineEnvelope.m4')
 
 loc_1747:
@@ -1551,4 +1503,67 @@ readDMAAddress:	db 0, 44h, 3Ah,	47h, 41h, 4Ch, 41h, 43h, 54h, 49h, 43h
 		db 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh, 0,	0FFh, 0
 		db 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh, 0,	0FFh, 0
 		db 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh, 0, 0FFh
-include(`bgn/stubs.m4')
+baseBGNAddress:			ds 20
+g_currentScore:			ds 2
+g_verboseCountdown:		ds 1
+g_currentRoomData:		ds 2
+g_currentPlanetNumber:		ds 1
+g_currentRoomNumber:		ds 1
+g_shipDestination:		ds 1
+g_radioactiveValue:		ds 1
+g_launchCounter_xxx:		ds 2
+g_restoredGameFlag:		ds 1
+baseTimeMaybe:			ds 5
+g_earth_terminalIntroFlag:	ds 1
+include(`hireable.m4')dnl
+g_computerInstalledFlag:	ds 1
+analyzerInstalledFlag:		ds 1
+g_boughtItemList:		ds 4
+carriedItemCount:		ds 1
+g_shipSuppliedFlag:		ds 1
+g_analyzerUsedOnLucinda:	ds 1
+g_gcsStorage_location:		ds 1
+g_gcs_psuitInLocker:		ds 1
+g_gcs_caseInLocker:		ds 1
+g_gcs_locker335_open:		ds 1
+g_gcs_changeBulletin:		ds 1
+g_lockerRentedFlag:		ds 1
+				ds 1
+g_wornSuitFloorMessage:		ds 1
+g_wearingSuitFlag:		ds 1
+g_slider_gameWonFlag:		ds 1
+byte_49B0:			ds 1
+g_poisonedFlag:			ds 1
+g_drankShipsBeveragesFlag:	ds 1
+g_gcsDrankInRestaurantFlag:	ds 1
+g_gcsLandingBay_warning:	ds 1
+g_terminalSkipPassword:		ds 1
+g_gcsComputerState:		ds 1
+g_gcs_barState:			ds 1
+g_gcs_restaurantEntered:	ds 1
+g_gcs_foundDyingGirl:		ds 1
+				ds 1
+g_gcs_supplyState:		ds 1
+g_gcs_engineeringTrigger:	ds 1
+g_gcs_doctorTrigger:		ds 1
+g_gcs_professorState:		ds 1
+g_earth_supplyState:		ds 1
+g_navier_boatTiedFlag:		ds 1
+g_navier_computerCenterTrigger:	ds 1
+				ds 1
+g_caseTrigger:			ds 1
+g_isthurGammaControlTrigger:	ds 1
+g_isthur_computerCenterTrigger:	ds 1
+g_navier_shelfTrigger:		ds 1
+g_solomaw_doorsOpened:		ds 1
+g_deliveredItemCount:		ds 1
+g_solomaw_riddleComplete:	ds 1
+gameWonFlagMaybe:		ds 1
+g_duffleBagExamined:		ds 1
+include(`landing.m4')dnl
+include(`items.m4')dnl
+include(`earthRooms.m4')dnl
+include(`isthurRooms.m4')dnl
+include(`gcsRooms.m4')dnl
+include(`navierRooms.m4')dnl
+include(`solomawRooms.m4')dnl

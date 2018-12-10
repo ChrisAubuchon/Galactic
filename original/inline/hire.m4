@@ -5,11 +5,11 @@
 ; ---------------------------------------------------------------------------
 l_inline_hire:
 		ld	e, a
-		ld	a, (g_currentPlanetNumber)
-		cp	location_earth
-		jp	z, l_hire_earth
+		; RETURN - Change Eq->Ne and l_hire_earth to l_inline_dontKnowHow
+		ifCurrentPlanetEq(location_earth, l_hire_earth)
 		cp	location_gcs			; Looks like a stray line. Does nothing
 
+; RETURN - Move to return label section
 l_doHire_dontKnowHow:
 		printMessage(s_dontKnowHowHere)
 		jp	l_mainLoop

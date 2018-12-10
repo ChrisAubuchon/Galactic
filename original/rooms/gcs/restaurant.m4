@@ -13,13 +13,12 @@
 ;     - Print no seats
 ; ---------------------------------------------------------------------------
 l_room_gcsRestaurant:
-		ld	a, (g_gcs_restaurantEntered)
-		cp	0
-		jp	nz, l_gcsRestaurant_noSeats
-
+		ifVariableNe(g_gcs_restaurantEntered, FALSE, l_gcsRestaurant_noSeats)
 		printMessage(s_restaurantGreeting)
 		printMessage(s_holsonMessage)
 
+		; `setVariable(g_gcs_restaurantEntered, TRUE)'
+		; `setVariable(g_gcs_professorState, gcsProfessor_met)'
 		ld	a, 1
 		ld	(g_gcs_restaurantEntered), a
 		ld	(g_gcs_professorState), a
@@ -27,17 +26,20 @@ l_room_gcsRestaurant:
 		ld	a, (g_currentRoomNumber)
 		push	af
 
-		ld	a, room_gcs_library
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_gcs_library)
 		call	getRoomData
+
+		; `setCurrentRoomScore(5)'
 		ld	hl, (g_currentRoomData)			; room_t.scoreBonus
 		ld	(hl), 5
 
+		; `addCurrentRoomFlag(roomFlag_first)'
 		inc	hl					; room_t.roomFlag
 		ld	a, (hl)
 		or	roomFlag_first
 		ld	(hl), a
 
+		; `setCurrentRoomFirstMessage(s_first_gcsLibrary)'
 		ld	de, 5
 		add	hl, de					; room_t.first_offset (HI)
 		ld	(hl), HI_BYTE(s_first_gcsLibrary)
@@ -48,10 +50,8 @@ l_room_gcsRestaurant:
 		ld	(g_currentRoomNumber), a
 		call	getRoomData
 
-		IncreaseScore(5)
-
-		ld	a, location_gcs
-		ld	(item_largeEnvelope.location), a
+		increaseScore(5)
+		setItemLocation(item_largeEnvelope, location_gcs)
 		jp	l_advanceClock
 ; ---------------------------------------------------------------------------
 

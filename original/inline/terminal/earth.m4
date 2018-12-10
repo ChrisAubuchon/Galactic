@@ -1,27 +1,24 @@
 ; ---------------------------------------------------------------------------
 ; ---------------------------------------------------------------------------
 ; ---------------------------------------------------------------------------
-l_doLogin_earthLogin:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_earth
-		jp	nz, l_doLogin_logonAborted
+l_login_earthLogin:
+		ifCurrentPlanetNe(location_earth, l_login_logonAborted)
 		printMessage(s_password)
+
 		call	parseInput
 		ld	a, (g_inputWordCount)
 		cp	1
-		jp	nz, l_doLogin_logonAborted
+		jp	nz, l_login_logonAborted
+
 		ld	a, (playerCommand)
 		cp	p_secret
-		jp	z, l_doLogin_earthTerminal
-		jp	l_doLogin_logonAborted
+		jp	z, l_login_earthTerminal
+		jp	l_login_logonAborted
 
-l_doLogin_earthTerminal:
-		ld	a, (g_earth_terminalIntroFlag)
-		cp	TRUE
-		jp	z, loc_3286
+l_login_earthTerminal:
+		ifVariableEq(g_earth_terminalIntroFlag, TRUE, loc_3286)
 		printMessage(s_terminal_ps_verbose)
-		ld	a, TRUE
-		ld	(g_earth_terminalIntroFlag), a
+		setVariable(g_earth_terminalIntroFlag, TRUE)
 		jp	loc_328D
 
 loc_3286:
@@ -43,30 +40,30 @@ loc_32A0:
 
 loc_32A5:
 		cp	p_logoff
-		jp	z, l_doLogin_logoff
+		jp	z, l_login_logoff
 		cp	p_e
-		jp	z, l_doLogin_logoff
+		jp	z, l_login_logoff
 		cp	p_exit
-		jp	z, l_doLogin_logoff
+		jp	z, l_login_logoff
 		cp	p_log
-		jp	z, l_doLogin_logoff
+		jp	z, l_login_logoff
 		cp	p_planet
 		jp	z, l_planetRoutine_enter
 		cp	p_find
 		jp	z, l_planetRoutine_enter
-		cp	p_1
+		cp	token_numberOne
 		jp	z, l_planetRoutine_enter
 		cp	p_personnel
 		jp	z, l_earthTerminal_personnel
 		cp	p_static
 		jp	z, l_earthTerminal_personnel
-		cp	p_2
+		cp	token_numberTwo
 		jp	z, l_earthTerminal_personnel
 		cp	p_general
 		jp	z, l_earthTerminal_gossip
 		cp	p_personnel
 		jp	z, l_earthTerminal_gossip
-		cp	p_3
+		cp	token_numberThree
 		jp	z, l_earthTerminal_gossip
 		ld	a, b
 		cp	1
@@ -86,15 +83,10 @@ loc_32F7:
 		jp	loc_32A5
 ; ---------------------------------------------------------------------------
 
-l_doLogin_logoff:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_gcs
-		jp	nz, l_logoffRoutine_complete
-		ld	a, (g_gcsComputerState)
-		cp	gcsTerminal_initial
-		jp	nz, l_logoffRoutine_complete
-		ld	a, gcsTerminal_givenOrders
-		ld	(g_gcsComputerState), a
+l_login_logoff:
+		ifCurrentPlanetNe(location_gcs, l_logoffRoutine_complete)
+		ifVariableNe(g_gcsComputerState, gcsTerminal_initial, l_logoffRoutine_complete)
+		setVariable(g_gcsComputerState, gcsTerminal_givenOrders)
 
 l_logoffRoutine_complete:
 		printMessage(s_terminal_logoffComplete)
@@ -136,7 +128,7 @@ loc_3344:
 		jp	z, l_planetRoutine_terminated
 		cp	p_exit
 		jp	z, l_planetRoutine_terminated
-		cp	p_letterM
+		cp	p_menu
 		jp	z, l_planetRoutine_terminated
 		ld	a, b
 		cp	1

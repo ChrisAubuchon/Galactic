@@ -7,8 +7,7 @@ l_inline_quit:
 		jp	z, l_inline_printOkayAndLoop
 
 l_inline_playerDied:
-		ld	b, 25
-		call	subtractFromScore
+		decreaseScore(25)
 
 loc_F1B:
 		printMessage(s_endScorePrefix)

@@ -2,43 +2,30 @@
 ; "untie boat"
 ; ---------------------------------------------------------------------------
 l_inline_untieBoat:
-		ld	a, (g_currentPlanetNumber)
-		cp	location_navier
-		jp	nz, l_caseOar_dontKnowHow
-
-		ld	a, (g_currentRoomNumber)
-		cp	room_navier_lakeEdge
-		jp	c, l_caseOar_dontKnowHow
-
-		cp	room_navier_airlock
-		jp	nc, l_caseOar_dontKnowHow
-
-		cp	room_navier_inRowboatOnLake
-		jp	c, l_untieBoat_fail
-
-		cp	room_navier_shelf
-		jp	nc, l_untieBoat_fail
+		ifCurrentPlanetNe(location_navier, l_caseOar_dontKnowHow)
+		loadCurrentRoom()
+		jumpLt(room_navier_lakeEdge, l_caseOar_dontKnowHow)
+		jumpGe(room_navier_airlock, l_caseOar_dontKnowHow)
+		jumpLt(room_navier_inRowboatOnLake, l_untieBoat_fail)
+		jumpGe(room_navier_shelf, l_untieBoat_fail)
 		jp	l_untieBoat_success
+
 ; ---------------------------------------------------------------------------
 l_untieBoat_fail:
 		printMessage(s_boatDriftedAway)
+		setVariable(g_navier_boatTiedFlag, FALSE)
 
-		ld	a, 0
-		ld	(g_navier_boatTiedFlag), a
 		ld	a, (g_currentRoomNumber)
-
 		push	af
 
-		ld	a, room_navier_lakeEdge
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_lakeEdge)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Ah
 		add	hl, de				; room_t.northRoom
 		ld	(hl), room_cantSwim
 
-		ld	a, room_navier_shelf
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_shelf)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Bh
@@ -53,22 +40,19 @@ l_untieBoat_fail:
 
 l_untieBoat_success:
 		printMessage(s_okay)
+		setVariable(g_navier_boatTiedFlag, FALSE)
 
-		ld	a, 0
-		ld	(g_navier_boatTiedFlag), a
 		ld	a, (g_currentRoomNumber)
-
 		push	af
-		ld	a, (room_navier_inRowboatOnLake)
-		ld	(g_currentRoomNumber), a
+
+		setCurrentRoom(room_navier_inRowboatOnLake)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Ah
 		add	hl, de					; room_t.northRoom
 		ld	(hl), room_navier_inRowboatNearShelf
 
-		ld	a, room_navier_inRowboatNearShelf
-		ld	(g_currentRoomNumber), a
+		setCurrentRoom(room_navier_inRowboatNearShelf)
 		call	getRoomData
 		ld	hl, (g_currentRoomData)
 		ld	de, 0Bh
